@@ -1,0 +1,233 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab143/Lab05_2024A/Exercise/03_GATE/TMIP_SYN.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/action\[2:0\]} \
+{/TESTBED/clk} \
+{/TESTBED/image\[7:0\]} \
+{/TESTBED/image_size\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/in_valid2} \
+{/TESTBED/out_valid} \
+{/TESTBED/out_value} \
+{/TESTBED/rst_n} \
+{/TESTBED/template\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP"
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/action\[2:0\]} \
+{/TESTBED/clk} \
+{/TESTBED/image\[7:0\]} \
+{/TESTBED/image_size\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/in_valid2} \
+{/TESTBED/out_valid} \
+{/TESTBED/out_value} \
+{/TESTBED/rst_n} \
+{/TESTBED/template\[7:0\]} \
+{/TESTBED/u_TMIP/M1/A0} \
+{/TESTBED/u_TMIP/M1/A1} \
+{/TESTBED/u_TMIP/M1/A2} \
+{/TESTBED/u_TMIP/M1/A3} \
+{/TESTBED/u_TMIP/M1/A4} \
+{/TESTBED/u_TMIP/M1/A5} \
+{/TESTBED/u_TMIP/M1/A6} \
+{/TESTBED/u_TMIP/M1/A7} \
+{/TESTBED/u_TMIP/M1/A8} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 11 12 13 14 15 16 17 18 19 )} 
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/action\[2:0\]} \
+{/TESTBED/clk} \
+{/TESTBED/image\[7:0\]} \
+{/TESTBED/image_size\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/in_valid2} \
+{/TESTBED/out_valid} \
+{/TESTBED/out_value} \
+{/TESTBED/rst_n} \
+{/TESTBED/template\[7:0\]} \
+{/TESTBED/u_TMIP/M1/A0} \
+{/TESTBED/u_TMIP/M1/A1} \
+{/TESTBED/u_TMIP/M1/A2} \
+{/TESTBED/u_TMIP/M1/A3} \
+{/TESTBED/u_TMIP/M1/A4} \
+{/TESTBED/u_TMIP/M1/A5} \
+{/TESTBED/u_TMIP/M1/A6} \
+{/TESTBED/u_TMIP/M1/A7} \
+{/TESTBED/u_TMIP/M1/A8} \
+{/TESTBED/u_TMIP/M1/WEB} \
+{/TESTBED/u_TMIP/M1/WEB_} \
+{/TESTBED/u_TMIP/M1/WEB_i} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 20 21 22 )} 
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 25355.694779 795246.790790
+wvSetCursor -win $_nWave1 80627.064253 -snap {("G1" 20)}
+wvSetCursor -win $_nWave1 97934.260755 -snap {("G1" 20)}
+wvSetCursor -win $_nWave1 124174.203839 -snap {("G1" 20)}
+wvSetCursor -win $_nWave1 116358.050580 -snap {("G1" 20)}
+wvSetCursor -win $_nWave1 138131.620373 -snap {("G1" 20)}
+wvSetCursor -win $_nWave1 153763.926891 -snap {("G1" 20)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvSetPosition -win $_nWave1 {("G1" 24)}
+wvSetPosition -win $_nWave1 {("G1" 24)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/action\[2:0\]} \
+{/TESTBED/clk} \
+{/TESTBED/image\[7:0\]} \
+{/TESTBED/image_size\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/in_valid2} \
+{/TESTBED/out_valid} \
+{/TESTBED/out_value} \
+{/TESTBED/rst_n} \
+{/TESTBED/template\[7:0\]} \
+{/TESTBED/u_TMIP/M1/A0} \
+{/TESTBED/u_TMIP/M1/A1} \
+{/TESTBED/u_TMIP/M1/A2} \
+{/TESTBED/u_TMIP/M1/A3} \
+{/TESTBED/u_TMIP/M1/A4} \
+{/TESTBED/u_TMIP/M1/A5} \
+{/TESTBED/u_TMIP/M1/A6} \
+{/TESTBED/u_TMIP/M1/A7} \
+{/TESTBED/u_TMIP/M1/A8} \
+{/TESTBED/u_TMIP/M1/WEB} \
+{/TESTBED/u_TMIP/M1/WEB_} \
+{/TESTBED/u_TMIP/M1/WEB_i} \
+{/TESTBED/u_TMIP/M1/CK} \
+{/TESTBED/u_TMIP/M1/CK_} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 23 24 )} 
+wvSetPosition -win $_nWave1 {("G1" 24)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvSetPosition -win $_nWave1 {("G1" 26)}
+wvSetPosition -win $_nWave1 {("G1" 26)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/action\[2:0\]} \
+{/TESTBED/clk} \
+{/TESTBED/image\[7:0\]} \
+{/TESTBED/image_size\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/in_valid2} \
+{/TESTBED/out_valid} \
+{/TESTBED/out_value} \
+{/TESTBED/rst_n} \
+{/TESTBED/template\[7:0\]} \
+{/TESTBED/u_TMIP/M1/A0} \
+{/TESTBED/u_TMIP/M1/A1} \
+{/TESTBED/u_TMIP/M1/A2} \
+{/TESTBED/u_TMIP/M1/A3} \
+{/TESTBED/u_TMIP/M1/A4} \
+{/TESTBED/u_TMIP/M1/A5} \
+{/TESTBED/u_TMIP/M1/A6} \
+{/TESTBED/u_TMIP/M1/A7} \
+{/TESTBED/u_TMIP/M1/A8} \
+{/TESTBED/u_TMIP/M1/WEB} \
+{/TESTBED/u_TMIP/M1/WEB_} \
+{/TESTBED/u_TMIP/M1/WEB_i} \
+{/TESTBED/u_TMIP/M1/CK} \
+{/TESTBED/u_TMIP/M1/CK_} \
+{/TESTBED/u_TMIP/M1/CS} \
+{/TESTBED/u_TMIP/M1/CS_} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 25 26 )} 
+wvSetPosition -win $_nWave1 {("G1" 26)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 202661.688073 -snap {("G1" 25)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_TMIP/M1"
+wvSetPosition -win $_nWave1 {("G1" 27)}
+wvSetPosition -win $_nWave1 {("G1" 27)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/action\[2:0\]} \
+{/TESTBED/clk} \
+{/TESTBED/image\[7:0\]} \
+{/TESTBED/image_size\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/in_valid2} \
+{/TESTBED/out_valid} \
+{/TESTBED/out_value} \
+{/TESTBED/rst_n} \
+{/TESTBED/template\[7:0\]} \
+{/TESTBED/u_TMIP/M1/A0} \
+{/TESTBED/u_TMIP/M1/A1} \
+{/TESTBED/u_TMIP/M1/A2} \
+{/TESTBED/u_TMIP/M1/A3} \
+{/TESTBED/u_TMIP/M1/A4} \
+{/TESTBED/u_TMIP/M1/A5} \
+{/TESTBED/u_TMIP/M1/A6} \
+{/TESTBED/u_TMIP/M1/A7} \
+{/TESTBED/u_TMIP/M1/A8} \
+{/TESTBED/u_TMIP/M1/WEB} \
+{/TESTBED/u_TMIP/M1/WEB_} \
+{/TESTBED/u_TMIP/M1/WEB_i} \
+{/TESTBED/u_TMIP/M1/CK} \
+{/TESTBED/u_TMIP/M1/CK_} \
+{/TESTBED/u_TMIP/M1/CS} \
+{/TESTBED/u_TMIP/M1/CS_} \
+{/TESTBED/u_TMIP/WEB1} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 27 )} 
+wvSetPosition -win $_nWave1 {("G1" 27)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 26 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 26 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 26 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 27 )} 
+wvSetCursor -win $_nWave1 206569.764702 -snap {("G2" 0)}

@@ -1,0 +1,5 @@
+{"vcs1":{"timestamp_begin":1726730178.540074241, "rt":71.19, "ut":0.08, "st":0.06}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1726730177.787596772}
+{"VCS_COMP_START_TIME": 1726730177.787596772}
+{"VCS_COMP_END_TIME": 1726730249.837205526}
+{"VCS_USER_OPTIONS": "-timescale=1ns/1fs -j4 -sverilog +v2k -full64 -Mupdate -R -debug_access+all -f filelist.f -o simv -l vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a -v /RAID2/COURSE/iclab/iclabTA01/umc018/Verilog/umc18_neg.v +define+GATE +neg_tchk"}

@@ -1,0 +1,41 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Sep 30 15:23:45 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               6
+    Cells do not drive (LINT-1)                                     6
+
+Nets                                                               18
+    Unloaded nets (LINT-2)                                         18
+--------------------------------------------------------------------------------
+
+Warning: In design 'TETRIS', cell 'B_3785' does not drive any nets. (LINT-1)
+Warning: In design 'TETRIS', cell 'B_3786' does not drive any nets. (LINT-1)
+Warning: In design 'TETRIS', cell 'B_3871' does not drive any nets. (LINT-1)
+Warning: In design 'TETRIS', cell 'B_3915' does not drive any nets. (LINT-1)
+Warning: In design 'TETRIS', cell 'B_3927' does not drive any nets. (LINT-1)
+Warning: In design 'TETRIS', cell 'B_4009' does not drive any nets. (LINT-1)
+Warning: In design 'TETRIS', net 'net8802' driven by pin 'C34049/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8801' driven by pin 'C34002/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8800' driven by pin 'C33221/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8799' driven by pin 'C32590/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8798' driven by pin 'C31942/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8797' driven by pin 'C31311/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8796' driven by pin 'C30672/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8795' driven by pin 'C30041/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8794' driven by pin 'C29410/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8793' driven by pin 'C28766/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8792' driven by pin 'C28135/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8791' driven by pin 'C27496/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8790' driven by pin 'C26865/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8789' driven by pin 'C26234/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8788' driven by pin 'C25973/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8787' driven by pin 'C25903/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8786' driven by pin 'C25843/Z' has no loads. (LINT-2)
+Warning: In design 'TETRIS', net 'net8785' driven by pin 'C25752/Z' has no loads. (LINT-2)
+1

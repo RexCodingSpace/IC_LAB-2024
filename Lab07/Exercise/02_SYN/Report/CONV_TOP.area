@@ -1,0 +1,75 @@
+ 
+****************************************
+Report : area
+Design : CONV_TOP
+Version: T-2022.03
+Date   : Sun Nov  3 21:04:05 2024
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+    DUAL_64X8X1BM1_WC (File: /RAID2/COURSE/iclab/iclab143/Lab07/Exercise/04_MEM/DUAL_64X8X1BM1_WC.db)
+
+Number of ports:                          155
+Number of nets:                          2813
+Number of cells:                         2527
+Number of combinational cells:           1884
+Number of sequential cells:               625
+Number of macros/black boxes:               1
+Number of buf/inv:                        185
+Number of references:                      42
+
+Combinational area:              35425.857824
+Buf/Inv area:                     1249.919987
+Noncombinational area:           37107.000351
+Macro/Black Box area:            54498.683594
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                127031.541769
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area               Local cell area
+                                  --------------------  ---------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-   Black-
+                                  Total        Total    national    national    boxes       Design
+--------------------------------  -----------  -------  ----------  ----------  ----------  ------------
+CONV_TOP                          127031.5418    100.0  11080.5409  19829.9810  54498.6836  CONV_TOP
+u_Conv                             39722.4579     31.3  24345.3169  15377.1409      0.0000  CLK_2_MODULE
+u_FIFO_syn/sync_r2w/genblk1[0].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_r2w/genblk1[1].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_r2w/genblk1[2].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_r2w/genblk1[3].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_r2w/genblk1[4].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_r2w/genblk1[5].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_r2w/genblk1[6].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_w2r/genblk1[0].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_w2r/genblk1[1].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_w2r/genblk1[2].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_w2r/genblk1[3].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_w2r/genblk1[4].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_w2r/genblk1[5].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_FIFO_syn/sync_w2r/genblk1[6].u_NDFF_syn
+                                     118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_Handshake_syn/NDFF_SYN0            118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+u_Handshake_syn/NDFF_SYN1            118.7424      0.1      0.0000    118.7424      0.0000  NDFF_syn
+--------------------------------  -----------  -------  ----------  ----------  ----------  ------------
+Total                                                   35425.8578  37107.0004  54498.6836
+
+1

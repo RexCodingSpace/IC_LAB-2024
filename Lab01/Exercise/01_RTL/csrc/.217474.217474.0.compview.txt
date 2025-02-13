@@ -1,0 +1,5 @@
+{"comelab":{"timestamp_begin":1726066428.573145353, "rt":0.88, "ut":0.31, "st":0.49}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1726066428.261687999}
+{"VCS_COMP_START_TIME": 1726066428.261687999}
+{"VCS_COMP_END_TIME": 1726066429.508709643}
+{"VCS_USER_OPTIONS": "-full64 +lint=TFIPC-L -o your_simulation work.your_module"}

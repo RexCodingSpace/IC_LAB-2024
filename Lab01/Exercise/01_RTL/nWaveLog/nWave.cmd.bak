@@ -1,0 +1,211 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab143/Lab01/Exercise/01_RTL/SSC.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/card_num\[63:0\]} \
+{/TESTBED/input_money\[8:0\]} \
+{/TESTBED/out_change\[8:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/price\[31:0\]} \
+{/TESTBED/snack_num\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/card_num\[63:0\]} \
+{/TESTBED/input_money\[8:0\]} \
+{/TESTBED/out_change\[8:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/price\[31:0\]} \
+{/TESTBED/snack_num\[31:0\]} \
+{/TESTBED/DUT_SSC/out_change\[8:0\]} \
+{/TESTBED/DUT_SSC/out_change_tmp\[9:0\]} \
+{/TESTBED/DUT_SSC/total_merg_6\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 7 8 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 20528.367755 -snap {("G2" 0)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvExpandBus -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 41)}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvCollapseBus -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 6)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalOpen -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/card_num\[63:0\]} \
+{/TESTBED/input_money\[8:0\]} \
+{/TESTBED/out_change\[8:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/price\[31:0\]} \
+{/TESTBED/snack_num\[31:0\]} \
+{/TESTBED/DUT_SSC/out_change\[8:0\]} \
+{/TESTBED/DUT_SSC/out_change_tmp\[9:0\]} \
+{/TESTBED/DUT_SSC/total_merg_6\[0:7\]} \
+{/TESTBED/DUT_SSC/total\[0:7\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvExpandBus -win $_nWave1 {("G1" 10)}
+wvSelectSignal -win $_nWave1 {( "G1" 11 12 13 14 15 16 17 18 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 49135.389740 -snap {("G1" 9)}
+wvSelectGroup -win $_nWave1 {G1}
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvSelectGroup -win $_nWave1 {G1}
+wvSelectGroup -win $_nWave1 {G1}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvExpandBus -win $_nWave1 {("G1" 1)}
+wvScrollUp -win $_nWave1 23
+wvSelectGroup -win $_nWave1 {G1}
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvSelectGroup -win $_nWave1 {G1}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvCollapseBus -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/DUT_SSC"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/DUT_SSC"
+wvSetPosition -win $_nWave1 {("G1" 17)}
+wvSetPosition -win $_nWave1 {("G1" 17)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/card_num\[63:0\]} \
+{/TESTBED/DUT_SSC/dig_1\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_2\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_3\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_4\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_5\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_6\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_7\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_8\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_9\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_10\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_11\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_12\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_13\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_14\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_15\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_16\[3:0\]} \
+{/TESTBED/input_money\[8:0\]} \
+{/TESTBED/out_change\[8:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/price\[31:0\]} \
+{/TESTBED/snack_num\[31:0\]} \
+{/TESTBED/DUT_SSC/out_change\[8:0\]} \
+{/TESTBED/DUT_SSC/out_change_tmp\[9:0\]} \
+{/TESTBED/DUT_SSC/total_merg_6\[0:7\]} \
+{/TESTBED/DUT_SSC/total\[0:7\]} \
+{/TESTBED/DUT_SSC/total\[0\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[1\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[2\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[3\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[4\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[5\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[6\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[7\]\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 )} \
+           
+wvSetPosition -win $_nWave1 {("G1" 17)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/DUT_SSC"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/DUT_SSC"
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/card_num\[63:0\]} \
+{/TESTBED/DUT_SSC/dig_1\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_2\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_3\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_4\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_5\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_6\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_7\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_8\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_9\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_10\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_11\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_12\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_13\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_14\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_15\[3:0\]} \
+{/TESTBED/DUT_SSC/dig_16\[3:0\]} \
+{/TESTBED/DUT_SSC/sum\[7:0\]} \
+{/TESTBED/input_money\[8:0\]} \
+{/TESTBED/out_change\[8:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/price\[31:0\]} \
+{/TESTBED/snack_num\[31:0\]} \
+{/TESTBED/DUT_SSC/out_change\[8:0\]} \
+{/TESTBED/DUT_SSC/out_change_tmp\[9:0\]} \
+{/TESTBED/DUT_SSC/total_merg_6\[0:7\]} \
+{/TESTBED/DUT_SSC/total\[0:7\]} \
+{/TESTBED/DUT_SSC/total\[0\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[1\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[2\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[3\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[4\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[5\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[6\]\[7:0\]} \
+{/TESTBED/DUT_SSC/total\[7\]\[7:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 18 )} 
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 42422.691539 -snap {("G1" 16)}
+wvSetCursor -win $_nWave1 23572.498334 -snap {("G1" 34)}
+wvSetCursor -win $_nWave1 23065.143238 -snap {("G2" 0)}
+wvSetCursor -win $_nWave1 17250.073284 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvUnknownSaveResult -win $_nWave1 -clear
+wvZoomOut -win $_nWave1
+wvExit

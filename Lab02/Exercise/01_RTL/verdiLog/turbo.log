@@ -1,0 +1,6 @@
+Command Line: /usr/cad/synopsys/verdi/2019.06/platform/LINUXAMD64/bin/Novas
+uname(Linux ee25 3.10.0-1160.88.1.el7.x86_64 #1 SMP Tue Mar 7 15:41:52 UTC 2023 x86_64)
+can not read file (EOF)
+can not read file (EOF)
+Read sm file (/RAID2/COURSE/iclab/iclab143/Lab02/Exercise/01_RTL/BSSLib.lib++/libfile) error!!
+au time 5738.998989 39.053212 62.347860 delta 278269952 278269952 total 713322496 713322496

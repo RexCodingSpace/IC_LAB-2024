@@ -1,0 +1,50 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "PATTERN": [
+        "PATTERN",
+        "ThTta",
+        "module",
+        2
+    ],
+    "comparator_module": [
+        "comparator_module",
+        "WwyRc",
+        "module",
+        3
+    ],
+    "median_network": [
+        "median_network",
+        "VEsdz",
+        "module",
+        4
+    ],
+    "mac9": [
+        "mac9",
+        "F1YNe",
+        "module",
+        5
+    ],
+    "TESTBED": [
+        "TESTBED",
+        "TAUdR",
+        "module",
+        6
+    ],
+    "MEM_3": [
+        "MEM_3",
+        "dBdBi",
+        "module",
+        7
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        8
+    ]
+}

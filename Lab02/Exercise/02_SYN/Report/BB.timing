@@ -1,0 +1,119 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : BB
+Version: T-2022.03
+Date   : Sun Sep 22 22:07:12 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: score_A_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[1] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  score_A_reg[1]/CK (DFFRHQXL)             0.00       0.00 r
+  score_A_reg[1]/Q (DFFRHQXL)              1.39       1.39 r
+  U163/Y (NAND2XL)                         0.11       1.50 f
+  U168/Y (NAND2XL)                         0.18       1.68 r
+  U167/Y (OAI22XL)                         0.16       1.84 f
+  U166/Y (AOI2BB2XL)                       0.22       2.06 r
+  U165/Y (OAI22XL)                         0.19       2.25 f
+  U226/Y (NOR4BXL)                         1.34       3.59 r
+  result[1] (out)                          0.00       3.59 r
+  data arrival time                                   3.59
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  output external delay                   -5.00       4.90
+  data required time                                  4.90
+  -----------------------------------------------------------
+  data required time                                  4.90
+  data arrival time                                  -3.59
+  -----------------------------------------------------------
+  slack (MET)                                         1.31
+
+
+  Startpoint: score_B_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: result[0] (output port clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  score_B_reg[1]/CK (DFFRHQXL)             0.00       0.00 r
+  score_B_reg[1]/Q (DFFRHQXL)              1.25       1.25 r
+  U274/Y (INVXL)                           0.17       1.42 f
+  U163/Y (NAND2XL)                         0.20       1.62 r
+  U168/Y (NAND2XL)                         0.09       1.71 f
+  U167/Y (OAI22XL)                         0.28       1.99 r
+  U166/Y (AOI2BB2XL)                       0.14       2.13 f
+  U165/Y (OAI22XL)                         0.27       2.40 r
+  U225/Y (AND2XL)                          0.69       3.09 r
+  result[0] (out)                          0.00       3.09 r
+  data arrival time                                   3.09
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  output external delay                   -5.00       4.90
+  data required time                                  4.90
+  -----------------------------------------------------------
+  data required time                                  4.90
+  data arrival time                                  -3.09
+  -----------------------------------------------------------
+  slack (MET)                                         1.81
+
+
+  Startpoint: action[0] (input port clocked by clk)
+  Endpoint: next_score_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     5.00       5.00 f
+  action[0] (in)                           0.00       5.00 f
+  U218/Y (INVXL)                           0.33       5.33 r
+  U162/Y (NOR2X1)                          0.11       5.45 f
+  U217/Y (AND2XL)                          0.26       5.70 f
+  U174/Y (NOR3XL)                          0.38       6.08 r
+  U212/Y (NAND2XL)                         0.18       6.26 f
+  U171/Y (INVXL)                           0.16       6.42 r
+  U234/Y (OAI2BB2XL)                       0.11       6.53 f
+  U232/Y (AOI211XL)                        0.34       6.87 r
+  U287/Y (AOI221XL)                        0.18       7.05 f
+  next_score_reg[2]/D (DFFX1)              0.00       7.05 f
+  data arrival time                                   7.05
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  clock uncertainty                       -0.10       9.90
+  next_score_reg[2]/CK (DFFX1)             0.00       9.90 r
+  library setup time                      -0.32       9.58
+  data required time                                  9.58
+  -----------------------------------------------------------
+  data required time                                  9.58
+  data arrival time                                  -7.05
+  -----------------------------------------------------------
+  slack (MET)                                         2.53
+
+
+1

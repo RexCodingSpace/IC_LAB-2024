@@ -1,0 +1,1446 @@
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+# (A) Global Parameters
+#======================================================
+set DESIGN "SA"
+SA
+set CYCLE 50.0
+50.0
+set INPUT_DLY [expr 0.5*$CYCLE]
+25.0
+set OUTPUT_DLY [expr 0.5*$CYCLE]
+25.0
+#======================================================
+# (B) Read RTL Code
+#======================================================
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $DESIGN\_wocg.v 
+Running PRESTO HDLC
+Compiling source file ../01_RTL/SA_wocg.v
+Presto compilation completed successfully.
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+1
+elaborate $DESIGN  
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Statistics for case statements in always block at line 129 in file
+        '../01_RTL/SA_wocg.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           130            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 328 in file
+        '../01_RTL/SA_wocg.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           673            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 911 in file
+        '../01_RTL/SA_wocg.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           914            |    auto/auto     |
+|           1105           |    auto/auto     |
+|           1445           |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 1676 in file
+        '../01_RTL/SA_wocg.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1691           |     no/auto      |
+|           1724           |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 1763 in file
+        '../01_RTL/SA_wocg.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1778           |     no/auto      |
+|           1811           |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 1849 in file
+        '../01_RTL/SA_wocg.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           1864           |    auto/auto     |
+|           1887           |     no/auto      |
+===============================================
+
+Inferred memory devices in process
+        in routine SA line 106 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      T_cnt_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+|      T_cnt_reg      | Flip-flop |   3   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 122 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 263 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  in_data_store_reg  | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 276 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     T_store_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 283 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    flag_qkv_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 293 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     in_cnt_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 303 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     W_store_reg     | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 1676 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       QKV_reg       | Flip-flop |  456  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 1763 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       QKV_reg       | Flip-flop |  456  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 1849 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       QKV_reg       | Flip-flop |  304  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2161 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2183 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2205 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2227 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2249 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2271 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2293 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2315 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2337 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2359 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2381 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2403 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2425 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2447 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2469 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2491 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2513 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2535 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2557 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2579 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2601 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2623 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2645 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2667 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2689 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2711 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2733 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2755 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2777 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2799 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2821 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2843 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2865 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2887 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2909 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2931 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2953 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2975 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 2997 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3019 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3041 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3063 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3085 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3107 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3129 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3151 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3173 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3195 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3217 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3239 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3261 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3283 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3305 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3327 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3349 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3371 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3393 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3412 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3431 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3450 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3469 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3488 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3507 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3527 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     P_store_reg     | Flip-flop |  41   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3742 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      A_cnt_reg      | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3754 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_cnt_reg     | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3764 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      B_cnt_reg      | Flip-flop |   7   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3788 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3799 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| out_data_store_reg  | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine SA line 3807 in file
+                '../01_RTL/SA_wocg.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| out_data_store1_reg | Flip-flop |  64   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|      SA/320      |   64   |   41    |      6       |
+======================================================
+Presto compilation completed successfully. (SA)
+Elaborated 1 design.
+Current design is now 'SA'.
+1
+current_design $DESIGN
+Current design is 'SA'.
+{SA}
+link
+
+  Linking design 'SA'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  SA                          /RAID2/COURSE/iclab/iclab143/Lab08/EXERCISE_wocg/02_SYN/SA.db
+  fsa0m_a_generic_core_ss1p62v125c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  (C) Global Setting
+#======================================================
+#set_wire_load_mode top
+#set_wire_load_model -name umc18_wl10 -library slow
+#set_operating_conditions -min fast  -max slow
+#======================================================
+#  (D) Set Design Constraints
+#======================================================
+create_clock -name "clk" -period $CYCLE clk 
+1
+set_input_delay  [ expr $CYCLE*0.5 ] -clock clk [all_inputs]
+1
+set_output_delay [ expr $CYCLE*0.5 ] -clock clk [all_outputs]
+1
+set_input_delay 0 -clock clk clk
+1
+set_input_delay 0 -clock clk rst_n
+1
+set_load 0.05 [all_outputs]
+1
+set_max_delay $CYCLE -from [all_inputs] -to [all_outputs]
+1
+#======================================================
+#  (E) Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants 
+1
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 10079                                  |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 5035                                   |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 982                                    |
+| Number of Dont Touch nets                               | 0                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 7 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'SA'
+
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ff1p98vm40c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ss1p62v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_tt1p8v25c.db.alib' (placeholder)
+Warning: Operating condition WCCOM set on design SA has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_ff1p98vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping 0 of 1 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'SA'
+Information: Added key list 'DesignWare' to design 'SA'. (DDB-72)
+Information: The register 'state_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: The register 'T_cnt_reg[0]' is a constant and will be removed. (OPT-1206)
+Information: The register 'T_cnt_reg[1]' is a constant and will be removed. (OPT-1206)
+Information: The register 'T_cnt_reg[2]' is a constant and will be removed. (OPT-1206)
+Information: In design 'SA', the register 'T_cnt_reg[4]' is removed because it is merged to 'T_cnt_reg[3]'. (OPT-1215)
+ Implement Synthetic for 'SA'.
+  Processing 'SA_DW_div_tc_J1_0'
+  Processing 'SA_DW01_absval_J1_0'
+  Processing 'SA_DW01_inc_J1_4_DW01_inc_J1_0'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+Information: In design 'SA', the register 'state_reg[1]' is removed because it is merged to 'out_valid_reg'. (OPT-1215)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:03:53 2514704.7     23.67   58184.1   16430.4                           140551408.0000
+    0:03:57 2514295.3     23.66   58161.5   16599.0                           140530528.0000
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:04:01 2514667.2     23.80   58142.2   16599.0                           140577552.0000
+    0:04:03 2514601.6     23.79   58123.7   16599.0                           140572080.0000
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Mapping 'SA_DW_inc_0'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:04:54 2365104.9     16.28   35898.7    1245.8                           114855296.0000
+    0:04:57 2376807.3      0.00       0.0    1096.9                           115964536.0000
+    0:04:57 2376807.3      0.00       0.0    1096.9                           115964536.0000
+    0:04:57 2376807.3      0.00       0.0    1096.9                           115964536.0000
+    0:05:42 2369335.9      0.34       1.2    1086.3                           115464528.0000
+    0:06:00 2369135.9      0.34       1.4    1086.3                           115451696.0000
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:06:54 2357139.8      0.03       0.2    1025.8                           114405104.0000
+    0:06:57 2354639.9      0.03       0.2    1004.0                           114196800.0000
+    0:07:02 2341518.9      0.03       0.2    1004.0                           112977064.0000
+    0:07:08 2327191.7      0.00       0.0    1004.4                           111547640.0000
+    0:07:11 2322148.3      0.00       0.0    1004.4                           111049568.0000
+    0:07:11 2322148.3      0.00       0.0    1004.4                           111049568.0000
+    0:07:11 2322148.3      0.00       0.0    1004.4                           111049568.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:07:25 2271760.9      0.00       0.0    1022.2                           106357104.0000
+  Global Optimization (Phase 31)
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+    0:07:28 2276816.8      0.00       0.0       0.0                           106684536.0000
+    0:07:28 2276816.8      0.00       0.0       0.0                           106684536.0000
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:07:28 2276816.8      0.00       0.0       0.0                           106684536.0000
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+  Global Optimization (Phase 48)
+  Global Optimization (Phase 49)
+    0:07:53 2241709.7      0.00       0.0       0.3                           104163856.0000
+    0:07:53 2241709.7      0.00       0.0       0.3                           104163856.0000
+    0:07:53 2241709.7      0.00       0.0       0.3                           104163856.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:07:59 2229810.4      0.00       0.0      14.0                           103068560.0000
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:08:03 2229810.4      0.00       0.0      14.0                           103068560.0000
+    0:08:13 2212599.0      0.00       0.0      50.4                           101400152.0000
+    0:08:13 2212599.0      0.00       0.0      50.4                           101400152.0000
+    0:08:13 2212599.0      0.00       0.0      50.4                           101400152.0000
+    0:08:17 2211208.5      0.00       0.0      53.9                           101281240.0000
+    0:08:23 2209771.1      0.00       0.0      53.4                           101140408.0000
+    0:08:27 2207493.1      0.00       0.0      53.2                           100979456.0000
+    0:08:29 2208633.7      0.00       0.0       0.0                           101062584.0000
+    0:08:29 2208633.7      0.00       0.0       0.0                           101062584.0000
+    0:08:29 2208633.7      0.00       0.0       0.0                           101062584.0000
+    0:08:29 2208633.7      0.00       0.0       0.0                           101062584.0000
+    0:08:29 2208633.7      0.00       0.0       0.0                           101062584.0000
+    0:08:29 2208633.7      0.00       0.0       0.0                           101062584.0000
+    0:08:41 2194509.6      0.00       0.0       2.3                           100229016.0000
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'SA' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 5029 load(s), 1 driver(s)
+     Net 'rst_n': 5030 load(s), 1 driver(s)
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#uniquify
+#compile
+#======================================================
+#  (F) Output Reports 
+#======================================================
+report_design  >  Report/$DESIGN\.design
+report_resource >  Report/$DESIGN\.resource
+report_timing -max_paths 3 >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_power > Report/$DESIGN\.power
+report_clock > Report/$DESIGN\.clock
+report_port >  Report/$DESIGN\.port
+report_power >  Report/$DESIGN\.power
+#report_reference > Report/$DESIGN\.reference
+#======================================================
+#  (G) Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  (H) Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/iclab/iclab143/Lab08/EXERCISE_wocg/02_SYN/Netlist/SA_SYN.v'.
+1
+write -format ddc     -hierarchy -output $DESIGN\_SYN.ddc
+Writing ddc file 'SA_SYN.ddc'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/iclab/iclab143/Lab08/EXERCISE_wocg/02_SYN/Netlist/SA_SYN.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+Warning: Design 'SA' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  (I) Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : SA
+Version: T-2022.03
+Date   : Tue Nov 12 00:15:01 2024
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+Number of ports:                          104
+Number of nets:                         90560
+Number of cells:                        75497
+Number of combinational cells:          70468
+Number of sequential cells:              5029
+Number of macros/black boxes:               0
+Number of buf/inv:                       4216
+Number of references:                     136
+
+Combinational area:            1895825.550679
+Buf/Inv area:                    38128.809489
+Noncombinational area:          298684.010788
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:               2194509.561467
+Total area:                 undefined
+1
+report_timing 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : SA
+Version: T-2022.03
+Date   : Tue Nov 12 00:15:01 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: B_cnt_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: P_store_reg_49__27_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SA                 enG500K               fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  B_cnt_reg_1_/CK (QDFFRBP)                0.00 #     0.00 r
+  B_cnt_reg_1_/Q (QDFFRBP)                 0.48       0.48 r
+  U49216/O (BUF12CK)                       0.26       0.74 r
+  U55927/O (INV6)                          0.09       0.84 f
+  U55966/O (ND3HT)                         0.47       1.30 r
+  U55975/O (NR2P)                          0.31       1.61 f
+  U23925/O (BUF12CK)                       0.30       1.92 f
+  U56811/O (AOI22S)                        0.54       2.45 r
+  U56813/O (AN4P)                          0.38       2.83 r
+  U21491/O (ND3P)                          0.22       3.05 f
+  U56815/O (OR2P)                          0.35       3.40 f
+  U56816/O (OR2T)                          0.24       3.64 f
+  U23885/O (NR2F)                          0.17       3.80 r
+  U56819/O (ND3HT)                         0.21       4.01 f
+  U56820/O (NR2F)                          0.23       4.24 r
+  U56823/O (ND3HT)                         0.20       4.44 f
+  U56824/O (ND2T)                          0.33       4.77 r
+  U23887/O (INV3)                          0.12       4.90 f
+  U32927/O (OR2P)                          0.34       5.24 f
+  U56825/O (OR2T)                          0.29       5.53 f
+  U56826/O (NR2F)                          0.22       5.75 r
+  U56870/O (ND2F)                          0.16       5.91 f
+  U56871/O (OR2T)                          0.26       6.18 f
+  U56872/O (OR2T)                          0.27       6.45 f
+  U56873/O (NR2F)                          0.22       6.67 r
+  U56915/O (ND2F)                          0.17       6.83 f
+  U56916/O (OR2T)                          0.26       7.09 f
+  U56917/O (OR2T)                          0.27       7.36 f
+  U56918/O (NR2F)                          0.22       7.58 r
+  U56961/O (ND2F)                          0.14       7.72 f
+  U56962/O (OR2T)                          0.26       7.98 f
+  U56963/O (OR2T)                          0.24       8.22 f
+  U56964/O (OR2T)                          0.24       8.45 f
+  U56965/O (OR2T)                          0.27       8.72 f
+  U56966/O (NR2F)                          0.22       8.94 r
+  U57009/O (ND2F)                          0.18       9.12 f
+  U57010/O (NR2F)                          0.27       9.40 r
+  U57055/O (ND2F)                          0.16       9.55 f
+  U57100/O (NR2F)                          0.26       9.82 r
+  U57141/O (ND2F)                          0.14       9.96 f
+  U57182/O (OR2T)                          0.28      10.23 f
+  U57223/O (OR2T)                          0.27      10.51 f
+  U57263/O (NR2F)                          0.22      10.72 r
+  U57304/O (ND2F)                          0.16      10.89 f
+  U22692/O (OR2T)                          0.29      11.18 f
+  U57383/O (OR2T)                          0.28      11.45 f
+  U57423/O (NR2F)                          0.22      11.67 r
+  U22236/O (ND2F)                          0.18      11.85 f
+  U57502/O (NR2F)                          0.25      12.10 r
+  U57542/O (ND2F)                          0.18      12.28 f
+  U57582/O (NR2F)                          0.24      12.52 r
+  U22234/O (ND2T)                          0.21      12.73 f
+  U57661/O (NR2F)                          0.25      12.98 r
+  U21464/O (INV1)                          0.28      13.26 f
+  U22688/O (MOAI1H)                        0.35      13.61 f
+  U57662/O (MOAI1H)                        0.48      14.10 f
+  U57703/O (AO12T)                         0.54      14.64 f
+  U21457/O (AN2B1S)                        0.53      15.17 r
+  U57705/O (AO12T)                         0.47      15.64 r
+  U21454/O (MUX2P)                         0.50      16.14 f
+  U57708/O (AO12T)                         0.42      16.55 f
+  U22676/O (MUX2P)                         0.44      17.00 f
+  U57710/O (AO12T)                         0.44      17.44 f
+  U22222/O (MUX2P)                         0.44      17.88 f
+  U57712/O (AO12T)                         0.44      18.32 f
+  U21439/O (MUX2)                          0.46      18.78 f
+  U57713/O (AO12T)                         0.49      19.27 f
+  U57714/OB (MXL2HP)                       0.24      19.51 f
+  U57716/O (AO12T)                         0.45      19.96 f
+  U22661/OB (MXL2H)                        0.25      20.21 f
+  U57717/O (AO12T)                         0.46      20.66 f
+  U21428/O (MUX2P)                         0.44      21.11 f
+  U57718/O (AO12T)                         0.44      21.55 f
+  U57720/O (MUX2T)                         0.43      21.98 f
+  U57721/O (AO12T)                         0.46      22.44 f
+  U57722/OB (MXL2HP)                       0.23      22.66 f
+  U21421/O (INV3)                          0.26      22.92 r
+  U57725/O (XOR2H)                         0.27      23.19 r
+  U22219/OB (MXL2H)                        0.24      23.43 f
+  U57726/O (AO12T)                         0.45      23.88 f
+  U57727/O (MUX2T)                         0.47      24.35 f
+  U22657/O (INV4)                          0.20      24.55 r
+  U57730/O (XOR2H)                         0.28      24.83 r
+  U24510/OB (MXL2HP)                       0.18      25.01 f
+  U57731/O (AO12T)                         0.44      25.45 f
+  U57732/O (MUX2T)                         0.47      25.93 f
+  U22216/O (INV4)                          0.19      26.11 r
+  U57735/O (XOR2H)                         0.25      26.36 r
+  U22656/OB (MXL2H)                        0.24      26.60 f
+  U57736/O (AO12T)                         0.48      27.08 f
+  U22215/OB (MXL2HT)                       0.21      27.29 f
+  U57738/O (AN2T)                          0.32      27.61 f
+  U57739/O (OR2T)                          0.28      27.89 f
+  U57781/O (MUX2T)                         0.47      28.36 f
+  U21363/O (INV2)                          0.22      28.58 r
+  U21353/O (AN2P)                          0.37      28.95 r
+  U57783/O (MUX2P)                         0.41      29.36 r
+  U57785/O (OR2T)                          0.31      29.67 r
+  U23904/O (MUX2T)                         0.43      30.10 f
+  U21308/O (INV3)                          0.23      30.33 r
+  U57786/O (XOR2H)                         0.26      30.59 r
+  U22651/OB (MXL2H)                        0.27      30.86 f
+  U22212/O (INV4)                          0.19      31.05 r
+  U57787/O (OAI12HT)                       0.18      31.23 f
+  U57788/O (MUX2T)                         0.49      31.72 f
+  U22650/O (INV4)                          0.19      31.90 r
+  U57792/O (XOR2H)                         0.25      32.15 r
+  U22211/OB (MXL2H)                        0.24      32.39 f
+  U23906/O (AO12T)                         0.49      32.88 f
+  U22649/OB (MXL2HP)                       0.24      33.12 f
+  U57794/O (AO12T)                         0.48      33.59 f
+  U22648/OB (MXL2H)                        0.29      33.88 f
+  U22646/O (INV4)                          0.24      34.12 r
+  U22645/O (XOR2H)                         0.26      34.38 r
+  U22644/OB (MXL2H)                        0.24      34.62 f
+  U57798/O (AO12T)                         0.48      35.10 f
+  U22207/OB (MXL2H)                        0.25      35.35 f
+  U57801/O (AO12T)                         0.44      35.79 f
+  U21197/OB (MXL2HS)                       0.50      36.29 r
+  U22642/O (INV4)                          0.18      36.47 f
+  U57805/O (XOR2H)                         0.29      36.76 r
+  U22205/OB (MXL2H)                        0.24      37.00 f
+  U57806/O (AO12T)                         0.48      37.48 f
+  U57807/OB (MXL2HP)                       0.24      37.71 f
+  U21136/O (NR2)                           0.60      38.31 r
+  U22203/O (MUX2T)                         0.45      38.76 r
+  U57813/O (AO12T)                         0.38      39.13 r
+  U22636/OB (MXL2H)                        0.27      39.40 r
+  U57815/O (AO12T)                         0.38      39.78 r
+  U22201/O (MUX2T)                         0.40      40.18 f
+  U57817/O (AO12T)                         0.41      40.59 f
+  U22633/O (BUF3)                          0.28      40.87 f
+  U57819/OB (MXL2H)                        0.22      41.10 f
+  U57820/O (AO12T)                         0.48      41.58 f
+  U57822/OB (MXL2H)                        0.25      41.82 f
+  U57823/O (AO12T)                         0.44      42.26 f
+  U57826/O (BUF6)                          0.23      42.50 f
+  U22198/O (INV6)                          0.10      42.60 r
+  U22197/OB (MXL2HP)                       0.10      42.70 f
+  U57827/O (AO12T)                         0.50      43.19 f
+  U57828/OB (MXL2HP)                       0.25      43.44 f
+  U57831/O (AO12T)                         0.49      43.93 f
+  U21109/OB (MXL2HP)                       0.24      44.18 f
+  U22196/O (INV12)                         0.19      44.37 r
+  U57833/O (XOR2H)                         0.27      44.64 r
+  U57834/OB (MXL2HP)                       0.19      44.83 f
+  U57835/O (AO12T)                         0.43      45.26 f
+  U57836/OB (MXL2HT)                       0.20      45.46 f
+  U57837/O (ND2F)                          0.52      45.97 r
+  U85148/O (INV1S)                         0.58      46.56 f
+  U24529/O (XNR2H)                         0.43      46.98 r
+  U85149/O (ND2T)                          0.29      47.27 f
+  U33011/O (OR2P)                          0.58      47.86 f
+  U21846/O (NR2)                           0.64      48.50 r
+  U22562/O (NR2P)                          0.29      48.79 f
+  U89558/O (MOAI1)                         0.54      49.34 r
+  U19552/O (AO12)                          0.48      49.81 r
+  P_store_reg_49__27_/D (QDFFRBS)          0.00      49.81 r
+  data arrival time                                  49.81
+
+  clock clk (rise edge)                   50.00      50.00
+  clock network delay (ideal)              0.00      50.00
+  P_store_reg_49__27_/CK (QDFFRBS)         0.00      50.00 r
+  library setup time                      -0.18      49.82
+  data required time                                 49.82
+  -----------------------------------------------------------
+  data required time                                 49.82
+  data arrival time                                 -49.81
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+exit
+
+Memory usage for this session 820 Mbytes.
+Memory usage for this session including child processes 1446 Mbytes.
+CPU usage for this session 1317 seconds ( 0.37 hours ).
+Elapsed time for this session 557 seconds ( 0.15 hours ).
+
+Thank you...
+

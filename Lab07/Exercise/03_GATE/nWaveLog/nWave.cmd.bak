@@ -1,0 +1,214 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab143/Lab07/Exercise/03_GATE/CONV_TOP_SYN.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/clk1} \
+{/TESTBED/clk2} \
+{/TESTBED/in_kernel\[11:0\]} \
+{/TESTBED/in_row\[17:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rst_n} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 )} 
+wvSetPosition -win $_nWave1 {("G1" 8)}
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Handshake_syn_NDFF_SYN0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Handshake_syn_NDFF_SYN1"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_0__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_0__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_1__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_w2r_genblk1_6__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_w2r_genblk1_4__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Handshake_syn_NDFF_SYN0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Handshake_syn_NDFF_SYN1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_0__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_1__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/clk1} \
+{/TESTBED/clk2} \
+{/TESTBED/in_kernel\[11:0\]} \
+{/TESTBED/in_row\[17:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rst_n} \
+{/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/A_\[5:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 5884718.791592 9087793.576888
+wvSetCursor -win $_nWave1 6221732.955152 -snap {("G1" 9)}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 6250537.584516 -snap {("G1" 9)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 792574784.082734 826840235.274281
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/TOHDOA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/TOHDOB"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_0__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_1__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_r2w_genblk1_2__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Handshake_syn_NDFF_SYN0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Handshake_syn_NDFF_SYN1"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Handshake_syn_NDFF_SYN0"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/TOHDOA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/TOHDOB"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/TOHDOA"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 \
+           "/TESTBED/I_CONV/u_FIFO_syn_sync_w2r_genblk1_6__u_NDFF_syn"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 798737635.016431 802743488.123357
+wvZoom -win $_nWave1 799847169.869757 800070517.794783
+wvSetCursor -win $_nWave1 799896981.277440 -snap {("G1" 1)}
+wvSetCursor -win $_nWave1 799900998.326451 -snap {("G1" 6)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetCursor -win $_nWave1 799897182.129890 -snap {("G1" 7)}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetCursor -win $_nWave1 799903006.850957 -snap {("G1" 6)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/clk1} \
+{/TESTBED/clk2} \
+{/TESTBED/in_kernel\[11:0\]} \
+{/TESTBED/in_row\[17:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rst_n} \
+{/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/A_\[5:0\]} \
+{/TESTBED/I_PATTERN/patnum\[31:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetPosition -win $_nWave1 {("G1" 10)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvZoom -win $_nWave1 688047072.017541 690463728.702719
+wvZoom -win $_nWave1 688662102.450868 689411874.533949
+wvSetCursor -win $_nWave1 688695815.224320 -snap {("G1" 9)}
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 688360036.000064 689266235.352278
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/clk1} \
+{/TESTBED/clk2} \
+{/TESTBED/in_kernel\[11:0\]} \
+{/TESTBED/in_row\[17:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rst_n} \
+{/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/A_\[5:0\]} \
+{/TESTBED/I_PATTERN/patnum\[31:0\]} \
+{/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram/B_\[5:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetPosition -win $_nWave1 {("G1" 11)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 688605981.111980 -snap {("G1" 11)}
+wvSetCursor -win $_nWave1 688690733.569381 -snap {("G1" 11)}
+wvZoom -win $_nWave1 688682584.294631 688750223.275057
+wvSetCursor -win $_nWave1 688696817.677172 -snap {("G1" 11)}
+wvSetCursor -win $_nWave1 688697243.462120 -snap {("G1" 11)}
+wvSetCursor -win $_nWave1 688699433.213285 -snap {("G1" 9)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_Conv"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/I_CONV/u_FIFO_syn_u_dual_sram"

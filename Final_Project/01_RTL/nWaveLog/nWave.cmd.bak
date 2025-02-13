@@ -1,0 +1,477 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/RAID2/COURSE/iclab/iclab143/Lab10/01_RTL/Program.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/\$unit_0x0359e3aa"
+wvExit
+wvSetPosition -win $_nWave1 {("G1" 36)}
+wvSetPosition -win $_nWave1 {("G1" 36)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/araddr_s_inf\[31:0\]} \
+{/TESTBED/arburst_s_inf\[1:0\]} \
+{/TESTBED/arid_s_inf\[3:0\]} \
+{/TESTBED/arlen_s_inf\[7:0\]} \
+{/TESTBED/arready_s_inf} \
+{/TESTBED/arsize_s_inf\[2:0\]} \
+{/TESTBED/arvalid_s_inf} \
+{/TESTBED/awaddr_s_inf\[31:0\]} \
+{/TESTBED/awburst_s_inf\[1:0\]} \
+{/TESTBED/awid_s_inf\[3:0\]} \
+{/TESTBED/awlen_s_inf\[7:0\]} \
+{/TESTBED/awready_s_inf} \
+{/TESTBED/awsize_s_inf\[2:0\]} \
+{/TESTBED/awvalid_s_inf} \
+{/TESTBED/bid_s_inf\[3:0\]} \
+{/TESTBED/bready_s_inf} \
+{/TESTBED/bresp_s_inf\[1:0\]} \
+{/TESTBED/bvalid_s_inf} \
+{/TESTBED/clk} \
+{/TESTBED/in_mode\[1:0\]} \
+{/TESTBED/in_pic_no\[3:0\]} \
+{/TESTBED/in_ratio_mode\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rdata_s_inf\[127:0\]} \
+{/TESTBED/rid_s_inf\[3:0\]} \
+{/TESTBED/rlast_s_inf} \
+{/TESTBED/rready_s_inf} \
+{/TESTBED/rresp_s_inf\[1:0\]} \
+{/TESTBED/rst_n} \
+{/TESTBED/rvalid_s_inf} \
+{/TESTBED/wdata_s_inf\[127:0\]} \
+{/TESTBED/wlast_s_inf} \
+{/TESTBED/wready_s_inf} \
+{/TESTBED/wvalid_s_inf} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 )} 
+wvSetPosition -win $_nWave1 {("G1" 36)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 6224234.641711 6268958.670455
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/araddr_s_inf\[31:0\]} \
+{/TESTBED/arburst_s_inf\[1:0\]} \
+{/TESTBED/arid_s_inf\[3:0\]} \
+{/TESTBED/arlen_s_inf\[7:0\]} \
+{/TESTBED/arready_s_inf} \
+{/TESTBED/arsize_s_inf\[2:0\]} \
+{/TESTBED/arvalid_s_inf} \
+{/TESTBED/awaddr_s_inf\[31:0\]} \
+{/TESTBED/awburst_s_inf\[1:0\]} \
+{/TESTBED/awid_s_inf\[3:0\]} \
+{/TESTBED/awlen_s_inf\[7:0\]} \
+{/TESTBED/awready_s_inf} \
+{/TESTBED/awsize_s_inf\[2:0\]} \
+{/TESTBED/awvalid_s_inf} \
+{/TESTBED/bid_s_inf\[3:0\]} \
+{/TESTBED/bready_s_inf} \
+{/TESTBED/bresp_s_inf\[1:0\]} \
+{/TESTBED/bvalid_s_inf} \
+{/TESTBED/clk} \
+{/TESTBED/in_mode\[1:0\]} \
+{/TESTBED/in_pic_no\[3:0\]} \
+{/TESTBED/in_ratio_mode\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rdata_s_inf\[127:0\]} \
+{/TESTBED/rid_s_inf\[3:0\]} \
+{/TESTBED/rlast_s_inf} \
+{/TESTBED/rready_s_inf} \
+{/TESTBED/rresp_s_inf\[1:0\]} \
+{/TESTBED/rst_n} \
+{/TESTBED/rvalid_s_inf} \
+{/TESTBED/wdata_s_inf\[127:0\]} \
+{/TESTBED/wlast_s_inf} \
+{/TESTBED/wready_s_inf} \
+{/TESTBED/wvalid_s_inf} \
+{/TESTBED/u_ISP/zero_flag\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 37 )} 
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 37 )} 
+wvExpandBus -win $_nWave1 {("G1" 37)}
+wvSelectSignal -win $_nWave1 {( "G1" 38 39 40 41 42 43 44 45 46 47 48 49 50 51 \
+           52 53 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 42 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 43 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvSelectSignal -win $_nWave1 {( "G1" 43 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 37 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 37 )} 
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvCollapseBus -win $_nWave1 {("G1" 37)}
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G1" 36)}
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/araddr_s_inf\[31:0\]} \
+{/TESTBED/arburst_s_inf\[1:0\]} \
+{/TESTBED/arid_s_inf\[3:0\]} \
+{/TESTBED/arlen_s_inf\[7:0\]} \
+{/TESTBED/arready_s_inf} \
+{/TESTBED/arsize_s_inf\[2:0\]} \
+{/TESTBED/arvalid_s_inf} \
+{/TESTBED/awaddr_s_inf\[31:0\]} \
+{/TESTBED/awburst_s_inf\[1:0\]} \
+{/TESTBED/awid_s_inf\[3:0\]} \
+{/TESTBED/awlen_s_inf\[7:0\]} \
+{/TESTBED/awready_s_inf} \
+{/TESTBED/awsize_s_inf\[2:0\]} \
+{/TESTBED/awvalid_s_inf} \
+{/TESTBED/bid_s_inf\[3:0\]} \
+{/TESTBED/bready_s_inf} \
+{/TESTBED/bresp_s_inf\[1:0\]} \
+{/TESTBED/bvalid_s_inf} \
+{/TESTBED/clk} \
+{/TESTBED/in_mode\[1:0\]} \
+{/TESTBED/in_pic_no\[3:0\]} \
+{/TESTBED/in_ratio_mode\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rdata_s_inf\[127:0\]} \
+{/TESTBED/rid_s_inf\[3:0\]} \
+{/TESTBED/rlast_s_inf} \
+{/TESTBED/rready_s_inf} \
+{/TESTBED/rresp_s_inf\[1:0\]} \
+{/TESTBED/rst_n} \
+{/TESTBED/rvalid_s_inf} \
+{/TESTBED/wdata_s_inf\[127:0\]} \
+{/TESTBED/wlast_s_inf} \
+{/TESTBED/wready_s_inf} \
+{/TESTBED/wvalid_s_inf} \
+{/TESTBED/u_ISP/flag_pic\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 37 )} 
+wvSetPosition -win $_nWave1 {("G1" 37)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 36 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 37 )} 
+wvExpandBus -win $_nWave1 {("G1" 37)}
+wvSetCursor -win $_nWave1 6239810.322844 -snap {("G1" 45)}
+wvSelectSignal -win $_nWave1 {( "G1" 43 )} 
+wvSetCursor -win $_nWave1 6246267.802930 -snap {("G1" 25)}
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvSetPosition -win $_nWave1 {("G1" 54)}
+wvSetPosition -win $_nWave1 {("G1" 54)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/araddr_s_inf\[31:0\]} \
+{/TESTBED/arburst_s_inf\[1:0\]} \
+{/TESTBED/arid_s_inf\[3:0\]} \
+{/TESTBED/arlen_s_inf\[7:0\]} \
+{/TESTBED/arready_s_inf} \
+{/TESTBED/arsize_s_inf\[2:0\]} \
+{/TESTBED/arvalid_s_inf} \
+{/TESTBED/awaddr_s_inf\[31:0\]} \
+{/TESTBED/awburst_s_inf\[1:0\]} \
+{/TESTBED/awid_s_inf\[3:0\]} \
+{/TESTBED/awlen_s_inf\[7:0\]} \
+{/TESTBED/awready_s_inf} \
+{/TESTBED/awsize_s_inf\[2:0\]} \
+{/TESTBED/awvalid_s_inf} \
+{/TESTBED/bid_s_inf\[3:0\]} \
+{/TESTBED/bready_s_inf} \
+{/TESTBED/bresp_s_inf\[1:0\]} \
+{/TESTBED/bvalid_s_inf} \
+{/TESTBED/clk} \
+{/TESTBED/in_mode\[1:0\]} \
+{/TESTBED/in_pic_no\[3:0\]} \
+{/TESTBED/in_ratio_mode\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rdata_s_inf\[127:0\]} \
+{/TESTBED/rid_s_inf\[3:0\]} \
+{/TESTBED/rlast_s_inf} \
+{/TESTBED/rready_s_inf} \
+{/TESTBED/rresp_s_inf\[1:0\]} \
+{/TESTBED/rst_n} \
+{/TESTBED/rvalid_s_inf} \
+{/TESTBED/wdata_s_inf\[127:0\]} \
+{/TESTBED/wlast_s_inf} \
+{/TESTBED/wready_s_inf} \
+{/TESTBED/wvalid_s_inf} \
+{/TESTBED/u_ISP/flag_pic\[15:0\]} \
+{/TESTBED/u_ISP/flag_pic\[15\]} \
+{/TESTBED/u_ISP/flag_pic\[14\]} \
+{/TESTBED/u_ISP/flag_pic\[13\]} \
+{/TESTBED/u_ISP/flag_pic\[12\]} \
+{/TESTBED/u_ISP/flag_pic\[11\]} \
+{/TESTBED/u_ISP/flag_pic\[10\]} \
+{/TESTBED/u_ISP/flag_pic\[9\]} \
+{/TESTBED/u_ISP/flag_pic\[8\]} \
+{/TESTBED/u_ISP/flag_pic\[7\]} \
+{/TESTBED/u_ISP/flag_pic\[6\]} \
+{/TESTBED/u_ISP/flag_pic\[5\]} \
+{/TESTBED/u_ISP/flag_pic\[4\]} \
+{/TESTBED/u_ISP/flag_pic\[3\]} \
+{/TESTBED/u_ISP/flag_pic\[2\]} \
+{/TESTBED/u_ISP/flag_pic\[1\]} \
+{/TESTBED/u_ISP/flag_pic\[0\]} \
+{/TESTBED/u_ISP/state\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 54 )} 
+wvSetPosition -win $_nWave1 {("G1" 54)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 6245281.072475 -snap {("G1" 54)}
+wvSetCursor -win $_nWave1 6245669.717109 -snap {("G1" 54)}
+wvSelectSignal -win $_nWave1 {( "G1" 36 )} 
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 6135729.710246 -snap {("G1" 45)}
+wvZoom -win $_nWave1 6242876.046487 6252681.849581
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 6244245.814990 6253474.806137
+wvZoomOut -win $_nWave1
+wvSetCursor -win $_nWave1 6246244.607190 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 6245800.431145 -snap {("G1" 54)}
+wvSetCursor -win $_nWave1 6245294.563983 -snap {("G1" 54)}
+wvSetCursor -win $_nWave1 6245837.445816 -snap {("G1" 54)}
+wvSetCursor -win $_nWave1 6246269.283637 -snap {("G1" 54)}
+wvSetCursor -win $_nWave1 6245775.754698 -snap {("G1" 54)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvSetPosition -win $_nWave1 {("G1" 55)}
+wvSetPosition -win $_nWave1 {("G1" 55)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/araddr_s_inf\[31:0\]} \
+{/TESTBED/arburst_s_inf\[1:0\]} \
+{/TESTBED/arid_s_inf\[3:0\]} \
+{/TESTBED/arlen_s_inf\[7:0\]} \
+{/TESTBED/arready_s_inf} \
+{/TESTBED/arsize_s_inf\[2:0\]} \
+{/TESTBED/arvalid_s_inf} \
+{/TESTBED/awaddr_s_inf\[31:0\]} \
+{/TESTBED/awburst_s_inf\[1:0\]} \
+{/TESTBED/awid_s_inf\[3:0\]} \
+{/TESTBED/awlen_s_inf\[7:0\]} \
+{/TESTBED/awready_s_inf} \
+{/TESTBED/awsize_s_inf\[2:0\]} \
+{/TESTBED/awvalid_s_inf} \
+{/TESTBED/bid_s_inf\[3:0\]} \
+{/TESTBED/bready_s_inf} \
+{/TESTBED/bresp_s_inf\[1:0\]} \
+{/TESTBED/bvalid_s_inf} \
+{/TESTBED/clk} \
+{/TESTBED/in_mode\[1:0\]} \
+{/TESTBED/in_pic_no\[3:0\]} \
+{/TESTBED/in_ratio_mode\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rdata_s_inf\[127:0\]} \
+{/TESTBED/rid_s_inf\[3:0\]} \
+{/TESTBED/rlast_s_inf} \
+{/TESTBED/rready_s_inf} \
+{/TESTBED/rresp_s_inf\[1:0\]} \
+{/TESTBED/rst_n} \
+{/TESTBED/rvalid_s_inf} \
+{/TESTBED/wdata_s_inf\[127:0\]} \
+{/TESTBED/wlast_s_inf} \
+{/TESTBED/wready_s_inf} \
+{/TESTBED/wvalid_s_inf} \
+{/TESTBED/u_ISP/flag_pic\[15:0\]} \
+{/TESTBED/u_ISP/flag_pic\[15\]} \
+{/TESTBED/u_ISP/flag_pic\[14\]} \
+{/TESTBED/u_ISP/flag_pic\[13\]} \
+{/TESTBED/u_ISP/flag_pic\[12\]} \
+{/TESTBED/u_ISP/flag_pic\[11\]} \
+{/TESTBED/u_ISP/flag_pic\[10\]} \
+{/TESTBED/u_ISP/flag_pic\[9\]} \
+{/TESTBED/u_ISP/flag_pic\[8\]} \
+{/TESTBED/u_ISP/flag_pic\[7\]} \
+{/TESTBED/u_ISP/flag_pic\[6\]} \
+{/TESTBED/u_ISP/flag_pic\[5\]} \
+{/TESTBED/u_ISP/flag_pic\[4\]} \
+{/TESTBED/u_ISP/flag_pic\[3\]} \
+{/TESTBED/u_ISP/flag_pic\[2\]} \
+{/TESTBED/u_ISP/flag_pic\[1\]} \
+{/TESTBED/u_ISP/flag_pic\[0\]} \
+{/TESTBED/u_ISP/state\[3:0\]} \
+{/TESTBED/u_ISP/next_state\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 55 )} 
+wvSetPosition -win $_nWave1 {("G1" 55)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 6245208.196419 -snap {("G1" 55)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/u_ISP"
+wvSetPosition -win $_nWave1 {("G1" 56)}
+wvSetPosition -win $_nWave1 {("G1" 56)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/araddr_s_inf\[31:0\]} \
+{/TESTBED/arburst_s_inf\[1:0\]} \
+{/TESTBED/arid_s_inf\[3:0\]} \
+{/TESTBED/arlen_s_inf\[7:0\]} \
+{/TESTBED/arready_s_inf} \
+{/TESTBED/arsize_s_inf\[2:0\]} \
+{/TESTBED/arvalid_s_inf} \
+{/TESTBED/awaddr_s_inf\[31:0\]} \
+{/TESTBED/awburst_s_inf\[1:0\]} \
+{/TESTBED/awid_s_inf\[3:0\]} \
+{/TESTBED/awlen_s_inf\[7:0\]} \
+{/TESTBED/awready_s_inf} \
+{/TESTBED/awsize_s_inf\[2:0\]} \
+{/TESTBED/awvalid_s_inf} \
+{/TESTBED/bid_s_inf\[3:0\]} \
+{/TESTBED/bready_s_inf} \
+{/TESTBED/bresp_s_inf\[1:0\]} \
+{/TESTBED/bvalid_s_inf} \
+{/TESTBED/clk} \
+{/TESTBED/in_mode\[1:0\]} \
+{/TESTBED/in_pic_no\[3:0\]} \
+{/TESTBED/in_ratio_mode\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rdata_s_inf\[127:0\]} \
+{/TESTBED/rid_s_inf\[3:0\]} \
+{/TESTBED/rlast_s_inf} \
+{/TESTBED/rready_s_inf} \
+{/TESTBED/rresp_s_inf\[1:0\]} \
+{/TESTBED/rst_n} \
+{/TESTBED/rvalid_s_inf} \
+{/TESTBED/wdata_s_inf\[127:0\]} \
+{/TESTBED/wlast_s_inf} \
+{/TESTBED/wready_s_inf} \
+{/TESTBED/wvalid_s_inf} \
+{/TESTBED/u_ISP/flag_pic\[15:0\]} \
+{/TESTBED/u_ISP/flag_pic\[15\]} \
+{/TESTBED/u_ISP/flag_pic\[14\]} \
+{/TESTBED/u_ISP/flag_pic\[13\]} \
+{/TESTBED/u_ISP/flag_pic\[12\]} \
+{/TESTBED/u_ISP/flag_pic\[11\]} \
+{/TESTBED/u_ISP/flag_pic\[10\]} \
+{/TESTBED/u_ISP/flag_pic\[9\]} \
+{/TESTBED/u_ISP/flag_pic\[8\]} \
+{/TESTBED/u_ISP/flag_pic\[7\]} \
+{/TESTBED/u_ISP/flag_pic\[6\]} \
+{/TESTBED/u_ISP/flag_pic\[5\]} \
+{/TESTBED/u_ISP/flag_pic\[4\]} \
+{/TESTBED/u_ISP/flag_pic\[3\]} \
+{/TESTBED/u_ISP/flag_pic\[2\]} \
+{/TESTBED/u_ISP/flag_pic\[1\]} \
+{/TESTBED/u_ISP/flag_pic\[0\]} \
+{/TESTBED/u_ISP/state\[3:0\]} \
+{/TESTBED/u_ISP/next_state\[3:0\]} \
+{/TESTBED/u_ISP/in_pic_no_store\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 56 )} 
+wvSetPosition -win $_nWave1 {("G1" 56)}
+wvSetPosition -win $_nWave1 {("G1" 58)}
+wvSetPosition -win $_nWave1 {("G1" 58)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/araddr_s_inf\[31:0\]} \
+{/TESTBED/arburst_s_inf\[1:0\]} \
+{/TESTBED/arid_s_inf\[3:0\]} \
+{/TESTBED/arlen_s_inf\[7:0\]} \
+{/TESTBED/arready_s_inf} \
+{/TESTBED/arsize_s_inf\[2:0\]} \
+{/TESTBED/arvalid_s_inf} \
+{/TESTBED/awaddr_s_inf\[31:0\]} \
+{/TESTBED/awburst_s_inf\[1:0\]} \
+{/TESTBED/awid_s_inf\[3:0\]} \
+{/TESTBED/awlen_s_inf\[7:0\]} \
+{/TESTBED/awready_s_inf} \
+{/TESTBED/awsize_s_inf\[2:0\]} \
+{/TESTBED/awvalid_s_inf} \
+{/TESTBED/bid_s_inf\[3:0\]} \
+{/TESTBED/bready_s_inf} \
+{/TESTBED/bresp_s_inf\[1:0\]} \
+{/TESTBED/bvalid_s_inf} \
+{/TESTBED/clk} \
+{/TESTBED/in_mode\[1:0\]} \
+{/TESTBED/in_pic_no\[3:0\]} \
+{/TESTBED/in_ratio_mode\[1:0\]} \
+{/TESTBED/in_valid} \
+{/TESTBED/out_data\[7:0\]} \
+{/TESTBED/out_valid} \
+{/TESTBED/rdata_s_inf\[127:0\]} \
+{/TESTBED/rid_s_inf\[3:0\]} \
+{/TESTBED/rlast_s_inf} \
+{/TESTBED/rready_s_inf} \
+{/TESTBED/rresp_s_inf\[1:0\]} \
+{/TESTBED/rst_n} \
+{/TESTBED/rvalid_s_inf} \
+{/TESTBED/wdata_s_inf\[127:0\]} \
+{/TESTBED/wlast_s_inf} \
+{/TESTBED/wready_s_inf} \
+{/TESTBED/wvalid_s_inf} \
+{/TESTBED/u_ISP/flag_pic\[15:0\]} \
+{/TESTBED/u_ISP/flag_pic\[15\]} \
+{/TESTBED/u_ISP/flag_pic\[14\]} \
+{/TESTBED/u_ISP/flag_pic\[13\]} \
+{/TESTBED/u_ISP/flag_pic\[12\]} \
+{/TESTBED/u_ISP/flag_pic\[11\]} \
+{/TESTBED/u_ISP/flag_pic\[10\]} \
+{/TESTBED/u_ISP/flag_pic\[9\]} \
+{/TESTBED/u_ISP/flag_pic\[8\]} \
+{/TESTBED/u_ISP/flag_pic\[7\]} \
+{/TESTBED/u_ISP/flag_pic\[6\]} \
+{/TESTBED/u_ISP/flag_pic\[5\]} \
+{/TESTBED/u_ISP/flag_pic\[4\]} \
+{/TESTBED/u_ISP/flag_pic\[3\]} \
+{/TESTBED/u_ISP/flag_pic\[2\]} \
+{/TESTBED/u_ISP/flag_pic\[1\]} \
+{/TESTBED/u_ISP/flag_pic\[0\]} \
+{/TESTBED/u_ISP/state\[3:0\]} \
+{/TESTBED/u_ISP/next_state\[3:0\]} \
+{/TESTBED/u_ISP/in_pic_no_store\[3:0\]} \
+{/TESTBED/u_ISP/in_mode_store\[1:0\]} \
+{/TESTBED/u_ISP/in_ratio_mode_store\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 57 58 )} 
+wvSetPosition -win $_nWave1 {("G1" 58)}
+wvGetSignalClose -win $_nWave1
+wvExit

@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : BB
+Version: T-2022.03
+Date   : Sun Sep 22 22:07:12 2024
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/iclab/iclabTA01/umc018/Synthesis/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 169.6937 uW   (91%)
+  Net Switching Power  =  16.3993 uW    (9%)
+                         ---------
+Total Dynamic Power    = 186.0931 uW  (100%)
+
+Cell Leakage Power     = 233.3907 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.1483            0.0000            0.0000            0.0000  (   0.00%)  i
+register       7.0795e-03        3.7173e-03        8.5576e+04            0.1592  (  85.45%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  1.4279e-02        1.2682e-02        1.4782e+05        2.7109e-02  (  14.55%)
+--------------------------------------------------------------------------------------------------
+Total              0.1697 mW     1.6399e-02 mW     2.3339e+05 pW         0.1863 mW
+1

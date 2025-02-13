@@ -1,0 +1,848 @@
+#======================================================
+#
+# Synopsys Synthesis Scripts (Design Vision dctcl mode)
+#
+#======================================================
+#======================================================
+#  Set Libraries
+#======================================================
+#
+#set search_path {./../01_RTL \
+#                 ./../04_MEM/ \
+#                                 /RAID2/COURSE/BackUp/2023_Spring/iclab/iclabta01/UMC018_CBDK/CIC/SynopsysDC/db/ \
+#                 /~iclabta01/umc018/Synthesis/ }
+#                 /usr/synthesis/libraries/syn/ \
+#                  /usr/synthesis/dw/ }
+#set synthetic_library {dw_foundation.sldb}
+#set link_library {MYMEMORY_WC.db MEMORY2_WC.db fsa0m_a_generic_core_ss1p62v125c.db fsa0m_a_generic_core_ff1p98vm40c.db fsa0m_a_t33_generic_io_ss1p62v125c.db fsa0m_a_t33_generic_io_tt1p8v25c.db dw_foundation.sldb} 
+#set target_library {slow.db}
+#
+#======================================================
+# (A) Global Parameters
+#======================================================
+set DESIGN "MDC"
+MDC
+set CYCLE 13
+13
+set INPUT_DLY [expr 0.5*$CYCLE]
+6.5
+set OUTPUT_DLY [expr 0.5*$CYCLE]
+6.5
+#======================================================
+# (B) Read RTL Code
+#======================================================
+# (B-1) analyze + elaborate
+set hdlin_auto_save_templates TRUE
+TRUE
+analyze -f sverilog $DESIGN\.v 
+Running PRESTO HDLC
+Compiling source file ../01_RTL/MDC.v
+Presto compilation completed successfully.
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/cur/libraries/syn/standard.sldb'
+1
+analyze -f sverilog HAMMING_IP.v
+Running PRESTO HDLC
+Compiling source file ../01_RTL/HAMMING_IP.v
+Presto compilation completed successfully.
+1
+elaborate $DESIGN  
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'fsa0m_a_generic_core_ss1p62v125c'
+  Loading link library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading link library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading link library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../01_RTL/MDC.v:172: signed to unsigned assignment occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:410: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:413: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:416: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:419: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:422: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:425: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:428: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:431: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:434: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:439: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:442: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:445: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:448: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:451: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:457: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:459: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:508: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:509: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:511: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:512: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:514: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:515: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:517: signed to unsigned part selection occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:518: unsigned to signed assignment occurs. (VER-318)
+Warning:  ../01_RTL/MDC.v:541: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 116 in file
+        '../01_RTL/MDC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           117            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 220 in file
+        '../01_RTL/MDC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           226            |    auto/auto     |
+|           228            |    auto/auto     |
+|           259            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 281 in file
+        '../01_RTL/MDC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           282            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 396 in file
+        '../01_RTL/MDC.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           406            |     no/auto      |
+|           408            |     no/auto      |
+|           440            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+        in routine MDC line 109 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      state_reg      | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 137 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   store_input_reg   | Flip-flop |  15   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 150 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  in_mode_store_reg  | Flip-flop |   9   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 168 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   Instruction_reg   | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 184 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  decoded_data_reg   | Flip-flop |  176  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 200 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    read_cnt_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 210 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     out_cnt_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 220 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     cal_cnt_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 396 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+| out_data_store_reg  | Flip-flop |  207  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 466 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    store_det_reg    | Flip-flop |  36   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine MDC line 529 in file
+                '../01_RTL/MDC.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    out_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|     MDC/289      |   16   |   11    |      4       |
+======================================================
+Presto compilation completed successfully. (MDC)
+Elaborated 1 design.
+Current design is now 'MDC'.
+Information: Building the design 'HAMMING_IP' instantiated from design 'MDC' with
+        the parameters "5". (HDL-193)
+Warning:  ../01_RTL/HAMMING_IP.v:39: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 51 in file
+        '../01_RTL/HAMMING_IP.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            52            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (HAMMING_IP_IP_BIT5)
+Information: Building the design 'HAMMING_IP' instantiated from design 'MDC' with
+        the parameters "11". (HDL-193)
+Warning:  ../01_RTL/HAMMING_IP.v:426: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 438 in file
+        '../01_RTL/HAMMING_IP.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           439            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (HAMMING_IP_IP_BIT11)
+Information: Building the design 'determinant_3x3'. (HDL-193)
+Presto compilation completed successfully. (determinant_3x3)
+Information: Building the design 'multi'. (HDL-193)
+Presto compilation completed successfully. (multi)
+Information: Building the design 'add'. (HDL-193)
+Presto compilation completed successfully. (add)
+1
+elaborate HAMMING_IP
+Running PRESTO HDLC
+Warning:  ../01_RTL/HAMMING_IP.v:219: signed to unsigned assignment occurs. (VER-318)
+
+Statistics for case statements in always block at line 231 in file
+        '../01_RTL/HAMMING_IP.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           232            |    auto/auto     |
+===============================================
+Presto compilation completed successfully. (HAMMING_IP)
+Elaborated 1 design.
+Current design is now 'HAMMING_IP'.
+1
+# (B-2) read_sverilog
+#read_sverilog $DESIGN\.v
+# (B-3) set current design
+current_design $DESIGN
+Current design is 'MDC'.
+{MDC}
+link
+
+  Linking design 'MDC'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (7 designs)               /RAID2/COURSE/iclab/iclab143/Lab06/Exercise/02_SYN/MDC.db, etc
+  fsa0m_a_generic_core_ss1p62v125c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db
+  fsa0m_a_generic_core_ff1p98vm40c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db
+  fsa0m_a_t33_generic_io_ss1p62v125c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db
+  fsa0m_a_t33_generic_io_tt1p8v25c (library) /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/cur/libraries/syn/dw_foundation.sldb
+
+1
+#======================================================
+#  (C) Global Setting
+#======================================================
+set_wire_load_mode top
+1
+set_operating_conditions -max WCCOM -min BCCOM
+Using operating conditions 'WCCOM' found in library 'fsa0m_a_generic_core_ss1p62v125c'.
+Using operating conditions 'BCCOM' found in library 'fsa0m_a_generic_core_ff1p98vm40c'.
+1
+set_wire_load_model -name G5K -library fsa0m_a_generic_core_ss1p62v125c
+1
+#======================================================
+#  (D) Set Design Constraints
+#======================================================
+# (D-1) Setting Clock Constraints
+create_clock -name clk -period $CYCLE [get_ports clk] 
+1
+set_dont_touch_network             [get_clocks clk]
+1
+set_fix_hold                       [get_clocks clk]
+1
+set_clock_uncertainty       0.1    [get_clocks clk]
+1
+# set_clock_latency   -source 0      [get_clocks clk]
+# set_clock_latency           1      [get_clocks clk] 
+set_input_transition        0.5    [all_inputs] 
+1
+set_clock_transition        0.1    [all_clocks] 
+1
+# (D-2) Setting in/out Constraints
+set_input_delay   -max  $INPUT_DLY  -clock clk   [all_inputs] ;  # set_up time check 
+1
+set_input_delay   -min  0           -clock clk   [all_inputs] ;  # hold   time check 
+1
+set_output_delay  -max  $OUTPUT_DLY -clock clk   [all_outputs] ; # set_up time check 
+1
+set_output_delay  -min  0           -clock clk   [all_outputs] ; # hold   time check 
+1
+set_input_delay 0 -clock clk clk
+1
+set_input_delay 0 -clock clk rst_n
+1
+#set_max_delay $CYCLE -from [all_inputs] -to [all_outputs]
+# (D-3) Setting Design Environment
+# set_driving_cell -library umc18io3v5v_slow -lib_cell P2C    -pin {Y}  [get_ports clk]
+# set_driving_cell -library umc18io3v5v_slow -lib_cell P2C    -pin {Y}  [remove_from_collection [all_inputs] [get_ports clk]]
+# set_load  [load_of "umc18io3v5v_slow/P8C/A"]       [all_outputs] ; # ~= 0.038
+set_load 0.05 [all_outputs]
+1
+# (D-4) Setting DRC Constraint
+#set_max_delay           0     ; # Optimize delay max effort                 
+#set_max_area            0      ; # Optimize area max effort           
+set_max_transition      3       [all_inputs]   ; # U18 LUT Max Transition Value  
+1
+set_max_capacitance     0.15    [all_inputs]   ; # U18 LUT Max Capacitance Value
+1
+set_max_fanout          10      [all_inputs]
+1
+# set_dont_use slow/JKFF*
+#set_dont_touch [get_cells core_reg_macro]
+#set hdlin_ff_always_sync_set_reset true
+# (D-5) Report Clock skew
+report_clock -skew clk
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Changed wire load model for 'alt1' from '(none)' to 'G5K'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'G5K'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'G5K'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'G5K'. (OPT-170)
+Information: Changed wire load model for 'alt1' from '(none)' to 'G5K'. (OPT-170)
+Information: Changed wire load model for 'apparch' from '(none)' to 'G5K'. (OPT-170)
+Information: Updating design information... (UID-85)
+Warning: Design 'MDC' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clock_skew
+Design : MDC
+Version: T-2022.03
+Date   : Sun Oct 20 21:04:33 2024
+****************************************
+
+                 Rise      Fall  Min Rise  Min fall        Uncertainty
+Object          Delay     Delay     Delay     Delay     Plus      Minus
+--------------------------------------------------------------------------------
+clk                 -         -         -         -      0.10      0.10
+
+                 Max Transition      Min Transition
+Object           Rise      Fall      Rise      Fall
+-------------------------------------------------------
+clk              0.10      0.10      0.10      0.10
+1
+check_timing
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+1
+#======================================================
+#  (E) Optimization
+#======================================================
+check_design > Report/$DESIGN\.check
+set_fix_multiple_port_nets -all -buffer_constants [get_designs *]
+1
+set_fix_hold [all_clocks]
+1
+compile_ultra
+Information: Performing power optimization. (PWR-850)
+Alib files are up-to-date.
+Information: Running optimization using a maximum of 8 cores. (OPT-1500)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler NXT WLM                                                           |
+| Comand line  | compile_ultra                                                                     |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 1786                                   |
+| Number of User Hierarchies                              | 5                                      |
+| Sequential Cell Count                                   | 460                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 369                                    |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+----------------------------------------------------------------------------------------------------
+| Variables                                               | Value                                  |
+----------------------------------------------------------------------------------------------------
+| set_fix_multiple_port_nets                              | -all -buffer_constants                 |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 7 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'MDC'
+
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ss1p62v125c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_generic_core_ff1p98vm40c.db.alib'
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_ss1p62v125c.db.alib' (placeholder)
+Loaded alib file './alib-52/fsa0m_a_t33_generic_io_tt1p8v25c.db.alib' (placeholder)
+Warning: Operating condition WCCOM set on design MDC has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fsa0m_a_generic_core_ff1p98vm40c is characterized. Delays may be inaccurate as a result. (OPT-998)
+  Building model 'DW01_NAND2'
+Information: Ungrouping hierarchy HMP1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy HMP2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy m3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy add1 before Pass 1 (OPT-776)
+Information: Ungrouping 4 of 6 hierarchies before Pass 1 (OPT-775)
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'MDC'
+Information: Added key list 'DesignWare' to design 'MDC'. (DDB-72)
+ Implement Synthetic for 'MDC'.
+  Processing 'determinant_3x3'
+ Implement Synthetic for 'determinant_3x3'.
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIE1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIE0' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The library cell 'BHD1' in the library 'fsa0m_a_generic_core_ss1p62v125c' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Ungrouping hierarchy uut 'determinant_3x3' #insts = 0. (OPT-777)
+  Mapping Optimization (Phase 1)
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:00:47  492899.7      0.32      12.4       0.0                           41336172.0000      0.00  
+    0:00:47  492193.5      0.54      29.5      20.0                           41291716.0000      0.00  
+
+  Beginning Constant Register Removal
+  -----------------------------------
+    0:00:47  493027.8      0.54      27.7      20.0                           41393204.0000      0.00  
+    0:00:48  493027.8      0.54      27.7      20.0                           41393204.0000      0.00  
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+  Global Optimization (Phase 31)
+  Mapping 'MDC_DP_OP_16J1_126_6340_3'
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:00:52  232932.0      2.54     163.0       8.9                           15163860.0000      0.00  
+    0:00:53  236050.5      0.00       0.0       8.9                           15498315.0000      0.00  
+    0:00:53  236050.5      0.00       0.0       8.9                           15498315.0000      0.00  
+    0:00:53  236050.5      0.00       0.0       8.9                           15498315.0000      0.00  
+    0:00:58  233238.2      0.01       0.1       3.6                           15293245.0000      0.00  
+    0:00:59  233178.8      0.06       0.5       3.6                           15287956.0000      0.00  
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:05  228822.9      0.05       1.0       0.1                           14867269.0000      0.00  
+    0:01:06  228744.7      0.00       0.0       0.1                           14861670.0000      0.00  
+    0:01:06  228744.7      0.00       0.0       0.1                           14861670.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:06  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:07  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+    0:01:07  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+
+
+  Beginning Leakage Power Optimization  (max_leakage_power 0)
+  ------------------------------------
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:07  226960.5      0.00       0.0       0.0                           14621537.0000      0.00  
+  Global Optimization (Phase 32)
+  Global Optimization (Phase 33)
+  Global Optimization (Phase 34)
+  Global Optimization (Phase 35)
+  Global Optimization (Phase 36)
+  Global Optimization (Phase 37)
+  Global Optimization (Phase 38)
+  Global Optimization (Phase 39)
+  Global Optimization (Phase 40)
+  Global Optimization (Phase 41)
+  Global Optimization (Phase 42)
+  Global Optimization (Phase 43)
+  Global Optimization (Phase 44)
+  Global Optimization (Phase 45)
+  Global Optimization (Phase 46)
+  Global Optimization (Phase 47)
+    0:01:10  225198.1      0.00       0.0       0.0                           14237676.0000      0.00  
+    0:01:10  225198.1      0.00       0.0       0.0                           14237676.0000      0.00  
+    0:01:10  225198.1      0.00       0.0       0.0                           14237676.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+
+                                  TOTAL                                                            
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE   MIN DELAY 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER      COST    
+  --------- --------- --------- --------- --------- ------------------------- --------- -----------
+    0:01:11  223620.1      0.00       0.0       0.0                           14093057.0000      0.00  
+    0:01:12  221073.4      0.00       0.0       0.0                           13842092.0000      0.00  
+    0:01:12  221073.4      0.00       0.0       0.0                           13842092.0000      0.00  
+    0:01:12  221073.4      0.00       0.0       0.0                           13842092.0000      0.00  
+    0:01:12  220879.6      0.00       0.0       0.0                           13809605.0000      0.00  
+    0:01:13  219654.7      0.00       0.0       0.0                           13667539.0000      0.00  
+    0:01:13  219654.7      0.00       0.0       0.0                           13667539.0000      0.00  
+    0:01:13  219654.7      0.00       0.0       0.0                           13667539.0000      0.00  
+    0:01:13  219654.7      0.00       0.0       0.0                           13667539.0000      0.00  
+    0:01:13  219654.7      0.00       0.0       0.0                           13667539.0000      0.00  
+    0:01:13  219654.7      0.00       0.0       0.0                           13667539.0000      0.00  
+    0:01:14  217123.6      0.00       0.0       0.0                           13353074.0000      0.00  
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ff1p98vm40c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_ss1p62v125c.db'
+Loading db file '/RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_t33_generic_io_tt1p8v25c.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'fsa0m_a_generic_core_ff1p98vm40c'
+  Loading target library 'fsa0m_a_t33_generic_io_ss1p62v125c'
+  Loading target library 'fsa0m_a_t33_generic_io_tt1p8v25c'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+1
+#uniquify
+#compile
+#======================================================
+#  (F) Output Reports 
+#======================================================
+report_design  >  Report/$DESIGN\.design
+report_resource >  Report/$DESIGN\.resource
+report_timing -max_paths 3 >  Report/$DESIGN\.timing
+report_area >  Report/$DESIGN\.area
+report_power > Report/$DESIGN\.power
+report_clock > Report/$DESIGN\.clock
+report_port >  Report/$DESIGN\.port
+report_power >  Report/$DESIGN\.power
+#report_reference > Report/$DESIGN\.reference
+#======================================================
+#  (G) Change Naming Rule
+#======================================================
+set bus_inference_style "%s\[%d\]"
+%s[%d]
+set bus_naming_style "%s\[%d\]"
+%s[%d]
+set hdlout_internal_busses true
+true
+change_names -hierarchy -rule verilog
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _" -max_length 255 -type cell
+1
+define_name_rules name_rule -allowed "a-z A-Z 0-9 _[]" -max_length 255 -type net
+1
+define_name_rules name_rule -map {{"\\*cell\\*" "cell"}}
+1
+define_name_rules name_rule -case_insensitive
+1
+change_names -hierarchy -rules name_rule
+1
+#======================================================
+#  (H) Output Results
+#======================================================
+set verilogout_higher_designs_first true
+true
+write -format verilog -output Netlist/$DESIGN\_SYN.v -hierarchy
+Writing verilog file '/RAID2/COURSE/iclab/iclab143/Lab06/Exercise/02_SYN/Netlist/MDC_SYN.v'.
+1
+write -format ddc     -hierarchy -output $DESIGN\_SYN.ddc
+Writing ddc file 'MDC_SYN.ddc'.
+1
+write_sdf -version 3.0 -context verilog -load_delay cell Netlist/$DESIGN\_SYN.sdf -significant_digits 6
+Information: Writing timing information to file '/RAID2/COURSE/iclab/iclab143/Lab06/Exercise/02_SYN/Netlist/MDC_SYN.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_sdc Netlist/$DESIGN\_SYN.sdc
+1
+#======================================================
+#  (I) Finish and Quit
+#======================================================
+report_area
+ 
+****************************************
+Report : area
+Design : MDC
+Version: T-2022.03
+Date   : Sun Oct 20 21:05:52 2024
+****************************************
+
+Library(s) Used:
+
+    fsa0m_a_generic_core_ss1p62v125c (File: /RAID2/COURSE/iclab/iclabTA01/UMC018_CBDK/CIC/SynopsysDC/db/fsa0m_a_generic_core_ss1p62v125c.db)
+
+Number of ports:                          235
+Number of nets:                          9108
+Number of cells:                         8080
+Number of combinational cells:           7620
+Number of sequential cells:               460
+Number of macros/black boxes:               0
+Number of buf/inv:                        759
+Number of references:                     105
+
+Combinational area:             189744.106814
+Buf/Inv area:                     7602.638351
+Noncombinational area:           27379.497822
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                217123.604636
+Total area:                 undefined
+1
+report_timing 
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MDC
+Version: T-2022.03
+Date   : Sun Oct 20 21:05:52 2024
+****************************************
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: read_cnt_reg_1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: out_data_store_reg_48_
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MDC                G5K                   fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  read_cnt_reg_1_/CK (QDFFRBP)             0.00       0.00 r
+  read_cnt_reg_1_/Q (QDFFRBP)              0.51       0.51 f
+  U4412/O (INV3)                           0.11       0.61 r
+  U2773/O (NR2P)                           0.11       0.73 f
+  U2910/O (OAI12H)                         0.23       0.96 r
+  U4413/O (NR2F)                           0.12       1.07 f
+  U2905/O (INV12)                          0.24       1.31 r
+  U4216/O (NR2)                            0.12       1.43 f
+  U3796/O (BUF2)                           0.32       1.75 f
+  U2656/O (INV2)                           0.29       2.04 r
+  U3704/O (MOAI1S)                         0.20       2.25 f
+  U4683/O (NR2)                            0.24       2.49 r
+  U4227/O (ND3P)                           0.45       2.94 f
+  U6037/O (XNR2HS)                         0.35       3.28 f
+  U6038/O (OAI22S)                         0.29       3.58 r
+  U3171/C (HA1S)                           0.26       3.84 r
+  U4266/S (FA1S)                           0.55       4.39 f
+  U2598/CO (FA1S)                          0.56       4.95 f
+  U6275/CO (FA1)                           0.38       5.33 f
+  U2587/CO (FA1S)                          0.48       5.81 f
+  U3674/S (FA1)                            0.62       6.44 f
+  U3671/O (OAI12HS)                        0.25       6.69 r
+  U3426/O (ND2P)                           0.15       6.83 f
+  U3296/O (XNR2HP)                         0.22       7.06 r
+  U3130/O (INV8)                           0.12       7.17 f
+  U7588/O (XNR2HS)                         0.18       7.35 f
+  U3318/O (OAI22S)                         0.35       7.70 r
+  U3748/S (FA1S)                           0.55       8.25 f
+  U7645/S (FA1)                            0.67       8.92 f
+  U7670/S (FA1)                            0.54       9.46 f
+  U3354/S (FA1)                            0.65      10.11 f
+  U3918/S (FA1)                            0.58      10.69 f
+  U7618/O (NR2P)                           0.19      10.88 r
+  U7627/O (OAI12HS)                        0.15      11.03 f
+  U7628/O (AOI12H)                         0.18      11.21 r
+  U7629/O (OAI12H)                         0.15      11.35 f
+  U3430/O (AOI12HP)                        0.18      11.53 r
+  U3427/O (XOR2HP)                         0.18      11.70 r
+  U2495/O (INV3)                           0.08      11.78 f
+  U7915/O (NR2F)                           0.16      11.94 r
+  U9875/O (NR2F)                           0.11      12.05 f
+  U9877/O (ND2F)                           0.13      12.18 r
+  U9878/O (OA12)                           0.31      12.49 r
+  U9879/O (MUX2)                           0.25      12.74 r
+  out_data_store_reg_48_/D (QDFFRBS)       0.00      12.74 r
+  data arrival time                                  12.74
+
+  clock clk (rise edge)                   13.00      13.00
+  clock network delay (ideal)              0.00      13.00
+  clock uncertainty                       -0.10      12.90
+  out_data_store_reg_48_/CK (QDFFRBS)      0.00      12.90 r
+  library setup time                      -0.16      12.74
+  data required time                                 12.74
+  -----------------------------------------------------------
+  data required time                                 12.74
+  data arrival time                                 -12.74
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
+exit
+
+Memory usage for this session 463 Mbytes.
+Memory usage for this session including child processes 673 Mbytes.
+CPU usage for this session 173 seconds ( 0.05 hours ).
+Elapsed time for this session 88 seconds ( 0.02 hours ).
+
+Thank you...
+

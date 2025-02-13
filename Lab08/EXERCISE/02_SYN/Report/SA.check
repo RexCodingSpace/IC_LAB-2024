@@ -1,0 +1,23 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Tue Nov 12 00:03:00 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               9
+    Cells do not drive (LINT-1)                                     9
+--------------------------------------------------------------------------------
+
+Warning: In design 'SA', cell 'C71701' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C71718' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C71725' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C71758' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'B_594' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C73743' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C73751' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'C73769' does not drive any nets. (LINT-1)
+Warning: In design 'SA', cell 'B_602' does not drive any nets. (LINT-1)
+1

@@ -1,0 +1,9 @@
+{"vcs1":{"timestamp_begin":1727638089.283494230, "rt":2.06, "ut":0.77, "st":0.51}}
+{"vcselab":{"timestamp_begin":1727638091.421884568, "rt":0.86, "ut":0.25, "st":0.06}}
+{"link":{"timestamp_begin":1727638092.366963512, "rt":0.49, "ut":0.28, "st":0.38}}
+{"SNPS_VCS_INTERNAL_ROOT_START_TIME": 1727638088.673675076}
+{"VCS_COMP_START_TIME": 1727638088.673675076}
+{"VCS_COMP_END_TIME": 1727638094.295556239}
+{"VCS_USER_OPTIONS": "-timescale=1ns/1fs -j4 -sverilog +v2k -full64 -Mupdate -R -debug_access+all -f filelist.f -o simv -l vcs.log -P /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/novas.tab /usr/cad/synopsys/verdi/2019.06//share/PLI/VCS/linux64/pli.a -v /RAID2/COURSE/iclab/iclabTA01/umc018/Verilog/umc18_neg.v +define+GATE +neg_tchk"}
+{"vcs1": {"peak_mem": 352580}}
+{"stitch_vcselab": {"peak_mem": 225800}}

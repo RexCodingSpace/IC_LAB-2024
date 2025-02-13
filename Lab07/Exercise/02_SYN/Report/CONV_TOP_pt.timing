@@ -1,0 +1,61 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : CONV_TOP
+Version: P-2019.03-SP5-1
+Date   : Sun Nov  3 21:04:28 2024
+****************************************
+
+
+  Startpoint: u_Conv/conv_count_reg_4_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Endpoint: u_Conv/conv_out_reg_2__6_
+               (rising edge-triggered flip-flop clocked by clk2)
+  Path Group: clk2
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clk2 (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  u_Conv/conv_count_reg_4_/CK (QDFFRBS)                   0.00       0.00 r
+  u_Conv/conv_count_reg_4_/Q (QDFFRBS)                    0.64 *     0.64 r
+  u_Conv/U664/O (INV1S)                                   0.35 *     0.99 f
+  u_Conv/U945/O (NR2)                                     1.19 *     2.18 r
+  u_Conv/U83/O (BUF4)                                     0.62 *     2.80 r
+  u_Conv/U1023/O (AOI22S)                                 0.15 *     2.95 f
+  u_Conv/U1025/O (ND2)                                    0.34 *     3.29 r
+  u_Conv/U239/O (OA22S)                                   0.44 *     3.74 r
+  u_Conv/U565/O (AO222)                                   0.42 *     4.16 r
+  u_Conv/U566/O (INV1S)                                   0.49 *     4.65 f
+  u_Conv/U57/O (NR2P)                                     0.24 *     4.89 r
+  u_Conv/U12/S (FA1S)                                     0.59 *     5.48 f
+  u_Conv/U329/S (FA1S)                                    0.73 *     6.21 r
+  u_Conv/U402/S (FA1S)                                    0.57 *     6.78 f
+  u_Conv/U447/CO (FA1S)                                   0.52 *     7.30 f
+  u_Conv/U448/CO (FA1S)                                   0.53 *     7.83 f
+  u_Conv/U449/CO (FA1S)                                   0.53 *     8.35 f
+  u_Conv/U450/CO (FA1S)                                   0.53 *     8.88 f
+  u_Conv/U451/S (FA1S)                                    0.65 *     9.53 r
+  u_Conv/U515/O (MUX2S)                                   0.28 *     9.81 r
+  u_Conv/conv_out_reg_2__6_/D (QDFFRBS)                   0.00 *     9.81 r
+  data arrival time                                                  9.81
+
+  clock clk2 (rise edge)                                 10.10      10.10
+  clock network delay (ideal)                             0.00      10.10
+  clock reconvergence pessimism                           0.00      10.10
+  clock uncertainty                                      -0.10      10.00
+  u_Conv/conv_out_reg_2__6_/CK (QDFFRBS)                            10.00 r
+  library setup time                                     -0.17 *     9.83
+  data required time                                                 9.83
+  ------------------------------------------------------------------------------
+  data required time                                                 9.83
+  data arrival time                                                 -9.81
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

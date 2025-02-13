@@ -1,0 +1,42 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Sep 22 22:07:07 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               1
+    Cells do not drive (LINT-1)                                     1
+
+Nets                                                               24
+    Unloaded nets (LINT-2)                                         24
+--------------------------------------------------------------------------------
+
+Warning: In design 'BB', cell 'B_67' does not drive any nets. (LINT-1)
+Warning: In design 'BB', net 'net165' driven by pin 'C1100/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net164' driven by pin 'C1110/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net163' driven by pin 'C1096/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net162' driven by pin 'C1088/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net161' driven by pin 'C1077/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net160' driven by pin 'C1107/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net159' driven by pin 'C1073/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net158' driven by pin 'C1065/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net157' driven by pin 'C1043/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net156' driven by pin 'C1037/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net155' driven by pin 'C1033/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net154' driven by pin 'C1027/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net153' driven by pin 'C1023/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net152' driven by pin 'C1022/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net151' driven by pin 'C1021/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net150' driven by pin 'C1020/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net149' driven by pin 'C1014/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net148' driven by pin 'C1013/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net147' driven by pin 'C1007/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net146' driven by pin 'C997/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net145' driven by pin 'C991/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net144' driven by pin 'C987/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net143' driven by pin 'C986/Z' has no loads. (LINT-2)
+Warning: In design 'BB', net 'net142' driven by pin 'C977/Z' has no loads. (LINT-2)
+1

@@ -1,0 +1,556 @@
+# ----------------------------------------
+# Jasper Version Info
+# tool      : Jasper 2023.09
+# platform  : Linux 3.10.0-1160.88.1.el7.x86_64
+# version   : 2023.09p001 64 bits
+# build date: 2023.10.25 14:35:20 UTC
+# ----------------------------------------
+# started   : 2024-11-12 17:33:25 CST
+# hostname  : ee21.EEHPC
+# pid       : 60175
+# arguments : '-label' 'session_0' '-console' '//127.0.0.1:45676' '-style' 'windows' '-data' 'AAAAnnicVYq9CkBgGEbPR0omV+AOGMxWG4nBapCUZPCzWLhUd/J5E+LU81ePAqJNa82FuYq5JKQUxOIZpeSLOu4SKb6ofP8lWM/xuRgiG5+Jhlq6R0dLde+KkYWBkIBZdi8PhxN+VREN' '-proj' '/RAID2/COURSE/iclab/iclab143/Lab08/JG/jgproject/sessionLogs/session_0' '-init' '-hidden' '/RAID2/COURSE/iclab/iclab143/Lab08/JG/jgproject/.tmp/.initCmds.tcl' 'jg_sec_run2.tcl'
+
+Any disclosure about the Cadence Design Systems software or its use
+model to any third party violates the written Non-Disclosure Agreement
+between Cadence Design Systems, Inc. and the customer.
+
+THIS SOFTWARE CONTAINS CONFIDENTIAL INFORMATION AND TRADE SECRETS OF
+CADENCE DESIGN SYSTEMS, INC. USE, DISCLOSURE, OR REPRODUCTION IS
+PROHIBITED WITHOUT THE PRIOR EXPRESS WRITTEN PERMISSION OF CADENCE
+DESIGN SYSTEMS, INC.
+
+Copyright (C) 2000-2023 Cadence Design Systems, Inc. All Rights
+Reserved.  Unpublished -- rights reserved under the copyright laws of
+the United States.
+
+This product includes software developed by others and redistributed
+according to license agreement. See doc/third_party_readme.txt for
+further details.
+
+RESTRICTED RIGHTS LEGEND
+
+Use, duplication, or disclosure by the Government is subject to
+restrictions as set forth in subparagraph (c) (1) (ii) of the Rights in
+Technical Data and Computer Software clause at DFARS 252.227-7013 or
+subparagraphs (c) (1) and (2) of Commercial Computer Software -- Restricted
+Rights at 48 CFR 52.227-19, as applicable.
+
+
+                          Cadence Design Systems, Inc.
+                          2655 Seely Avenue
+                          San Jose, CA 95134
+                          Phone: 408.943.1234
+
+For technical assistance visit http://support.cadence.com.
+
+Jasper Apps Analysis Session - /RAID2/COURSE/iclab/iclab143/Lab08/JG/jgproject/sessionLogs/session_0
+
+WARNING (WG017): [session]: The system's locale is "ANSI_X3.4-1968", which is not UTF-8. Non-ASCII characters might not be handled correctly.
+WARNING (WG017): [jg_console]: The system's locale is "ANSI_X3.4-1968", which is not UTF-8. Non-ASCII characters might not be handled correctly.
+INFO: successfully checked out licenses "jasper_interactive" and "jasper_fao".
+INFO: reading configuration file "/RAID2/COURSE/iclab/iclab143/.config/cadence/jasper.conf".
+% clear -all 
+INFO (IPF121): Cleared environment completely for new design analysis.
+% 
+% set_proofgrid_max_local_jobs 50
+% check_sec -analyze -sv -both ../EXERCISE/01_RTL/GATED_OR.v
+[-- (VERI-1482)] Analyzing Verilog file '/usr/cad/cadence/JASPER/jasper_2023.09p001/lib/verilog/packages/std/std.sv' into library 'std'
+[-- (VERI-1482)] Analyzing Verilog file '../EXERCISE/01_RTL/GATED_OR.v'
+% check_sec -analyze -sv -both ../EXERCISE/01_RTL/SA.v 
+[-- (VERI-1482)] Analyzing Verilog file '../EXERCISE/01_RTL/SA.v'
+[INFO (VERI-1328)] ../EXERCISE/01_RTL/SA.v(14): analyzing included file '../EXERCISE/01_RTL/GATED_OR.v'
+[WARN (VERI-1206)] ../EXERCISE/01_RTL/GATED_OR.v(35): overwriting previous definition of module 'GATED_OR'
+[INFO (VERI-2142)] ../EXERCISE/01_RTL/GATED_OR.v(35): previous definition of design element 'GATED_OR' is here
+% check_sec -elaborate -both  -top SA -disable_auto_bbox
+INFO (ISW003): Top module name is "SA".
+[INFO (HIER-8002)] ../EXERCISE/01_RTL/SA.v(3915): Disabling old hierarchical reference handler
+[INFO (VERI-1018)] ../EXERCISE/01_RTL/GATED_OR.v(2): compiling module 'GATED_OR'
+[INFO (VERI-1018)] ../EXERCISE/01_RTL/SA.v(16): compiling module 'SA'
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(385): expression size 32 truncated to fit in target size 2
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(393): expression size 32 truncated to fit in target size 6
+[WARN (VERI-9005)] ../EXERCISE/01_RTL/SA.v(416): 7-bit index expression 'B_cnt' is larger than the required 6 bits. This might lead to an out-of-bound access
+[WARN (VERI-9005)] ../EXERCISE/01_RTL/SA.v(418): 7-bit index expression 'B_cnt' is larger than the required 6 bits. This might lead to an out-of-bound access
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1204): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1205): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1206): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1207): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1208): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1209): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1210): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1211): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1213): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1214): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1215): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1216): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1217): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1218): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1219): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1220): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1224): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1225): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1226): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1227): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1228): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1229): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1230): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1231): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1233): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1234): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1235): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1236): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1237): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1238): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1239): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1240): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1244): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1245): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1246): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1247): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1248): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1249): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1250): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1251): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1253): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1254): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1255): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1256): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1257): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1258): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1259): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1260): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1264): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1265): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1266): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1267): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1268): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1269): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1270): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1271): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1273): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1274): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1275): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1276): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1277): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1278): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1279): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1280): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1284): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1285): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1286): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1287): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1288): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1289): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1290): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1291): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1293): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1294): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1295): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1296): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1297): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1298): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1299): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1300): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1304): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1305): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1306): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1307): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1308): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1309): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1310): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1311): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1313): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1314): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1315): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1316): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1317): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1318): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1319): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1320): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1324): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1325): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1326): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1327): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1328): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1329): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1330): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1331): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1333): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1334): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1335): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1336): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1337): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1338): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1339): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1340): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1344): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1345): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1346): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1347): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1348): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1349): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1350): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1351): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1353): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1354): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1355): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1356): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1357): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1358): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1359): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1360): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1789): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1790): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1791): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1792): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1793): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1794): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1795): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1796): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1799): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1800): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1801): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1802): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1803): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1804): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1805): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1806): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1809): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1810): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1811): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1812): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1813): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1814): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1815): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1816): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1822): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1823): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1824): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1825): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1826): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1827): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1828): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1829): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1832): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1833): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1834): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1835): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1836): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1837): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1838): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1839): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1842): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1843): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1844): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1845): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1846): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1847): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1848): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1849): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1876): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1877): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1878): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1879): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1880): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1881): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1882): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1883): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1886): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1887): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1888): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1889): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1890): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1891): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1892): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1893): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1896): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1897): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1898): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1899): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1900): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1901): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1902): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1903): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1909): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1910): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1911): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1912): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1913): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1914): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1915): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1916): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1919): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1920): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1921): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1922): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1923): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1924): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1925): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1926): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1929): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1930): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1931): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1932): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1933): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1934): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1935): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1936): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1962): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1963): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1964): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1965): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1966): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1967): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1968): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1969): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1972): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1973): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1974): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1975): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1976): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1977): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1978): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1979): expression size 64 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1985): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1986): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1987): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1988): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1989): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1990): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1991): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1996): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1997): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1998): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(1999): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2000): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2001): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2002): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2006): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2007): expression size 41 truncated to fit in target size 19
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2418): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2594): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2770): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(2946): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3122): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3298): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3474): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3498): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3517): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3536): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3555): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3574): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3593): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3612): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3630): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3632): expression size 64 truncated to fit in target size 41
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3845): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3856): expression size 32 truncated to fit in target size 7
+[WARN (VERI-1209)] ../EXERCISE/01_RTL/SA.v(3867): expression size 32 truncated to fit in target size 7
+INFO (INL208): Elaboration synthesis summary:
+  Number of synthesized netlists          2 (0 packages)
+  Single run mode                         On
+  Pipeline                                On (2 pipelined netlists)
+  Late hierarchical reference connection  On
+  Number of analyzed Verilog modules      2 (2 synthesized)
+  Number of analyzed VHDL entities        0 (0 synthesized)
+INFO (INL003): Clearing all state information (assumes, stopats, and so forth).
+SA
+[<embedded>] % check_sec -setup
+WARNING (WSEC130): The split setup flow automatically maps flop and latch pairs that are nonresettable or uninitialized.
+    To remove those mappings, use "check_sec -auto_map_reset_x_values off".
+    To avoid adding any mapping, add the switch "-no_auto_mapping".
+INFO (ISEC091): Connecting spec and imp designs.
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IMTR159): Auto init mapping has been enabled for all tasks.
+INFO (IMTR082): Calculating design region.
+INFO (ISEC083): Building the SEC signal DB.
+INFO (IMTR087): Collecting free X signals.
+INFO (IMTR087): Collecting free X signals - Done.
+INFO (IMTR084): Collecting undriven signals.
+INFO (IMTR084): Collecting undriven signals - Done.
+INFO (IMTR088): Collecting stopat signals.
+INFO (IMTR088): Collecting stopat signals - Done.
+INFO (IMTR086): Collecting register signals.
+INFO (IMTR086): Collecting register signals - Done.
+INFO (ISEC083): Building the SEC signal DB - Done.
+INFO (IMTR093): Modeling the MPRAM blackbox instances.
+INFO (IMTR074): Applying auto mapping for signal type = "dut_output".
+INFO (IMTR074): Applying auto mapping for signal type = "bbox_input".
+INFO (IMTR074): Applying auto mapping for signal type = "primary_input".
+INFO (IMTR074): Applying auto mapping for signal type = "undriven".
+INFO (IMTR074): Applying auto mapping for signal type = "bbox_output".
+INFO (IMTR074): Applying auto mapping for signal type = "setup_stopat".
+[<embedded>] % 
+[<embedded>] % #clock clk -both_edge
+[<embedded>] % clock clk -both_edge 
+[<embedded>] % reset ~rst_n
+INFO (IPM031): Clearing proof results of all properties.
+INFO (IRS006): Current reset condition is "rst_n".
+[<embedded>] % 
+[<embedded>] % check_sec -gen
+INFO (IMTR114): Start - Clear AutoProve Data on task="<embedded>".
+INFO (IMTR115): Done - Clear AutoProve Data on task="<embedded>".
+INFO (IMTR031): Exposing connection mappings.
+INFO (IMTR028): Exposing connection mapping properties...
+INFO (IMTR029): Exposing connection mapping properties, DONE.
+INFO (ISEC021): Computing SEC environment configuration.
+INFO (IMTR032): Computing clock data.
+INFO (IMTR033): Computing reset data.
+INFO (IRS039): Reset analysis complete.
+INFO (IMTR094): Updating init mapping entries.
+INFO (IMTR074): Applying auto mapping for signal type = "reset_x".
+INFO (IMTR095): Apply mapping sanity check.
+INFO (ISEC097): Applying sanity check for cutpoints against user-specified assumptions and SEC connections.
+INFO (IMTR126): Started calculating user verification targets' COI on task "<embedded>".
+INFO (IMTR127): Finished calculating user verification targets' COI on task "<embedded>".
+INFO (IMTR131): Started updating mapping entries according to the targets' COI.
+INFO (IMTR132): Finished updating mapping entries according to the targets' COI.
+INFO (IMTR034): Exposing the remaining mapping entries.
+INFO (IMTR028): Exposing verification target mapping properties...
+INFO (IMTR029): Exposing verification target mapping properties, DONE.
+INFO (ISEC042): Running interface check.
+INFO (ISEC043): All boundary inputs, boundary outputs, and reset_x signals are mapped.
+<embedded>
+[<embedded>] % check_sec -interface
+   Interface Check Summary
+=============================
+primary_input       - PASSED
+primary_output      - PASSED
+user_bbox_input     - PASSED
+user_bbox_output    - PASSED
+auto_bbox_input     - PASSED
+auto_bbox_output    - PASSED
+user_task_stopat    - PASSED
+user_env_stopat     - PASSED
+setup_stopat        - PASSED
+internal_undriven   - PASSED
+x_assignment        - PASSED
+x_default_assignment- PASSED
+x_index_out_of_range- PASSED
+x_divide_by_zero    - PASSED
+x_misc_undriven     - PASSED
+x_low_power         - PASSED
+x_bus_contention    - PASSED
+x_bus_floating      - PASSED
+reset_x             - PASSED
+imp_assumptions     - PASSED
+=============================
+Overall interface check result - PASSED
+passed
+[<embedded>] % 
+[<embedded>] % assume cg_en==0
+WARNING (WNL023): Expression sizes mismatch.
+INFO (IPM005): The name "<embedded>::assume:0" is assigned to assumption "cg_en==0".
+assume:0
+[<embedded>] % assume SA_imp.cg_en==1
+WARNING (WNL023): Expression sizes mismatch.
+INFO (IPM005): The name "<embedded>::assume:1" is assigned to assumption "SA_imp.cg_en==1".
+assume:1
+[<embedded>] % check_sec -waive -waive_signals cg_en
+cg_en
+[<embedded>] % check_sec -waive -waive_signals SA_imp.cg_en
+SA_imp.cg_en
+[<embedded>] % 
+[<embedded>] % check_sec -interface
+INFO (IMTR114): Start - Clear AutoProve Data on task="<embedded>".
+INFO (IMTR115): Done - Clear AutoProve Data on task="<embedded>".
+INFO (IMTR032): Computing clock data.
+INFO (IMTR033): Computing reset data.
+INFO (IRS039): Reset analysis complete.
+INFO (IMTR094): Updating init mapping entries.
+INFO (IMTR074): Applying auto mapping for signal type = "reset_x".
+INFO (IMTR095): Apply mapping sanity check.
+INFO (ISEC097): Applying sanity check for cutpoints against user-specified assumptions and SEC connections.
+INFO (IMTR126): Started calculating user verification targets' COI on task "<embedded>".
+INFO (IMTR127): Finished calculating user verification targets' COI on task "<embedded>".
+INFO (IMTR131): Started updating mapping entries according to the targets' COI.
+INFO (IMTR132): Finished updating mapping entries according to the targets' COI.
+INFO (IMTR034): Exposing the remaining mapping entries.
+INFO (ISEC042): Running interface check.
+INFO (ISEC043): All boundary inputs, boundary outputs, and reset_x signals are mapped.
+   Interface Check Summary
+=============================
+primary_input       - PASSED
+primary_output      - PASSED
+user_bbox_input     - PASSED
+user_bbox_output    - PASSED
+auto_bbox_input     - PASSED
+auto_bbox_output    - PASSED
+user_task_stopat    - PASSED
+user_env_stopat     - PASSED
+setup_stopat        - PASSED
+internal_undriven   - PASSED
+x_assignment        - PASSED
+x_default_assignment- PASSED
+x_index_out_of_range- PASSED
+x_divide_by_zero    - PASSED
+x_misc_undriven     - PASSED
+x_low_power         - PASSED
+x_bus_contention    - PASSED
+x_bus_floating      - PASSED
+reset_x             - PASSED
+imp_assumptions     - PASSED
+=============================
+Overall interface check result - PASSED
+passed
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % set_sec_autoprove_strategy design_style
+WARNING (WCD001): The command "set_sec_autoprove_strategy design_style" has been deprecated. Use "set_sec_autoprove_strategy clock_gating/state_matching" instead.
+[<embedded>] % set_sec_autoprove_design_style_type clock_gating
+WARNING (WDEP018): The command "set_sec_autoprove_design_style_type" has been deprecated. Use "set_sec_autoprove_strategy clock_gating/state_matching" instead.
+[<embedded>] % 
+[<embedded>] % 
+[<embedded>] % check_sec -prove -bg
+INFO (ISEC116): Preparing the SEC environment for "sec_design_style_clock_gating" strategy - started.
+INFO (ISEC116): Preparing the SEC environment for "sec_design_style_clock_gating" strategy - done.
+INFO (ISEC143): SEC proof cache is off. To enable it, use the "set_proofmaster on" command.
+INFO (IMTR158): Both edges clock has been detected and clock optimization has been enabled.
+background 0
+INFO (IMTR110): (0.proof) Starting SEC clock gating strategy on task "<embedded>".
+INFO (IPF031): Settings used for proof thread default:
+    orchestration                 = off (auto)
+    time_limit                    = 86400s
+    proofgrid_per_engine_max_jobs = 1
+    proofgrid_max_jobs            = 50
+    proofgrid_mode                = local
+    proofgrid_restarts            = 10
+WARNING (WPF015): 2: max_jobs=7. Ignoring exceeding part of engine_mode { J }.
+INFO (IRS026): Computing reset analysis for expressions.
+INFO (IRS027): Finished computing reset analysis for expressions.
+WARNING (WMTR018): cutpoint on a verification pair (primary_output, bbox_input, or mpram_port): "out_valid -> SA_imp.out_valid".
+Htscustom9: Custom engine code is hT3N0LhP3feYRABjCHqhIMzrrE+3/q+KYn2rpXcsai/7id+dKx0lO4wyqAS/56za9Jpv9X/7IWGwnfjpAHefLq+IgK4OHbjMwsF9ER9x7aHROGIfmqd0lXLs3fVGhJ4huCEpGkWC0d/nrRw6edIVnPE5MgEA
+Htscustom10: Custom engine code is hT3N0LhP3feYRABjCHqhIMzrrE+3/q+KYn2rpXcsai/7id+dKx0lO4wyqAS/56za9Jxv9X/7IWGwnfjpAHefLq+IgK4OHbjMwsF9ER9x7aHROGYfmqd0lXLs3fVGhJ4huCEpGkWC0d/nrRw6edP5nPWGjQEA
+INFO (IRS026): Computing reset analysis for expressions.
+INFO (IRS027): Finished computing reset analysis for expressions.
+INFO (ISEC104): (0.proof) SEC clock gating strategy (BP) (Ncustom2): The property "<embedded>::out_valid" was proven in 8.80 s.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+WARNING (WPF015): 5: max_jobs=5. Ignoring exceeding part of engine_mode { Bmcustom6 Hpcustom4 }.
+INFO (IPL017): The host machine is running out of memory.
+    This message was triggered because the system reached 10% memory.
+    System memory use information:
+    [Process]
+        Memory In Use: 258434300 kB (24%)
+        Peak Memory Usage: 265461412 kB (25%)
+    [Host]
+        Available Memory: 116057136 kB (10%)
+        Total Memory: 1056530580 kB
+        Free Swap: 4185340 kB (99%)
+        Total Swap: 4194300 kB
+INFO (IPL017): The host machine is running out of memory.
+    This message was triggered because the system reached 1% memory.
+    System memory use information:
+    [Process]
+        Memory In Use: 234223176 kB (22%)
+        Peak Memory Usage: 265461412 kB (25%)
+    [Host]
+        Available Memory: 20288676 kB (1%)
+        Total Memory: 1056530580 kB
+        Free Swap: 4172540 kB (99%)
+        Total Swap: 4194300 kB

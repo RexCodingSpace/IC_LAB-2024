@@ -1,0 +1,15 @@
+[ Average of Min and Max ]
+
+
+*********RED**********
+[ MIN ] : 0          [ MAX ] : 0         
+
+********GREEN*********
+[ MIN ] : 0          [ MAX ] : 0         
+
+*********BLUE*********
+[ MIN ] : 0          [ MAX ] : 0         
+
+
+[ Average of MIN and MAX  ] : 0 
+[ Your average ] : 0 

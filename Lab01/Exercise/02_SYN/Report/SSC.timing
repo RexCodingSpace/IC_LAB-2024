@@ -1,0 +1,336 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : SSC
+Version: T-2022.03
+Date   : Mon Sep 16 00:02:49 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: snack_num[10]
+              (input port)
+  Endpoint: out_change[2]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SSC                umc18_wl10            slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  snack_num[10] (in)                                      0.00       0.00 r
+  U1185/Y (AND2X1)                                        0.28       0.28 r
+  U2769/CO (ADDHXL)                                       0.32       0.60 r
+  U2095/S (ADDFX2)                                        0.48       1.08 r
+  U1335/CO (ADDFX2)                                       0.59       1.67 r
+  U2052/CO (ADDFHX2)                                      0.25       1.93 r
+  U1617/CO (ADDFX2)                                       0.37       2.30 r
+  U2874/S (ADDFX2)                                        0.36       2.66 f
+  U2796/Y (INVX2)                                         0.26       2.91 r
+  DP_OP_341J1_125_3061/U8/CO0 (AFCSHCINX2)                0.40       3.31 r
+  U2878/Y (MX2X2)                                         0.28       3.59 r
+  U1993/Y (MXI2X2)                                        0.23       3.82 r
+  U1591/Y (BUFX12)                                        0.32       4.14 r
+  U2138/Y (MXI2X4)                                        0.26       4.40 f
+  U1578/Y (OAI2BB1X2)                                     0.23       4.63 r
+  U1568/Y (OAI21X2)                                       0.20       4.83 f
+  U2242/Y (OAI2BB1X2)                                     0.30       5.13 f
+  U2892/Y (OAI21X4)                                       0.20       5.33 r
+  U2894/Y (AOI21X4)                                       0.13       5.47 f
+  U1294/Y (NAND2X2)                                       0.17       5.64 r
+  U1554/Y (NAND2X2)                                       0.13       5.77 f
+  U2898/Y (NAND2X4)                                       0.12       5.89 r
+  U2899/Y (BUFX16)                                        0.24       6.14 r
+  U2248/Y (MXI2X1)                                        0.36       6.50 r
+  U2310/Y (INVX2)                                         0.28       6.78 f
+  U2911/Y (OAI21X4)                                       0.21       6.99 r
+  U2912/Y (NAND2X2)                                       0.13       7.13 f
+  U2913/Y (OAI21X4)                                       0.13       7.26 r
+  U1134/Y (AOI2BB1X2)                                     0.30       7.55 r
+  U2915/Y (NAND2X4)                                       0.11       7.67 f
+  U2432/Y (OAI21X1)                                       0.31       7.98 r
+  U2431/Y (OAI22X2)                                       0.23       8.21 f
+  U2923/Y (NAND2X4)                                       0.21       8.43 r
+  U2925/Y (NAND2X4)                                       0.14       8.57 f
+  U1506/Y (BUFX16)                                        0.23       8.80 f
+  U2286/Y (MXI2X1)                                        0.23       9.03 r
+  U1123/Y (BUFX4)                                         0.26       9.29 r
+  U2309/Y (INVX2)                                         0.13       9.42 f
+  U2201/Y (NAND2X2)                                       0.12       9.54 r
+  U2960/Y (OAI2BB1X4)                                     0.21       9.76 r
+  U2961/Y (OAI21X4)                                       0.12       9.88 f
+  U1274/Y (OAI2BB1X2)                                     0.24      10.11 f
+  U1273/Y (NAND2X2)                                       0.21      10.32 r
+  U2972/Y (NAND2X4)                                       0.11      10.43 f
+  U1479/Y (BUFX16)                                        0.24      10.66 f
+  U2981/Y (MXI2X4)                                        0.26      10.92 r
+  U1879/Y (OAI22X2)                                       0.19      11.11 f
+  U2726/Y (OAI22X2)                                       0.23      11.34 r
+  U1083/Y (OAI21X1)                                       0.19      11.54 f
+  U2986/Y (OAI2BB1X4)                                     0.27      11.81 f
+  U2988/Y (AOI2BB2X4)                                     0.25      12.06 f
+  U2989/Y (OAI2BB1X4)                                     0.16      12.22 r
+  U1262/Y (BUFX16)                                        0.21      12.43 r
+  U2990/Y (MXI2X2)                                        0.27      12.70 r
+  U2134/Y (OAI21X2)                                       0.20      12.90 f
+  U2996/Y (OAI21X4)                                       0.13      13.03 r
+  U2997/CON (AFHCONX2)                                    0.22      13.25 f
+  U1865/Y (AOI2BB1X2)                                     0.34      13.59 f
+  U2128/Y (AOI211X2)                                      0.33      13.92 r
+  U2140/Y (NOR2X4)                                        0.14      14.05 f
+  U1861/Y (INVX3)                                         0.10      14.16 r
+  U2568/Y (OAI2BB1X1)                                     0.16      14.32 f
+  U2567/Y (AOI222X2)                                      0.35      14.67 r
+  U1832/Y (BUFX12)                                        0.32      14.99 r
+  U1822/Y (MX2X2)                                         0.37      15.36 r
+  U3028/S (ADDFHX4)                                       0.55      15.91 r
+  U3027/S (ADDFHX4)                                       0.47      16.38 r
+  U3030/S (ADDFHX4)                                       0.46      16.83 r
+  U3049/S (ADDFHX4)                                       0.45      17.29 r
+  U1025/Y (NAND2X1)                                       0.29      17.58 f
+  U1022/Y (OAI21X1)                                       0.46      18.04 r
+  U3051/Y (AOI21X4)                                       0.21      18.25 f
+  U1723/Y (OAI21X2)                                       0.27      18.52 r
+  U2142/Y (INVX4)                                         0.10      18.62 f
+  U2141/Y (OR2X4)                                         0.28      18.90 f
+  U1716/Y (NOR2X2)                                        0.20      19.10 r
+  U2682/Y (BUFX8)                                         0.23      19.33 r
+  U1709/Y (OAI2BB1X2)                                     0.24      19.57 r
+  U1701/Y (AOI21X2)                                       0.13      19.70 f
+  U2170/Y (OAI2BB2X4)                                     0.30      19.99 r
+  out_change[2] (out)                                     0.00      19.99 r
+  data arrival time                                                 19.99
+
+  max_delay                                              20.00      20.00
+  output external delay                                   0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                -19.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: snack_num[10]
+              (input port)
+  Endpoint: out_change[1]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SSC                umc18_wl10            slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  snack_num[10] (in)                                      0.00       0.00 r
+  U1185/Y (AND2X1)                                        0.28       0.28 r
+  U2769/CO (ADDHXL)                                       0.32       0.60 r
+  U2095/S (ADDFX2)                                        0.48       1.08 r
+  U1335/CO (ADDFX2)                                       0.59       1.67 r
+  U2052/CO (ADDFHX2)                                      0.25       1.93 r
+  U1617/CO (ADDFX2)                                       0.37       2.30 r
+  U2874/S (ADDFX2)                                        0.36       2.66 f
+  U2796/Y (INVX2)                                         0.26       2.91 r
+  DP_OP_341J1_125_3061/U8/CO0 (AFCSHCINX2)                0.40       3.31 r
+  U2878/Y (MX2X2)                                         0.28       3.59 r
+  U1993/Y (MXI2X2)                                        0.23       3.82 r
+  U1591/Y (BUFX12)                                        0.32       4.14 r
+  U2138/Y (MXI2X4)                                        0.26       4.40 f
+  U1578/Y (OAI2BB1X2)                                     0.23       4.63 r
+  U1568/Y (OAI21X2)                                       0.20       4.83 f
+  U2242/Y (OAI2BB1X2)                                     0.30       5.13 f
+  U2892/Y (OAI21X4)                                       0.20       5.33 r
+  U2894/Y (AOI21X4)                                       0.13       5.47 f
+  U1294/Y (NAND2X2)                                       0.17       5.64 r
+  U1554/Y (NAND2X2)                                       0.13       5.77 f
+  U2898/Y (NAND2X4)                                       0.12       5.89 r
+  U2899/Y (BUFX16)                                        0.24       6.14 r
+  U2248/Y (MXI2X1)                                        0.36       6.50 r
+  U2310/Y (INVX2)                                         0.28       6.78 f
+  U2911/Y (OAI21X4)                                       0.21       6.99 r
+  U2912/Y (NAND2X2)                                       0.13       7.13 f
+  U2913/Y (OAI21X4)                                       0.13       7.26 r
+  U1134/Y (AOI2BB1X2)                                     0.30       7.55 r
+  U2915/Y (NAND2X4)                                       0.11       7.67 f
+  U2432/Y (OAI21X1)                                       0.31       7.98 r
+  U2431/Y (OAI22X2)                                       0.23       8.21 f
+  U2923/Y (NAND2X4)                                       0.21       8.43 r
+  U2925/Y (NAND2X4)                                       0.14       8.57 f
+  U1506/Y (BUFX16)                                        0.23       8.80 f
+  U2286/Y (MXI2X1)                                        0.23       9.03 r
+  U1123/Y (BUFX4)                                         0.26       9.29 r
+  U2309/Y (INVX2)                                         0.13       9.42 f
+  U2201/Y (NAND2X2)                                       0.12       9.54 r
+  U2960/Y (OAI2BB1X4)                                     0.21       9.76 r
+  U2961/Y (OAI21X4)                                       0.12       9.88 f
+  U1274/Y (OAI2BB1X2)                                     0.24      10.11 f
+  U1273/Y (NAND2X2)                                       0.21      10.32 r
+  U2972/Y (NAND2X4)                                       0.11      10.43 f
+  U1479/Y (BUFX16)                                        0.24      10.66 f
+  U2981/Y (MXI2X4)                                        0.26      10.92 r
+  U1879/Y (OAI22X2)                                       0.19      11.11 f
+  U2726/Y (OAI22X2)                                       0.23      11.34 r
+  U1083/Y (OAI21X1)                                       0.19      11.54 f
+  U2986/Y (OAI2BB1X4)                                     0.27      11.81 f
+  U2988/Y (AOI2BB2X4)                                     0.25      12.06 f
+  U2989/Y (OAI2BB1X4)                                     0.16      12.22 r
+  U1262/Y (BUFX16)                                        0.21      12.43 r
+  U2990/Y (MXI2X2)                                        0.27      12.70 r
+  U2134/Y (OAI21X2)                                       0.20      12.90 f
+  U2996/Y (OAI21X4)                                       0.13      13.03 r
+  U2997/CON (AFHCONX2)                                    0.22      13.25 f
+  U1865/Y (AOI2BB1X2)                                     0.34      13.59 f
+  U2128/Y (AOI211X2)                                      0.33      13.92 r
+  U2140/Y (NOR2X4)                                        0.14      14.05 f
+  U1861/Y (INVX3)                                         0.10      14.16 r
+  U2568/Y (OAI2BB1X1)                                     0.16      14.32 f
+  U2567/Y (AOI222X2)                                      0.35      14.67 r
+  U1832/Y (BUFX12)                                        0.32      14.99 r
+  U1822/Y (MX2X2)                                         0.37      15.36 r
+  U3028/S (ADDFHX4)                                       0.55      15.91 r
+  U3027/S (ADDFHX4)                                       0.47      16.38 r
+  U3030/S (ADDFHX4)                                       0.46      16.83 r
+  U3049/S (ADDFHX4)                                       0.45      17.29 r
+  U1025/Y (NAND2X1)                                       0.29      17.58 f
+  U1022/Y (OAI21X1)                                       0.46      18.04 r
+  U3051/Y (AOI21X4)                                       0.21      18.25 f
+  U1723/Y (OAI21X2)                                       0.27      18.52 r
+  U2142/Y (INVX4)                                         0.10      18.62 f
+  U2141/Y (OR2X4)                                         0.28      18.90 f
+  U1716/Y (NOR2X2)                                        0.20      19.10 r
+  U2682/Y (BUFX8)                                         0.23      19.33 r
+  U1710/Y (OAI2BB1X2)                                     0.24      19.57 r
+  U1702/Y (AOI21X2)                                       0.13      19.70 f
+  U2169/Y (OAI2BB2X4)                                     0.30      19.99 r
+  out_change[1] (out)                                     0.00      19.99 r
+  data arrival time                                                 19.99
+
+  max_delay                                              20.00      20.00
+  output external delay                                   0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                -19.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+  Startpoint: snack_num[10]
+              (input port)
+  Endpoint: out_change[0]
+            (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  SSC                umc18_wl10            slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  snack_num[10] (in)                                      0.00       0.00 r
+  U1185/Y (AND2X1)                                        0.28       0.28 r
+  U2769/CO (ADDHXL)                                       0.32       0.60 r
+  U2095/S (ADDFX2)                                        0.48       1.08 r
+  U1335/CO (ADDFX2)                                       0.59       1.67 r
+  U2052/CO (ADDFHX2)                                      0.25       1.93 r
+  U1617/CO (ADDFX2)                                       0.37       2.30 r
+  U2874/S (ADDFX2)                                        0.36       2.66 f
+  U2796/Y (INVX2)                                         0.26       2.91 r
+  DP_OP_341J1_125_3061/U8/CO0 (AFCSHCINX2)                0.40       3.31 r
+  U2878/Y (MX2X2)                                         0.28       3.59 r
+  U1993/Y (MXI2X2)                                        0.23       3.82 r
+  U1591/Y (BUFX12)                                        0.32       4.14 r
+  U2138/Y (MXI2X4)                                        0.26       4.40 f
+  U1578/Y (OAI2BB1X2)                                     0.23       4.63 r
+  U1568/Y (OAI21X2)                                       0.20       4.83 f
+  U2242/Y (OAI2BB1X2)                                     0.30       5.13 f
+  U2892/Y (OAI21X4)                                       0.20       5.33 r
+  U2894/Y (AOI21X4)                                       0.13       5.47 f
+  U1294/Y (NAND2X2)                                       0.17       5.64 r
+  U1554/Y (NAND2X2)                                       0.13       5.77 f
+  U2898/Y (NAND2X4)                                       0.12       5.89 r
+  U2899/Y (BUFX16)                                        0.24       6.14 r
+  U2248/Y (MXI2X1)                                        0.36       6.50 r
+  U2310/Y (INVX2)                                         0.28       6.78 f
+  U2911/Y (OAI21X4)                                       0.21       6.99 r
+  U2912/Y (NAND2X2)                                       0.13       7.13 f
+  U2913/Y (OAI21X4)                                       0.13       7.26 r
+  U1134/Y (AOI2BB1X2)                                     0.30       7.55 r
+  U2915/Y (NAND2X4)                                       0.11       7.67 f
+  U2432/Y (OAI21X1)                                       0.31       7.98 r
+  U2431/Y (OAI22X2)                                       0.23       8.21 f
+  U2923/Y (NAND2X4)                                       0.21       8.43 r
+  U2925/Y (NAND2X4)                                       0.14       8.57 f
+  U1506/Y (BUFX16)                                        0.23       8.80 f
+  U2286/Y (MXI2X1)                                        0.23       9.03 r
+  U1123/Y (BUFX4)                                         0.26       9.29 r
+  U2309/Y (INVX2)                                         0.13       9.42 f
+  U2201/Y (NAND2X2)                                       0.12       9.54 r
+  U2960/Y (OAI2BB1X4)                                     0.21       9.76 r
+  U2961/Y (OAI21X4)                                       0.12       9.88 f
+  U1274/Y (OAI2BB1X2)                                     0.24      10.11 f
+  U1273/Y (NAND2X2)                                       0.21      10.32 r
+  U2972/Y (NAND2X4)                                       0.11      10.43 f
+  U1479/Y (BUFX16)                                        0.24      10.66 f
+  U2981/Y (MXI2X4)                                        0.26      10.92 r
+  U1879/Y (OAI22X2)                                       0.19      11.11 f
+  U2726/Y (OAI22X2)                                       0.23      11.34 r
+  U1083/Y (OAI21X1)                                       0.19      11.54 f
+  U2986/Y (OAI2BB1X4)                                     0.27      11.81 f
+  U2988/Y (AOI2BB2X4)                                     0.25      12.06 f
+  U2989/Y (OAI2BB1X4)                                     0.16      12.22 r
+  U1262/Y (BUFX16)                                        0.21      12.43 r
+  U2990/Y (MXI2X2)                                        0.27      12.70 r
+  U2134/Y (OAI21X2)                                       0.20      12.90 f
+  U2996/Y (OAI21X4)                                       0.13      13.03 r
+  U2997/CON (AFHCONX2)                                    0.22      13.25 f
+  U1865/Y (AOI2BB1X2)                                     0.34      13.59 f
+  U2128/Y (AOI211X2)                                      0.33      13.92 r
+  U2140/Y (NOR2X4)                                        0.14      14.05 f
+  U1861/Y (INVX3)                                         0.10      14.16 r
+  U2568/Y (OAI2BB1X1)                                     0.16      14.32 f
+  U2567/Y (AOI222X2)                                      0.35      14.67 r
+  U1832/Y (BUFX12)                                        0.32      14.99 r
+  U1822/Y (MX2X2)                                         0.37      15.36 r
+  U3028/S (ADDFHX4)                                       0.55      15.91 r
+  U3027/S (ADDFHX4)                                       0.47      16.38 r
+  U3030/S (ADDFHX4)                                       0.46      16.83 r
+  U3049/S (ADDFHX4)                                       0.45      17.29 r
+  U1025/Y (NAND2X1)                                       0.29      17.58 f
+  U1022/Y (OAI21X1)                                       0.46      18.04 r
+  U3051/Y (AOI21X4)                                       0.21      18.25 f
+  U1723/Y (OAI21X2)                                       0.27      18.52 r
+  U2142/Y (INVX4)                                         0.10      18.62 f
+  U2141/Y (OR2X4)                                         0.28      18.90 f
+  U1716/Y (NOR2X2)                                        0.20      19.10 r
+  U2682/Y (BUFX8)                                         0.23      19.33 r
+  U1714/Y (OAI2BB1X2)                                     0.24      19.57 r
+  U1707/Y (AOI21X2)                                       0.13      19.70 f
+  U2172/Y (OAI2BB2X4)                                     0.30      19.99 r
+  out_change[0] (out)                                     0.00      19.99 r
+  data arrival time                                                 19.99
+
+  max_delay                                              20.00      20.00
+  output external delay                                   0.00      20.00
+  data required time                                                20.00
+  --------------------------------------------------------------------------
+  data required time                                                20.00
+  data arrival time                                                -19.99
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

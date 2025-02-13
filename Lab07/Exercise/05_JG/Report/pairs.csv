@@ -1,0 +1,23 @@
+Status,Source Unit,Destination Unit,Source Clock Domain,Destination Clock Domain,Local Source Clock,Local Destination Clock,Pair Classification,Violation,Scheme,Id,Domain Crossing,Number of Pair Bits
+Passed,u_Handshake_syn.dack,u_Handshake_syn.NDFF_SYN1.A1,clk2,clk1,clk2,clk1,Control,,u_Handshake_syn.din,1,{clk2 clk1},1
+Passed,u_FIFO_syn.r_addr[5:4],u_FIFO_syn.sync_r2w.genblk1[4].u_NDFF_syn.A1,clk1,clk2,clk1,clk2,Control,,u_FIFO_syn.rdata,2,{clk1 clk2},2
+Passed,u_FIFO_syn.w_addr[6:5],u_FIFO_syn.sync_w2r.genblk1[5].u_NDFF_syn.A1,clk2,clk1,clk2,clk1,Control,,u_FIFO_syn.rdata,3,{clk2 clk1},2
+Passed,u_FIFO_syn.r_addr[1:0],u_FIFO_syn.sync_r2w.genblk1[0].u_NDFF_syn.A1,clk1,clk2,clk1,clk2,Control,,u_FIFO_syn.rdata,4,{clk1 clk2},2
+Passed,u_FIFO_syn.w_addr[6],u_FIFO_syn.sync_w2r.genblk1[6].u_NDFF_syn.A1,clk2,clk1,clk2,clk1,Control,,u_FIFO_syn.rdata,5,{clk2 clk1},1
+Passed,u_FIFO_syn.w_addr[1:0],u_FIFO_syn.sync_w2r.genblk1[0].u_NDFF_syn.A1,clk2,clk1,clk2,clk1,Control,,u_FIFO_syn.rdata,6,{clk2 clk1},2
+Passed,u_FIFO_syn.w_addr[2:1],u_FIFO_syn.sync_w2r.genblk1[1].u_NDFF_syn.A1,clk2,clk1,clk2,clk1,Control,,u_FIFO_syn.rdata,7,{clk2 clk1},2
+Passed,u_Handshake_syn.sreq,u_Handshake_syn.NDFF_SYN0.A1,clk1,clk2,clk1,clk2,Control,,u_Handshake_syn.din,8,{clk1 clk2},1
+Passed,u_FIFO_syn.r_addr[3:2],u_FIFO_syn.sync_r2w.genblk1[2].u_NDFF_syn.A1,clk1,clk2,clk1,clk2,Control,,u_FIFO_syn.rdata,9,{clk1 clk2},2
+Passed,u_FIFO_syn.r_addr[6:5],u_FIFO_syn.sync_r2w.genblk1[5].u_NDFF_syn.A1,clk1,clk2,clk1,clk2,Control,,u_FIFO_syn.rdata,10,{clk1 clk2},2
+Passed,u_FIFO_syn.w_addr[4:3],u_FIFO_syn.sync_w2r.genblk1[3].u_NDFF_syn.A1,clk2,clk1,clk2,clk1,Control,,u_FIFO_syn.rdata,11,{clk2 clk1},2
+Passed,u_FIFO_syn.w_addr[5:0],u_FIFO_syn.rdata,clk2,clk1,clk2,clk1,Data,,u_FIFO_syn.rdata,12,{clk2 clk1},48
+Passed,u_Conv.out_data,u_FIFO_syn.rdata,clk2,clk1,clk2,clk1,Data,,u_FIFO_syn.rdata,13,{clk2 clk1},8
+Passed,clk2,u_FIFO_syn.rdata,clk2,clk1,clk2,clk1,Data,,u_FIFO_syn.rdata,14,{clk2 clk1},8
+Passed,u_FIFO_syn.r_addr[4:3],u_FIFO_syn.sync_r2w.genblk1[3].u_NDFF_syn.A1,clk1,clk2,clk1,clk2,Control,,u_FIFO_syn.rdata,15,{clk1 clk2},2
+Passed,u_Conv.fifo_count,u_FIFO_syn.rdata,clk2,clk1,clk2,clk1,Data,,u_FIFO_syn.rdata,16,{clk2 clk1},40
+Passed,u_FIFO_syn.w_addr[5:4],u_FIFO_syn.sync_w2r.genblk1[4].u_NDFF_syn.A1,clk2,clk1,clk2,clk1,Control,,u_FIFO_syn.rdata,17,{clk2 clk1},2
+Passed,u_FIFO_syn.r_addr[2:1],u_FIFO_syn.sync_r2w.genblk1[1].u_NDFF_syn.A1,clk1,clk2,clk1,clk2,Control,,u_FIFO_syn.rdata,18,{clk1 clk2},2
+Passed,u_FIFO_syn.w_addr[3:2],u_FIFO_syn.sync_w2r.genblk1[2].u_NDFF_syn.A1,clk2,clk1,clk2,clk1,Control,,u_FIFO_syn.rdata,19,{clk2 clk1},2
+Passed,u_FIFO_syn.wfull,u_FIFO_syn.rdata,clk2,clk1,clk2,clk1,Data,,u_FIFO_syn.rdata,20,{clk2 clk1},8
+Passed,u_FIFO_syn.r_addr[6],u_FIFO_syn.sync_r2w.genblk1[6].u_NDFF_syn.A1,clk1,clk2,clk1,clk2,Control,,u_FIFO_syn.rdata,21,{clk1 clk2},1
+Passed,u_Handshake_syn.data,u_Handshake_syn.dout,clk1,clk2,clk1,clk2,Data,,u_Handshake_syn.din,22,{clk1 clk2},30

@@ -1,0 +1,58 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Nov  3 21:03:26 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     12
+    Unconnected ports (LINT-28)                                    12
+
+Cells                                                               2
+    Cells do not drive (LINT-1)                                     2
+
+Nets                                                               13
+    Unloaded nets (LINT-2)                                         13
+
+Tristate                                                            8
+    Single tristate driver drives an input pin (LINT-63)            8
+--------------------------------------------------------------------------------
+
+Warning: In design 'FIFO_syn_WIDTH8_WORDS64', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'FIFO_syn_WIDTH8_WORDS64', cell 'B_11' does not drive any nets. (LINT-1)
+Warning: In design 'CONV_TOP', net 'u_input_output/net1729' driven by pin 'u_input_output/C1423/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_input_output/net1728' driven by pin 'u_input_output/C1413/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_input_output/net1727' driven by pin 'u_input_output/C1405/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_Conv/net1809' driven by pin 'u_Conv/C7313/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_Conv/net1808' driven by pin 'u_Conv/C7305/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_Conv/net1807' driven by pin 'u_Conv/C6660/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_Conv/net1806' driven by pin 'u_Conv/C6612/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_Conv/net1805' driven by pin 'u_Conv/C6602/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_Conv/net1804' driven by pin 'u_Conv/C6594/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_FIFO_syn/net2842' driven by pin 'u_FIFO_syn/C354/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_FIFO_syn/net2841' driven by pin 'u_FIFO_syn/C346/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_FIFO_syn/net2840' driven by pin 'u_FIFO_syn/C321/Z' has no loads. (LINT-2)
+Warning: In design 'CONV_TOP', net 'u_FIFO_syn/net2839' driven by pin 'u_FIFO_syn/C299/Z' has no loads. (LINT-2)
+Warning: In design 'CLK_1_MODULE', port 'flag_handshake_to_clk1' is not connected to any nets. (LINT-28)
+Warning: In design 'CLK_1_MODULE', port 'flag_clk1_to_handshake' is not connected to any nets. (LINT-28)
+Warning: In design 'CLK_1_MODULE', port 'flag_clk1_to_fifo' is not connected to any nets. (LINT-28)
+Warning: In design 'Handshake_syn_WIDTH30', port 'flag_handshake_to_clk1' is not connected to any nets. (LINT-28)
+Warning: In design 'Handshake_syn_WIDTH30', port 'flag_clk1_to_handshake' is not connected to any nets. (LINT-28)
+Warning: In design 'Handshake_syn_WIDTH30', port 'flag_handshake_to_clk2' is not connected to any nets. (LINT-28)
+Warning: In design 'Handshake_syn_WIDTH30', port 'flag_clk2_to_handshake' is not connected to any nets. (LINT-28)
+Warning: In design 'CLK_2_MODULE', port 'flag_handshake_to_clk2' is not connected to any nets. (LINT-28)
+Warning: In design 'CLK_2_MODULE', port 'flag_clk2_to_handshake' is not connected to any nets. (LINT-28)
+Warning: In design 'CLK_2_MODULE', port 'flag_clk2_to_fifo' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_syn_WIDTH8_WORDS64', port 'flag_clk2_to_fifo' is not connected to any nets. (LINT-28)
+Warning: In design 'FIFO_syn_WIDTH8_WORDS64', port 'flag_clk1_to_fifo' is not connected to any nets. (LINT-28)
+Warning: Net 'u_FIFO_syn/rdata_r[0]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'u_FIFO_syn/rdata_r[1]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'u_FIFO_syn/rdata_r[2]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'u_FIFO_syn/rdata_r[3]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'u_FIFO_syn/rdata_r[4]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'u_FIFO_syn/rdata_r[5]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'u_FIFO_syn/rdata_r[6]' has a single tri-state driver.  (LINT-63)
+Warning: Net 'u_FIFO_syn/rdata_r[7]' has a single tri-state driver.  (LINT-63)
+1

@@ -1,0 +1,21 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sun Oct 20 21:04:33 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                                7
+    Unloaded nets (LINT-2)                                          7
+--------------------------------------------------------------------------------
+
+Warning: In design 'MDC', net 'net715' driven by pin 'C7674/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net714' driven by pin 'C7643/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net713' driven by pin 'C7628/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net712' driven by pin 'C7612/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net711' driven by pin 'C7446/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net710' driven by pin 'C7405/Z' has no loads. (LINT-2)
+Warning: In design 'MDC', net 'net709' driven by pin 'C7353/Z' has no loads. (LINT-2)
+1

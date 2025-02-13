@@ -1,0 +1,32 @@
+{
+    "std": [
+        "std",
+        "reYIK",
+        "module",
+        1
+    ],
+    "comparator_8bit": [
+        "comparator_8bit",
+        "AeDM9",
+        "module",
+        2
+    ],
+    "Multiplier4bit": [
+        "Multiplier4bit",
+        "k2CaC",
+        "module",
+        5
+    ],
+    "TESTBED": [
+        "TESTBED",
+        "TAUdR",
+        "module",
+        3
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module",
+        4
+    ]
+}

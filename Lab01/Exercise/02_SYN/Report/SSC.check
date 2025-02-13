@@ -1,0 +1,22 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Mon Sep 16 00:02:30 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               8
+    Cells do not drive (LINT-1)                                     8
+--------------------------------------------------------------------------------
+
+Warning: In design 'SSC', cell 'B_30' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'B_31' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'B_32' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'B_33' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'B_34' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'B_35' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'B_36' does not drive any nets. (LINT-1)
+Warning: In design 'SSC', cell 'B_37' does not drive any nets. (LINT-1)
+1

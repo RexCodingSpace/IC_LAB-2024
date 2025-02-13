@@ -1,0 +1,24 @@
+*design* DebussyLib (btIdent Verdi_P-2019.06)
+Command arguments:
+    +define+verilog
+    /RAID2/COURSE/iclab/iclab143/Lab02/Exercise/01_RTL/BB.v
+    -f /RAID2/COURSE/iclab/iclab143/Lab02/Exercise/01_RTL/filelist.f
+        TESTBED.v
+    /RAID2/COURSE/iclab/iclab143/Lab02/Exercise/01_RTL/PATTERN.v
+    /RAID2/COURSE/iclab/iclab143/Lab02/Exercise/01_RTL/TESTBED.v
+    -sv
+
+
+*Error* Module PATTERN redefined
+"/RAID2/COURSE/iclab/iclab143/Lab02/Exercise/01_RTL/PATTERN.v", 4: 
+
+*Error* Module PATTERN redefined
+"PATTERN.v", 4: 
+
+*Error* Module TESTBED redefined
+"/RAID2/COURSE/iclab/iclab143/Lab02/Exercise/01_RTL/TESTBED.v", 11: 
+Highest level modules:
+BB
+TESTBED
+
+Total	3 error(s),   0 warning(s)
