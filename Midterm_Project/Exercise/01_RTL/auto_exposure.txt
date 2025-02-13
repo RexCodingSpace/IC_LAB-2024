@@ -1,0 +1,2 @@
+[ Exposure grayscale ] : 22        
+[     Your grayscale ] : 2         

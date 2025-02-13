@@ -1,0 +1,37 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Sat Oct 26 18:56:29 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Nets                                                               23
+    Unloaded nets (LINT-2)                                         23
+--------------------------------------------------------------------------------
+
+Warning: In design 'Ramen', net 'net140' driven by pin 'C1509/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net139' driven by pin 'C1485/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net138' driven by pin 'C1484/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net137' driven by pin 'C1483/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net136' driven by pin 'C1482/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net135' driven by pin 'C1463/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net134' driven by pin 'C1462/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net133' driven by pin 'C1461/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net132' driven by pin 'C1460/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net131' driven by pin 'C1448/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net130' driven by pin 'C1447/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net129' driven by pin 'C1446/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net128' driven by pin 'C1445/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net127' driven by pin 'C1426/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net126' driven by pin 'C1422/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net125' driven by pin 'C1417/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net124' driven by pin 'C1413/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net123' driven by pin 'C1396/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net122' driven by pin 'C1392/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net121' driven by pin 'C1387/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net120' driven by pin 'C1383/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net119' driven by pin 'C1367/Z' has no loads. (LINT-2)
+Warning: In design 'Ramen', net 'net118' driven by pin 'C1362/Z' has no loads. (LINT-2)
+1

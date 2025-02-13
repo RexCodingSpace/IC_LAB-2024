@@ -1,0 +1,27 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab143/Lab09/Exercise/01_RTL/Program.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dram_r"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/data_no\[7:0\]} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/date_cnt\[1:0\]} \
+{/TESTBED/dut_p/date_flag} \
+{/TESTBED/dut_p/dram\[9:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 

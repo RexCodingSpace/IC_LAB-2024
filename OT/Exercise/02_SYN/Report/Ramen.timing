@@ -1,0 +1,150 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : Ramen
+Version: T-2022.03
+Date   : Sat Oct 26 18:57:32 2024
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: TONKOTSU_num_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: total_gain_reg[14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  TONKOTSU_num_reg[1]/CK (DFFRHQXL)                       0.00       0.00 r
+  TONKOTSU_num_reg[1]/Q (DFFRHQXL)                        0.66       0.66 r
+  intadd_1/U7/CO (ADDFXL)                                 1.22       1.89 r
+  intadd_1/U6/S (ADDFXL)                                  0.52       2.41 r
+  U634/Y (INVXL)                                          0.06       2.47 f
+  U633/CO (ADDFXL)                                        1.21       3.69 f
+  U635/CO (ADDFXL)                                        1.27       4.95 f
+  U532/Y (INVXL)                                          0.13       5.08 r
+  DP_OP_241J1_122_7686/U34/S (CMPR42X1)                   0.37       5.45 r
+  U883/Y (INVXL)                                          0.05       5.50 f
+  intadd_0/U8/CO (ADDFXL)                                 0.98       6.48 f
+  intadd_0/U7/CO (ADDFXL)                                 0.47       6.95 f
+  intadd_0/U6/CO (ADDFXL)                                 0.47       7.41 f
+  intadd_0/U5/CO (ADDFXL)                                 0.47       7.88 f
+  intadd_0/U4/CO (ADDFXL)                                 0.47       8.34 f
+  intadd_0/U3/CO (ADDFXL)                                 0.47       8.81 f
+  intadd_0/U2/CO (ADDFXL)                                 0.48       9.28 f
+  U438/Y (NOR2XL)                                         0.17       9.45 r
+  U757/Y (AOI211XL)                                       0.11       9.56 f
+  total_gain_reg[14]/D (DFFRHQXL)                         0.00       9.56 f
+  data arrival time                                                  9.56
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  total_gain_reg[14]/CK (DFFRHQXL)                        0.00       9.90 r
+  library setup time                                     -0.34       9.56
+  data required time                                                 9.56
+  --------------------------------------------------------------------------
+  data required time                                                 9.56
+  data arrival time                                                 -9.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: TONKOTSU_num_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: total_gain_reg[13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  TONKOTSU_num_reg[1]/CK (DFFRHQXL)                       0.00       0.00 r
+  TONKOTSU_num_reg[1]/Q (DFFRHQXL)                        0.66       0.66 r
+  intadd_1/U7/CO (ADDFXL)                                 1.22       1.89 r
+  intadd_1/U6/S (ADDFXL)                                  0.52       2.41 r
+  U634/Y (INVXL)                                          0.06       2.47 f
+  U633/CO (ADDFXL)                                        1.21       3.69 f
+  U635/CO (ADDFXL)                                        1.27       4.95 f
+  U532/Y (INVXL)                                          0.13       5.08 r
+  DP_OP_241J1_122_7686/U34/S (CMPR42X1)                   0.37       5.45 r
+  U883/Y (INVXL)                                          0.05       5.50 f
+  intadd_0/U8/CO (ADDFXL)                                 0.98       6.48 f
+  intadd_0/U7/CO (ADDFXL)                                 0.47       6.95 f
+  intadd_0/U6/CO (ADDFXL)                                 0.47       7.41 f
+  intadd_0/U5/CO (ADDFXL)                                 0.47       7.88 f
+  intadd_0/U4/CO (ADDFXL)                                 0.47       8.34 f
+  intadd_0/U3/CO (ADDFXL)                                 0.47       8.81 f
+  intadd_0/U2/S (ADDFXL)                                  0.48       9.29 r
+  U455/Y (NOR2X1)                                         0.07       9.36 f
+  total_gain_reg[13]/D (DFFRHQXL)                         0.00       9.36 f
+  data arrival time                                                  9.36
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  total_gain_reg[13]/CK (DFFRHQXL)                        0.00       9.90 r
+  library setup time                                     -0.32       9.58
+  data required time                                                 9.58
+  --------------------------------------------------------------------------
+  data required time                                                 9.58
+  data arrival time                                                 -9.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: TONKOTSU_num_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: total_gain_reg[12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  TONKOTSU_num_reg[1]/CK (DFFRHQXL)                       0.00       0.00 r
+  TONKOTSU_num_reg[1]/Q (DFFRHQXL)                        0.66       0.66 r
+  intadd_1/U7/CO (ADDFXL)                                 1.22       1.89 r
+  intadd_1/U6/S (ADDFXL)                                  0.52       2.41 r
+  U634/Y (INVXL)                                          0.06       2.47 f
+  U633/CO (ADDFXL)                                        1.21       3.69 f
+  U635/CO (ADDFXL)                                        1.27       4.95 f
+  U532/Y (INVXL)                                          0.13       5.08 r
+  DP_OP_241J1_122_7686/U34/S (CMPR42X1)                   0.37       5.45 r
+  U883/Y (INVXL)                                          0.05       5.50 f
+  intadd_0/U8/CO (ADDFXL)                                 0.98       6.48 f
+  intadd_0/U7/CO (ADDFXL)                                 0.47       6.95 f
+  intadd_0/U6/CO (ADDFXL)                                 0.47       7.41 f
+  intadd_0/U5/CO (ADDFXL)                                 0.47       7.88 f
+  intadd_0/U4/CO (ADDFXL)                                 0.47       8.34 f
+  intadd_0/U3/S (ADDFXL)                                  0.48       8.82 r
+  U456/Y (NOR2X1)                                         0.07       8.89 f
+  total_gain_reg[12]/D (DFFRHQXL)                         0.00       8.89 f
+  data arrival time                                                  8.89
+
+  clock clk (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.10       9.90
+  total_gain_reg[12]/CK (DFFRHQXL)                        0.00       9.90 r
+  library setup time                                     -0.32       9.58
+  data required time                                                 9.58
+  --------------------------------------------------------------------------
+  data required time                                                 9.58
+  data arrival time                                                 -8.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.69
+
+
+1

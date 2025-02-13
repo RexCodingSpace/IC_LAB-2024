@@ -1,0 +1,839 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab143/Midterm_Project/Exercise/01_RTL/ISP.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/u_ISP/data_from_dram\[15:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 60827.465182 177193.050749
+wvSetCursor -win $_nWave1 81264.031553 -snap {("G1" 0)}
+wvSetCursor -win $_nWave1 86401.091953 -snap {("G1" 1)}
+wvZoom -win $_nWave1 75680.270250 92319.878934
+wvSetCursor -win $_nWave1 78634.519392 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 86379.442821 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 83377.286935 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 81796.364421 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 1353971.028023 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvOpenFile -win $_nWave1 \
+           {/RAID2/COURSE/iclab/iclab143/Lab09/Exercise/01_RTL/Program.fsdb}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvSelectGroup -win $_nWave1 {G1}
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvSelectGroup -win $_nWave1 {G2}
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvSelectGroup -win $_nWave1 {G1}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/usertype"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/test_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dram_r"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dram_r"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dram_r"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/rst_n} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetPosition -win $_nWave1 {("G1" 2)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 3 4 5 6 7 8 9 )} 
+wvSetPosition -win $_nWave1 {("G1" 9)}
+wvGetSignalClose -win $_nWave1
+wvZoom -win $_nWave1 0.000000 440106.046065
+wvSetCursor -win $_nWave1 60398.430506 -snap {("G1" 1)}
+wvSelectSignal -win $_nWave1 {( "G1" 1 )} 
+wvSetPosition -win $_nWave1 {("G1" 1)}
+wvExpandBus -win $_nWave1 {("G1" 1)}
+wvSetPosition -win $_nWave1 {("G1" 15)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 2 )} 
+wvSetCursor -win $_nWave1 49839.264334 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 41391.931396 -snap {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetCursor -win $_nWave1 57441.863978 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 66311.563563 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 70112.863385 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 91653.562376 -snap {("G1" 3)}
+wvSetCursor -win $_nWave1 48994.531040 -snap {("G1" 3)}
+wvSelectSignal -win $_nWave1 {( "G1" 15 )} 
+wvSetCursor -win $_nWave1 58708.963918 -snap {("G1" 15)}
+wvSetCursor -win $_nWave1 50683.997627 -snap {("G1" 15)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/PATTERN"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf/Program_inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/ti_A\[5:0\]} \
+{/TESTBED/dut_p/ti_B\[5:0\]} \
+{/TESTBED/dut_p/ti_C\[5:0\]} \
+{/TESTBED/dut_p/ti_D\[5:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 16 17 18 19 20 21 22 )} 
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 16 )} 
+wvSetCursor -win $_nWave1 65044.463622 -snap {("G1" 16)}
+wvSetCursor -win $_nWave1 62932.630387 -snap {("G1" 11)}
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetCursor -win $_nWave1 45193.231218 -snap {("G1" 6)}
+wvSetCursor -win $_nWave1 54485.297450 -snap {("G1" 6)}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvExpandBus -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 30)}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvCollapseBus -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 5)}
+wvSetPosition -win $_nWave1 {("G1" 22)}
+wvSelectSignal -win $_nWave1 {( "G1" 5 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 16 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 16 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSetCursor -win $_nWave1 69268.130091 -snap {("G1" 16)}
+wvSetCursor -win $_nWave1 47727.431099 -snap {("G1" 6)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G1" 23)}
+wvSetPosition -win $_nWave1 {("G1" 23)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/ti_A\[5:0\]} \
+{/TESTBED/dut_p/ti_B\[5:0\]} \
+{/TESTBED/dut_p/ti_C\[5:0\]} \
+{/TESTBED/dut_p/ti_D\[5:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 23 )} 
+wvSetPosition -win $_nWave1 {("G1" 23)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 50683.997627 -snap {("G1" 23)}
+wvSetCursor -win $_nWave1 54485.297450 -snap {("G2" 0)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 51528.730921 -snap {("G1" 23)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 63354.997034 -snap {("G1" 23)}
+wvSetCursor -win $_nWave1 68845.763444 -snap {("G1" 23)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 49839.264334 -snap {("G1" 23)}
+wvSetCursor -win $_nWave1 53218.197509 -snap {("G1" 23)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSetCursor -win $_nWave1 67156.296856 -snap {("G1" 17)}
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 12 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 3 )} 
+wvSetCursor -win $_nWave1 82783.862791 -snap {("G1" 18)}
+wvSelectSignal -win $_nWave1 {( "G1" 18 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 18 )} 
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvExpandBus -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 25)}
+wvSelectSignal -win $_nWave1 {( "G1" 18 )} 
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvCollapseBus -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 23)}
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetRadix -win $_nWave1 -format Hex
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSelectSignal -win $_nWave1 {( "G1" 4 )} 
+wvSetRadix -win $_nWave1 -format Enum
+wvSetCursor -win $_nWave1 98411.428727 -snap {("G1" 16)}
+wvSelectSignal -win $_nWave1 {( "G1" 11 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/FSM"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/USR_OUTPUT"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalClose -win $_nWave1
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G1" 24)}
+wvSetPosition -win $_nWave1 {("G1" 24)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/ti_A\[5:0\]} \
+{/TESTBED/dut_p/ti_B\[5:0\]} \
+{/TESTBED/dut_p/ti_C\[5:0\]} \
+{/TESTBED/dut_p/ti_D\[5:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/data_no\[8:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSetPosition -win $_nWave1 {("G1" 24)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 24 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 113194.261368 -snap {("G1" 24)}
+wvSelectSignal -win $_nWave1 {( "G1" 10 )} 
+wvSetCursor -win $_nWave1 126709.994069 -snap {("G1" 19)}
+wvSelectSignal -win $_nWave1 {( "G1" 6 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSelectSignal -win $_nWave1 {( "G1" 19 )} 
+wvSetCursor -win $_nWave1 142759.926651 -snap {("G1" 20)}
+wvSetCursor -win $_nWave1 159232.225880 -snap {("G1" 21)}
+wvSetCursor -win $_nWave1 173170.325227 -snap {("G1" 22)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvExpandBus -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 30)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvCollapseBus -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 7)}
+wvSetPosition -win $_nWave1 {("G1" 24)}
+wvSelectSignal -win $_nWave1 {( "G1" 13 )} 
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G1" 25)}
+wvSetPosition -win $_nWave1 {("G1" 25)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/ti_A\[5:0\]} \
+{/TESTBED/dut_p/ti_B\[5:0\]} \
+{/TESTBED/dut_p/ti_C\[5:0\]} \
+{/TESTBED/dut_p/ti_D\[5:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/data_no\[8:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 25 )} 
+wvSetPosition -win $_nWave1 {("G1" 25)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 129666.560597 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 142337.560004 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 156275.659351 -snap {("G1" 25)}
+wvSetCursor -win $_nWave1 173170.325227 -snap {("G1" 25)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetRadix -win $_nWave1 -format Bin
+wvSetCursor -win $_nWave1 171480.858640 -snap {("G1" 25)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G1" 19 20 21 22 )} 
+wvCut -win $_nWave1
+wvSetPosition -win $_nWave1 {("G2" 0)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 1 2 3 4 )} 
+wvSetPosition -win $_nWave1 {("G2" 4)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 1 2 3 4 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvZoomAll -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoomOut -win $_nWave1
+wvZoom -win $_nWave1 58622.648752 263801.919386
+wvSetCursor -win $_nWave1 127934.648045 -snap {("G2" 1)}
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 7 )} 
+wvSetRadix -win $_nWave1 -format UDec
+wvSetCursor -win $_nWave1 142702.829713 -snap {("G2" 2)}
+wvSetCursor -win $_nWave1 158652.465913 -snap {("G2" 3)}
+wvSetCursor -win $_nWave1 174208.283936 -snap {("G2" 4)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G2" 5)}
+wvSetPosition -win $_nWave1 {("G2" 5)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+{/TESTBED/dut_p/C_in_valid} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 5 )} 
+wvSetPosition -win $_nWave1 {("G2" 5)}
+wvGetSignalClose -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvSetPosition -win $_nWave1 {("G2" 6)}
+wvSetPosition -win $_nWave1 {("G2" 6)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+{/TESTBED/dut_p/C_in_valid} \
+{/TESTBED/dut_p/inf/AR_ADDR\[16:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSetPosition -win $_nWave1 {("G2" 6)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 110714.477125 -snap {("G2" 6)}
+wvSelectSignal -win $_nWave1 {( "G2" 6 )} 
+wvSetRadix -win $_nWave1 -format Hex
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvSetPosition -win $_nWave1 {("G2" 10)}
+wvSetPosition -win $_nWave1 {("G2" 10)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+{/TESTBED/dut_p/C_in_valid} \
+{/TESTBED/dut_p/inf/AR_ADDR\[16:0\]} \
+{/TESTBED/dut_p/inf/AR_READY} \
+{/TESTBED/dut_p/inf/AR_VALID} \
+{/TESTBED/dut_p/inf/R_READY} \
+{/TESTBED/dut_p/inf/R_VALID} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 7 8 9 10 )} 
+wvSetPosition -win $_nWave1 {("G2" 10)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 8 )} 
+wvSetCursor -win $_nWave1 203458.657997 -snap {("G2" 9)}
+wvSetCursor -win $_nWave1 202867.930731 -snap {("G2" 8)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/FSM"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G2" 12)}
+wvSetPosition -win $_nWave1 {("G2" 12)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+{/TESTBED/dut_p/C_in_valid} \
+{/TESTBED/dut_p/inf/AR_ADDR\[16:0\]} \
+{/TESTBED/dut_p/inf/AR_READY} \
+{/TESTBED/dut_p/inf/AR_VALID} \
+{/TESTBED/dut_p/inf/R_READY} \
+{/TESTBED/dut_p/inf/R_VALID} \
+{/TESTBED/dut_p/state\[2:0\]} \
+{/TESTBED/dut_p/state_brige\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 11 12 )} 
+wvSetPosition -win $_nWave1 {("G2" 12)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 173646.621938 -snap {("G2" 11)}
+wvSelectSignal -win $_nWave1 {( "G2" 11 )} 
+wvSetCursor -win $_nWave1 53315.477711 -snap {("G2" 11)}
+wvSetCursor -win $_nWave1 205408.057977 -snap {("G2" 12)}
+wvSelectSignal -win $_nWave1 {( "G2" 8 )} 
+wvSetCursor -win $_nWave1 232975.330423 -snap {("G2" 7)}
+wvSelectSignal -win $_nWave1 {( "G2" 9 )} 
+wvSetCursor -win $_nWave1 260148.784692 -snap {("G2" 10)}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/inf"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/FSM"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p/inf"
+wvSetPosition -win $_nWave1 {("G2" 13)}
+wvSetPosition -win $_nWave1 {("G2" 13)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+{/TESTBED/dut_p/C_in_valid} \
+{/TESTBED/dut_p/inf/AR_ADDR\[16:0\]} \
+{/TESTBED/dut_p/inf/AR_READY} \
+{/TESTBED/dut_p/inf/AR_VALID} \
+{/TESTBED/dut_p/inf/R_READY} \
+{/TESTBED/dut_p/inf/R_VALID} \
+{/TESTBED/dut_p/state\[2:0\]} \
+{/TESTBED/dut_p/state_brige\[3:0\]} \
+{/TESTBED/dut_p/inf/R_DATA\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 13 )} 
+wvSetPosition -win $_nWave1 {("G2" 13)}
+wvGetSignalClose -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 13 )} 
+wvSetRadix -win $_nWave1 -format Hex
+wvSetCursor -win $_nWave1 276098.420893 -snap {("G2" 12)}
+wvSetCursor -win $_nWave1 277279.875426 -snap {("G2" 13)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/TESTBED/dut_p"
+wvSetPosition -win $_nWave1 {("G2" 14)}
+wvSetPosition -win $_nWave1 {("G2" 14)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+{/TESTBED/dut_p/C_in_valid} \
+{/TESTBED/dut_p/inf/AR_ADDR\[16:0\]} \
+{/TESTBED/dut_p/inf/AR_READY} \
+{/TESTBED/dut_p/inf/AR_VALID} \
+{/TESTBED/dut_p/inf/R_READY} \
+{/TESTBED/dut_p/inf/R_VALID} \
+{/TESTBED/dut_p/state\[2:0\]} \
+{/TESTBED/dut_p/state_brige\[3:0\]} \
+{/TESTBED/dut_p/inf/R_DATA\[63:0\]} \
+{/TESTBED/dut_p/r_data_store\[63:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 14 )} 
+wvSetPosition -win $_nWave1 {("G2" 14)}
+wvSetPosition -win $_nWave1 {("G2" 20)}
+wvSetPosition -win $_nWave1 {("G2" 20)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/D.d_act\[35:0\]} \
+{/TESTBED/inf/D.d_formula\[23:0\]} \
+{/TESTBED/inf/D.d_mode\[35:0\]} \
+{/TESTBED/inf/D.d_date\[7:0\]} \
+{/TESTBED/inf/D.d_data_no\[8:0\]} \
+{/TESTBED/inf/D.d_index\[5:0\]} \
+{/TESTBED/inf/rst_n} \
+{/TESTBED/inf/D} \
+{/TESTBED/inf/data_no_valid} \
+{/TESTBED/inf/date_valid} \
+{/TESTBED/inf/formula_valid} \
+{/TESTBED/inf/index_valid} \
+{/TESTBED/inf/mode_valid} \
+{/TESTBED/inf/sel_action_valid} \
+{/TESTBED/dut_p/date\[8:0\]} \
+{/TESTBED/dut_p/formula\[2:0\]} \
+{/TESTBED/dut_p/mode\[1:0\]} \
+{/TESTBED/dut_p/action\[1:0\]} \
+{/TESTBED/dut_p/cnt\[1:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+{/TESTBED/dut_p/ti_A\[11:0\]} \
+{/TESTBED/dut_p/ti_B\[11:0\]} \
+{/TESTBED/dut_p/ti_C\[11:0\]} \
+{/TESTBED/dut_p/ti_D\[11:0\]} \
+{/TESTBED/dut_p/C_in_valid} \
+{/TESTBED/dut_p/inf/AR_ADDR\[16:0\]} \
+{/TESTBED/dut_p/inf/AR_READY} \
+{/TESTBED/dut_p/inf/AR_VALID} \
+{/TESTBED/dut_p/inf/R_READY} \
+{/TESTBED/dut_p/inf/R_VALID} \
+{/TESTBED/dut_p/state\[2:0\]} \
+{/TESTBED/dut_p/state_brige\[3:0\]} \
+{/TESTBED/dut_p/inf/R_DATA\[63:0\]} \
+{/TESTBED/dut_p/r_data_store\[63:0\]} \
+{/TESTBED/dut_p/i_A\[11:0\]} \
+{/TESTBED/dut_p/i_B\[11:0\]} \
+{/TESTBED/dut_p/i_C\[11:0\]} \
+{/TESTBED/dut_p/i_D\[11:0\]} \
+{/TESTBED/dut_p/i_date\[4:0\]} \
+{/TESTBED/dut_p/i_month\[3:0\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G3" \
+}
+wvSelectSignal -win $_nWave1 {( "G2" 15 16 17 18 19 20 )} 
+wvSetPosition -win $_nWave1 {("G2" 20)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 290472.784383 -snap {("G2" 17)}
+wvSetCursor -win $_nWave1 292835.693449 -snap {("G2" 15)}
+wvDisplayGridCount -win $_nWave1 -off
+wvGetSignalClose -win $_nWave1
+wvReloadFile -win $_nWave1
+wvSelectSignal -win $_nWave1 {( "G2" 15 )} 
+wvSelectSignal -win $_nWave1 {( "G2" 18 )} 
+wvSetCursor -win $_nWave1 292441.875272 -snap {("G2" 14)}

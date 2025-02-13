@@ -1,0 +1,23 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Nov 27, 2024 at 00:27:11 CST
+irun
+	-f filelist.f
+		TESTBED.sv
+	-incdir /usr/cad/synopsys/synthesis/cur/dw/sim_ver/
+	-loadpli1 debpli:novas_pli_boot
+	-debug
+	-notimingchecks
+	-define NONE
+	-define RTL
+file: TESTBED.sv
+	package worklib.usertype:sv
+		errors: 0, warnings: 0
+	interface worklib.INF:sv
+		errors: 0, warnings: 0
+program automatic PATTERN(input clk, INF.PATTERN inf);
+                |
+ncvlog: *W,DFAUTO (PATTERN.sv,4|16): Default automatic lifetime will not be applied outside tasks and functions.
+(`include file: PATTERN.sv line 4, file: TESTBED.sv line 5)
+ncvlog: *F,CORRPD: corrupted `protected encrypted Verilog source.
+irun: *E,VLGERR: An error occurred during parsing.  Review the log file for errors with the code *E and fix those identified problems to proceed.  Exiting with code (status 2).
+TOOL:	irun(64)	15.20-s084: Exiting on Nov 27, 2024 at 00:27:11 CST  (total: 00:00:00)

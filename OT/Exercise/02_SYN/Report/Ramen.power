@@ -1,0 +1,54 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Ramen
+Version: T-2022.03
+Date   : Sat Oct 26 18:57:32 2024
+****************************************
+
+
+Library(s) Used:
+
+    slow (File: /RAID2/COURSE/iclab/iclabTA01/umc018/Synthesis/slow.db)
+
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.62 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   1.1996 mW   (97%)
+  Net Switching Power  =  41.5236 uW    (3%)
+                         ---------
+Total Dynamic Power    =   1.2411 mW  (100%)
+
+Cell Leakage Power     =   1.9169 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      1.1137            0.0000            0.0000            0.0000  (   0.00%)  i
+register       4.4154e-02        9.9127e-03        7.5044e+05            1.1685  (  94.01%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  4.1702e-02        3.1611e-02        1.1665e+06        7.4480e-02  (   5.99%)
+--------------------------------------------------------------------------------------------------
+Total              1.1996 mW     4.1524e-02 mW     1.9169e+06 pW         1.2430 mW
+1

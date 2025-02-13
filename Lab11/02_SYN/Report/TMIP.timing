@@ -1,0 +1,404 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 3
+Design : TMIP
+Version: T-2022.03
+Date   : Sun Dec  1 15:08:39 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: fsa0m_a_generic_core_ss1p62v125c
+Wire Load Model Mode: top
+
+  Startpoint: padding_cnt_b_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: store_process_reg[1][236][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TMIP               G5K                   fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  padding_cnt_b_reg[3]/CK (QDFFRBT)                       0.00 #     0.00 r
+  padding_cnt_b_reg[3]/Q (QDFFRBT)                        0.56       0.56 f
+  U59605/O (INV3)                                         0.28       0.83 r
+  U64022/O (NR2)                                          0.14       0.97 f
+  U66309/O (INV1S)                                        0.22       1.19 r
+  U60110/O (OR2P)                                         0.37       1.56 r
+  U77968/O (NR2F)                                         0.36       1.92 f
+  U59855/O (INV3)                                         0.74       2.66 r
+  U62236/O (INV4)                                         0.45       3.10 f
+  U78428/O (MOAI1S)                                       0.41       3.51 f
+  U78430/O (NR2)                                          0.20       3.71 r
+  U78433/O (ND3S)                                         0.16       3.87 f
+  U78434/O (NR2)                                          0.16       4.03 r
+  U78441/O (ND3S)                                         0.15       4.18 f
+  U78442/O (NR2)                                          0.16       4.34 r
+  U78455/O (ND3S)                                         0.14       4.48 f
+  U78458/O (MOAI1S)                                       0.36       4.85 f
+  U62450/O (NR2P)                                         0.24       5.09 r
+  U61353/O (NR2)                                          0.10       5.19 f
+  U102119/O (NR3)                                         0.23       5.42 r
+  U61342/O (AN3S)                                         0.30       5.72 r
+  U102120/O (OAI112HS)                                    0.15       5.87 f
+  U60308/O (NR3)                                          0.21       6.08 r
+  U102121/O (OAI112HS)                                    0.17       6.26 f
+  U66195/O (NR2)                                          0.32       6.58 r
+  U108448/O (NR2)                                         0.15       6.73 f
+  U108449/O (NR2)                                         0.15       6.89 r
+  U109671/O (ND2S)                                        0.11       7.00 f
+  U60300/O (OAI12HS)                                      0.27       7.27 r
+  U109676/O (ND2S)                                        0.11       7.38 f
+  U110780/O (ND2)                                         0.12       7.50 r
+  U110781/O (OAI12HS)                                     0.16       7.66 f
+  U110782/O (INV4CK)                                      0.13       7.79 r
+  U110783/O (INV12)                                       0.10       7.89 f
+  U110811/OB (MXL2H)                                      0.20       8.10 r
+  U110812/O (NR2T)                                        0.12       8.22 f
+  U60294/O (OAI12HS)                                      0.25       8.47 r
+  U62501/O (AOI12H)                                       0.10       8.57 f
+  U61260/O (OAI12HP)                                      0.18       8.75 r
+  U61258/O (INV4)                                         0.08       8.83 f
+  U61257/O (INV4)                                         0.14       8.97 r
+  U112966/OB (MXL2HS)                                     0.27       9.24 r
+  U112967/O (NR2)                                         0.14       9.38 f
+  U59249/O (OAI12HS)                                      0.26       9.64 r
+  U61253/O (AOI12H)                                       0.15       9.79 f
+  U60279/O (OAI12HP)                                      0.25      10.04 r
+  U112992/O (INV2)                                        0.08      10.12 f
+  U59247/O (INV3)                                         0.21      10.33 r
+  U113034/OB (MXL2HS)                                     0.23      10.56 r
+  U113035/O (NR2)                                         0.12      10.68 f
+  U113037/O (OAI112HS)                                    0.25      10.93 r
+  U113038/O (OAI12HS)                                     0.12      11.05 f
+  U113043/O (MAO222)                                      0.31      11.37 f
+  U113048/O (MOAI1HP)                                     0.26      11.63 r
+  U113049/OB (MXL2HS)                                     0.24      11.87 r
+  U113105/O (NR2)                                         0.15      12.02 f
+  U60276/O (NR2)                                          0.16      12.18 r
+  U60275/O (ND2)                                          0.20      12.38 f
+  U62275/O (OAI12HP)                                      0.23      12.61 r
+  U113114/O (OAI12HS)                                     0.15      12.76 f
+  U61238/O (ND2P)                                         0.15      12.91 r
+  U62274/O (OAI12HP)                                      0.16      13.07 f
+  U113323/OB (MXL2HS)                                     0.23      13.30 f
+  U62276/O (NR2T)                                         0.14      13.45 r
+  U113329/O (NR2)                                         0.13      13.58 f
+  U62207/O (AOI12H)                                       0.20      13.77 r
+  U113332/O (INV2)                                        0.06      13.83 f
+  U113333/O (NR2P)                                        0.11      13.94 r
+  U113334/O (OAI22H)                                      0.10      14.04 f
+  U113335/O (OAI12HS)                                     0.13      14.17 r
+  U113336/O (OAI12H)                                      0.15      14.32 f
+  U113340/O (OAI12HS)                                     0.25      14.57 r
+  U113341/O (OAI12H)                                      0.19      14.76 f
+  U113479/OB (MXL2HS)                                     0.24      15.01 f
+  U60274/O (NR2P)                                         0.17      15.18 r
+  U113491/O (OAI12HS)                                     0.12      15.29 f
+  U113492/O (AOI12HS)                                     0.18      15.47 r
+  U113499/O (OAI12HS)                                     0.11      15.58 f
+  U113500/O (MAO222)                                      0.26      15.85 f
+  U113505/O (MOAI1)                                       0.19      16.04 r
+  U113506/O (OAI12H)                                      0.17      16.21 f
+  U62211/O (OAI12HT)                                      0.14      16.35 r
+  U113517/OB (MXL2HS)                                     0.27      16.62 r
+  U60272/O (NR2P)                                         0.13      16.74 f
+  U113518/O (NR2)                                         0.17      16.91 r
+  U113531/O (AOI12HS)                                     0.15      17.06 f
+  U113536/O (OAI12H)                                      0.22      17.28 r
+  U60271/O (ND2)                                          0.14      17.42 f
+  U113538/O (AOI22H)                                      0.23      17.65 r
+  U113541/O (MOAI1HP)                                     0.17      17.82 f
+  U116143/OB (MXL2HS)                                     0.19      18.01 r
+  U116146/O (OAI12H)                                      0.12      18.14 f
+  U59928/O (NR2T)                                         0.17      18.31 r
+  U60265/O (BUF12CK)                                      0.26      18.58 r
+  U59865/O (INV1S)                                        0.24      18.81 f
+  U59890/O (BUF3)                                         0.32      19.14 f
+  U60617/O (MUX2S)                                        0.31      19.45 f
+  U116462/O (AO12S)                                       0.34      19.79 f
+  store_process_reg[1][236][6]/D (QDFFRBS)                0.00      19.79 f
+  data arrival time                                                 19.79
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  store_process_reg[1][236][6]/CK (QDFFRBS)               0.00      19.90 r
+  library setup time                                     -0.11      19.79
+  data required time                                                19.79
+  --------------------------------------------------------------------------
+  data required time                                                19.79
+  data arrival time                                                -19.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: padding_cnt_b_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: store_process_reg[1][253][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TMIP               G5K                   fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  padding_cnt_b_reg[3]/CK (QDFFRBT)                       0.00 #     0.00 r
+  padding_cnt_b_reg[3]/Q (QDFFRBT)                        0.56       0.56 f
+  U59605/O (INV3)                                         0.28       0.83 r
+  U64022/O (NR2)                                          0.14       0.97 f
+  U66309/O (INV1S)                                        0.22       1.19 r
+  U60110/O (OR2P)                                         0.37       1.56 r
+  U77968/O (NR2F)                                         0.36       1.92 f
+  U59855/O (INV3)                                         0.74       2.66 r
+  U62236/O (INV4)                                         0.45       3.10 f
+  U78428/O (MOAI1S)                                       0.41       3.51 f
+  U78430/O (NR2)                                          0.20       3.71 r
+  U78433/O (ND3S)                                         0.16       3.87 f
+  U78434/O (NR2)                                          0.16       4.03 r
+  U78441/O (ND3S)                                         0.15       4.18 f
+  U78442/O (NR2)                                          0.16       4.34 r
+  U78455/O (ND3S)                                         0.14       4.48 f
+  U78458/O (MOAI1S)                                       0.36       4.85 f
+  U62450/O (NR2P)                                         0.24       5.09 r
+  U61353/O (NR2)                                          0.10       5.19 f
+  U102119/O (NR3)                                         0.23       5.42 r
+  U61342/O (AN3S)                                         0.30       5.72 r
+  U102120/O (OAI112HS)                                    0.15       5.87 f
+  U60308/O (NR3)                                          0.21       6.08 r
+  U102121/O (OAI112HS)                                    0.17       6.26 f
+  U66195/O (NR2)                                          0.32       6.58 r
+  U108448/O (NR2)                                         0.15       6.73 f
+  U108449/O (NR2)                                         0.15       6.89 r
+  U109671/O (ND2S)                                        0.11       7.00 f
+  U60300/O (OAI12HS)                                      0.27       7.27 r
+  U109676/O (ND2S)                                        0.11       7.38 f
+  U110780/O (ND2)                                         0.12       7.50 r
+  U110781/O (OAI12HS)                                     0.16       7.66 f
+  U110782/O (INV4CK)                                      0.13       7.79 r
+  U110783/O (INV12)                                       0.10       7.89 f
+  U110811/OB (MXL2H)                                      0.20       8.10 r
+  U110812/O (NR2T)                                        0.12       8.22 f
+  U60294/O (OAI12HS)                                      0.25       8.47 r
+  U62501/O (AOI12H)                                       0.10       8.57 f
+  U61260/O (OAI12HP)                                      0.18       8.75 r
+  U61258/O (INV4)                                         0.08       8.83 f
+  U61257/O (INV4)                                         0.14       8.97 r
+  U112966/OB (MXL2HS)                                     0.27       9.24 r
+  U112967/O (NR2)                                         0.14       9.38 f
+  U59249/O (OAI12HS)                                      0.26       9.64 r
+  U61253/O (AOI12H)                                       0.15       9.79 f
+  U60279/O (OAI12HP)                                      0.25      10.04 r
+  U112992/O (INV2)                                        0.08      10.12 f
+  U59247/O (INV3)                                         0.21      10.33 r
+  U113034/OB (MXL2HS)                                     0.23      10.56 r
+  U113035/O (NR2)                                         0.12      10.68 f
+  U113037/O (OAI112HS)                                    0.25      10.93 r
+  U113038/O (OAI12HS)                                     0.12      11.05 f
+  U113043/O (MAO222)                                      0.31      11.37 f
+  U113048/O (MOAI1HP)                                     0.26      11.63 r
+  U113049/OB (MXL2HS)                                     0.24      11.87 r
+  U113105/O (NR2)                                         0.15      12.02 f
+  U60276/O (NR2)                                          0.16      12.18 r
+  U60275/O (ND2)                                          0.20      12.38 f
+  U62275/O (OAI12HP)                                      0.23      12.61 r
+  U113114/O (OAI12HS)                                     0.15      12.76 f
+  U61238/O (ND2P)                                         0.15      12.91 r
+  U62274/O (OAI12HP)                                      0.16      13.07 f
+  U113323/OB (MXL2HS)                                     0.23      13.30 f
+  U62276/O (NR2T)                                         0.14      13.45 r
+  U113329/O (NR2)                                         0.13      13.58 f
+  U62207/O (AOI12H)                                       0.20      13.77 r
+  U113332/O (INV2)                                        0.06      13.83 f
+  U113333/O (NR2P)                                        0.11      13.94 r
+  U113334/O (OAI22H)                                      0.10      14.04 f
+  U113335/O (OAI12HS)                                     0.13      14.17 r
+  U113336/O (OAI12H)                                      0.15      14.32 f
+  U113340/O (OAI12HS)                                     0.25      14.57 r
+  U113341/O (OAI12H)                                      0.19      14.76 f
+  U113479/OB (MXL2HS)                                     0.24      15.01 f
+  U60274/O (NR2P)                                         0.17      15.18 r
+  U113491/O (OAI12HS)                                     0.12      15.29 f
+  U113492/O (AOI12HS)                                     0.18      15.47 r
+  U113499/O (OAI12HS)                                     0.11      15.58 f
+  U113500/O (MAO222)                                      0.26      15.85 f
+  U113505/O (MOAI1)                                       0.19      16.04 r
+  U113506/O (OAI12H)                                      0.17      16.21 f
+  U62211/O (OAI12HT)                                      0.14      16.35 r
+  U113517/OB (MXL2HS)                                     0.27      16.62 r
+  U60272/O (NR2P)                                         0.13      16.74 f
+  U113518/O (NR2)                                         0.17      16.91 r
+  U113531/O (AOI12HS)                                     0.15      17.06 f
+  U113536/O (OAI12H)                                      0.22      17.28 r
+  U60271/O (ND2)                                          0.14      17.42 f
+  U113538/O (AOI22H)                                      0.23      17.65 r
+  U113541/O (MOAI1HP)                                     0.17      17.82 f
+  U116143/OB (MXL2HS)                                     0.19      18.01 r
+  U116146/O (OAI12H)                                      0.12      18.14 f
+  U59928/O (NR2T)                                         0.17      18.31 r
+  U60265/O (BUF12CK)                                      0.26      18.58 r
+  U59865/O (INV1S)                                        0.24      18.81 f
+  U59890/O (BUF3)                                         0.32      19.14 f
+  U60551/O (MUX2S)                                        0.31      19.45 f
+  U116505/O (AO12S)                                       0.34      19.79 f
+  store_process_reg[1][253][6]/D (QDFFRBS)                0.00      19.79 f
+  data arrival time                                                 19.79
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  store_process_reg[1][253][6]/CK (QDFFRBS)               0.00      19.90 r
+  library setup time                                     -0.11      19.79
+  data required time                                                19.79
+  --------------------------------------------------------------------------
+  data required time                                                19.79
+  data arrival time                                                -19.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: padding_cnt_b_reg[3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: store_process_reg[1][209][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TMIP               G5K                   fsa0m_a_generic_core_ss1p62v125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  padding_cnt_b_reg[3]/CK (QDFFRBT)                       0.00 #     0.00 r
+  padding_cnt_b_reg[3]/Q (QDFFRBT)                        0.56       0.56 f
+  U59605/O (INV3)                                         0.28       0.83 r
+  U64022/O (NR2)                                          0.14       0.97 f
+  U66309/O (INV1S)                                        0.22       1.19 r
+  U60110/O (OR2P)                                         0.37       1.56 r
+  U77968/O (NR2F)                                         0.36       1.92 f
+  U59855/O (INV3)                                         0.74       2.66 r
+  U62236/O (INV4)                                         0.45       3.10 f
+  U78428/O (MOAI1S)                                       0.41       3.51 f
+  U78430/O (NR2)                                          0.20       3.71 r
+  U78433/O (ND3S)                                         0.16       3.87 f
+  U78434/O (NR2)                                          0.16       4.03 r
+  U78441/O (ND3S)                                         0.15       4.18 f
+  U78442/O (NR2)                                          0.16       4.34 r
+  U78455/O (ND3S)                                         0.14       4.48 f
+  U78458/O (MOAI1S)                                       0.36       4.85 f
+  U62450/O (NR2P)                                         0.24       5.09 r
+  U61353/O (NR2)                                          0.10       5.19 f
+  U102119/O (NR3)                                         0.23       5.42 r
+  U61342/O (AN3S)                                         0.30       5.72 r
+  U102120/O (OAI112HS)                                    0.15       5.87 f
+  U60308/O (NR3)                                          0.21       6.08 r
+  U102121/O (OAI112HS)                                    0.17       6.26 f
+  U66195/O (NR2)                                          0.32       6.58 r
+  U108448/O (NR2)                                         0.15       6.73 f
+  U108449/O (NR2)                                         0.15       6.89 r
+  U109671/O (ND2S)                                        0.11       7.00 f
+  U60300/O (OAI12HS)                                      0.27       7.27 r
+  U109676/O (ND2S)                                        0.11       7.38 f
+  U110780/O (ND2)                                         0.12       7.50 r
+  U110781/O (OAI12HS)                                     0.16       7.66 f
+  U110782/O (INV4CK)                                      0.13       7.79 r
+  U110783/O (INV12)                                       0.10       7.89 f
+  U110811/OB (MXL2H)                                      0.20       8.10 r
+  U110812/O (NR2T)                                        0.12       8.22 f
+  U60294/O (OAI12HS)                                      0.25       8.47 r
+  U62501/O (AOI12H)                                       0.10       8.57 f
+  U61260/O (OAI12HP)                                      0.18       8.75 r
+  U61258/O (INV4)                                         0.08       8.83 f
+  U61257/O (INV4)                                         0.14       8.97 r
+  U112966/OB (MXL2HS)                                     0.27       9.24 r
+  U112967/O (NR2)                                         0.14       9.38 f
+  U59249/O (OAI12HS)                                      0.26       9.64 r
+  U61253/O (AOI12H)                                       0.15       9.79 f
+  U60279/O (OAI12HP)                                      0.25      10.04 r
+  U112992/O (INV2)                                        0.08      10.12 f
+  U59247/O (INV3)                                         0.21      10.33 r
+  U113034/OB (MXL2HS)                                     0.23      10.56 r
+  U113035/O (NR2)                                         0.12      10.68 f
+  U113037/O (OAI112HS)                                    0.25      10.93 r
+  U113038/O (OAI12HS)                                     0.12      11.05 f
+  U113043/O (MAO222)                                      0.31      11.37 f
+  U113048/O (MOAI1HP)                                     0.26      11.63 r
+  U113049/OB (MXL2HS)                                     0.24      11.87 r
+  U113105/O (NR2)                                         0.15      12.02 f
+  U60276/O (NR2)                                          0.16      12.18 r
+  U60275/O (ND2)                                          0.20      12.38 f
+  U62275/O (OAI12HP)                                      0.23      12.61 r
+  U113114/O (OAI12HS)                                     0.15      12.76 f
+  U61238/O (ND2P)                                         0.15      12.91 r
+  U62274/O (OAI12HP)                                      0.16      13.07 f
+  U113323/OB (MXL2HS)                                     0.23      13.30 f
+  U62276/O (NR2T)                                         0.14      13.45 r
+  U113329/O (NR2)                                         0.13      13.58 f
+  U62207/O (AOI12H)                                       0.20      13.77 r
+  U113332/O (INV2)                                        0.06      13.83 f
+  U113333/O (NR2P)                                        0.11      13.94 r
+  U113334/O (OAI22H)                                      0.10      14.04 f
+  U113335/O (OAI12HS)                                     0.13      14.17 r
+  U113336/O (OAI12H)                                      0.15      14.32 f
+  U113340/O (OAI12HS)                                     0.25      14.57 r
+  U113341/O (OAI12H)                                      0.19      14.76 f
+  U113479/OB (MXL2HS)                                     0.24      15.01 f
+  U60274/O (NR2P)                                         0.17      15.18 r
+  U113491/O (OAI12HS)                                     0.12      15.29 f
+  U113492/O (AOI12HS)                                     0.18      15.47 r
+  U113499/O (OAI12HS)                                     0.11      15.58 f
+  U113500/O (MAO222)                                      0.26      15.85 f
+  U113505/O (MOAI1)                                       0.19      16.04 r
+  U113506/O (OAI12H)                                      0.17      16.21 f
+  U62211/O (OAI12HT)                                      0.14      16.35 r
+  U113517/OB (MXL2HS)                                     0.27      16.62 r
+  U60272/O (NR2P)                                         0.13      16.74 f
+  U113518/O (NR2)                                         0.17      16.91 r
+  U113531/O (AOI12HS)                                     0.15      17.06 f
+  U113536/O (OAI12H)                                      0.22      17.28 r
+  U60271/O (ND2)                                          0.14      17.42 f
+  U113538/O (AOI22H)                                      0.23      17.65 r
+  U113541/O (MOAI1HP)                                     0.17      17.82 f
+  U116143/OB (MXL2HS)                                     0.19      18.01 r
+  U116146/O (OAI12H)                                      0.12      18.14 f
+  U59928/O (NR2T)                                         0.17      18.31 r
+  U60265/O (BUF12CK)                                      0.26      18.58 r
+  U59865/O (INV1S)                                        0.24      18.81 f
+  U59890/O (BUF3)                                         0.32      19.14 f
+  U60634/O (MUX2S)                                        0.31      19.45 f
+  U116438/O (AO12S)                                       0.34      19.79 f
+  store_process_reg[1][209][6]/D (QDFFRBS)                0.00      19.79 f
+  data arrival time                                                 19.79
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  clock uncertainty                                      -0.10      19.90
+  store_process_reg[1][209][6]/CK (QDFFRBS)               0.00      19.90 r
+  library setup time                                     -0.11      19.79
+  data required time                                                19.79
+  --------------------------------------------------------------------------
+  data required time                                                19.79
+  data arrival time                                                -19.79
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,125 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1536 793 289 563
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/iclab/iclab143/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 1618862.417606 1627145.627559
+cursor 1619930.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 25
+; marker line index
+markerPos 55
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/iclab/iclab143/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+addSignal -h 15 /TESTBED/addr_dram[12:0]
+addSignal -h 15 -holdScope addr_sd[15:0]
+addSignal -h 15 -holdScope araddr_s_inf[31:0]
+addSignal -h 15 -holdScope arburst_s_inf[1:0]
+addSignal -h 15 -holdScope arid_s_inf[3:0]
+addSignal -h 15 -holdScope arlen_s_inf[7:0]
+addSignal -h 15 -holdScope arready_s_inf
+addSignal -h 15 -holdScope arsize_s_inf[2:0]
+addSignal -h 15 -holdScope arvalid_s_inf
+addSignal -h 15 -holdScope awaddr_s_inf[31:0]
+addSignal -h 15 -holdScope awburst_s_inf[1:0]
+addSignal -h 15 -holdScope awid_s_inf[3:0]
+addSignal -h 15 -holdScope awlen_s_inf[7:0]
+addSignal -h 15 -holdScope awready_s_inf
+addSignal -h 15 -holdScope awsize_s_inf[2:0]
+addSignal -h 15 -holdScope awvalid_s_inf
+addSignal -h 15 -holdScope bid_s_inf[3:0]
+addSignal -h 15 -holdScope bready_s_inf
+addSignal -h 15 -holdScope bresp_s_inf[1:0]
+addSignal -h 15 -holdScope bvalid_s_inf
+addSignal -h 15 -holdScope clk
+addSignal -h 15 -holdScope direction
+addSignal -h 15 -holdScope in_mode
+addSignal -h 15 -holdScope in_pic_no[3:0]
+addSignal -h 15 -holdScope in_ratio_mode[1:0]
+addSignal -h 15 -holdScope in_valid
+addSignal -h 15 -holdScope out_data[7:0]
+addSignal -h 15 -holdScope out_valid
+addSignal -h 15 -holdScope rdata_s_inf[127:0]
+addSignal -h 15 -holdScope rid_s_inf[3:0]
+addSignal -h 15 -holdScope rlast_s_inf
+addSignal -h 15 -holdScope rready_s_inf
+addSignal -h 15 -holdScope rresp_s_inf[1:0]
+addSignal -h 15 -holdScope rst_n
+addSignal -h 15 -holdScope rvalid_s_inf
+addSignal -h 15 -holdScope wdata_s_inf[127:0]
+addSignal -h 15 -holdScope wlast_s_inf
+addSignal -h 15 -holdScope wready_s_inf
+addSignal -h 15 -holdScope wvalid_s_inf
+addSignal -h 15 -UNSIGNED -UDEC /TESTBED/u_ISP/count2[7:0]
+addSignal -h 15 /TESTBED/u_ISP/dd1/clk
+addSignal -h 15 -UNSIGNED -UDEC -holdScope count[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope current_state[1:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope dividend[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope dividend_e[27:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope divisor[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope divisor_e[27:0]
+addSignal -h 15 -holdScope en
+addSignal -h 15 -UNSIGNED -UDEC -holdScope next_state[1:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope quotient[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope quotient_e[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope remainder[13:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope remainder_e[13:0]
+addSignal -h 15 -holdScope rstn
+addSignal -h 15 -holdScope vld_out
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/iclab/iclab143/Midterm_Project/Exercise/01_RTL/ISP.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/TESTBED"
+"/TESTBED/u_ISP"
+
+SCOPE_LIST_BEGIN
+"/TESTBED"
+"/TESTBED/u_PATTERN"
+"/TESTBED/u_ISP/dd1"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

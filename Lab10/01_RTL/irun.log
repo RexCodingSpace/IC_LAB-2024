@@ -1,0 +1,155 @@
+irun(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s084: Started on Nov 25, 2024 at 01:32:31 CST
+irun
+	-f filelist.f
+		TESTBED.sv
+	-incdir /usr/cad/synopsys/synthesis/cur/dw/sim_ver/
+	-loadpli1 debpli:novas_pli_boot
+	-debug
+	-notimingchecks
+	-define ASSERT
+	-define SPEC_9_1
+file: TESTBED.sv
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+ncvlog: *W,WARIPR: warning within protected source code.
+		errors: 0, warnings: 22
+ncvlog: *W,WARIPR: warning within protected source code.
+		errors: 0, warnings: 1
+	module worklib.Checker:sv
+		errors: 0, warnings: 0
+	module worklib.TESTBED:sv
+		errors: 0, warnings: 0
+ncvlog: *W,SPDUSD: Include directory /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		usertype
+		$unit_0x0359e3aa
+		TESTBED
+		Caching library 'worklib' ....... Done
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncelab: *W,MEMODR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,MEMODR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+ncelab: *W,ENUMERR (./TESTBED.sv): warning within protected source code.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.Checker:sv <0x5ab5bd24>
+			streams:  81, words: 53850
+			streams:  72, words: 155339
+			streams:  57, words: 63131
+		worklib.TESTBED:sv <0x28ad25c2>
+			streams:   3, words:  1823
+			streams:  20, words:  9832
+		worklib.pseudo_DRAM:sv <0x66e88718>
+			streams:   5, words: 21122
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                     Instances  Unique
+		Modules:                     5       5
+		Interfaces:                  1       1
+		Programs:                    1       1
+		Verilog packages:            1       1
+		Registers:                 330     343
+		Scalar wires:               24       -
+		Vectored wires:             13       -
+		Named events:                9       9
+		Always blocks:              73      73
+		Initial blocks:             53      53
+		Pseudo assignments:         24      24
+		Assertions:                  9       9
+		Covergroup Instances:        0       6
+		Compilation units:           1       1
+		SV Class declarations:       8       8
+		SV Class specializations:    8       8
+		Simulation timescale:      1ps
+	Writing initial simulation snapshot: worklib.TESTBED:sv
+Loading snapshot worklib.TESTBED:sv .................... Done
+SVSEED default: 1
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_P-2019.06, Linux x86_64/64bit, 05/26/2019
+(C) 1996 - 2019 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'Program.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : Enable +all dumping.
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the SVA assertions, layer (0).
+*Verdi* : End of traversing the SVA assertions.
+ncsim: *F,ASRTST (./CHECKER.sv,208): (time 120 NS) Assertion TESTBED.check_inst.assertion9 has failed
+[31m--- Assertion 9 is violated ---[0m
+./CHECKER.sv:208     else $fatal(0, "%0s", assert_9);
+ncsim> exit
+TOOL:	irun(64)	15.20-s084: Exiting on Nov 25, 2024 at 01:32:32 CST  (total: 00:00:01)

@@ -1,0 +1,1 @@
+s1(27Nov2024:00:27:11):  irun -f filelist.f -incdir /usr/cad/synopsys/synthesis/cur/dw/sim_ver/ -loadpli1 debpli:novas_pli_boot -debug -notimingchecks -define NONE -define RTL 

@@ -1,0 +1,76 @@
+Magic 271485
+Revision Verdi_P-2019.06
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+viewPort 0 23 1920 1009 211 187
+
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+openDirFile -d / "" "/RAID2/COURSE/iclab/iclab143/Lab10/01_RTL/Program.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+zoom 732286539.839434 732605897.090605
+cursor 732378000.000000
+marker 0.000000
+
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 0
+; marker line index
+markerPos 5
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+
+
+COMPLEX_EVENT_BEGIN
+
+
+COMPLEX_EVENT_END
+
+
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "G1"
+activeDirFile "" "/RAID2/COURSE/iclab/iclab143/Lab10/01_RTL/Program.fsdb"
+addSignal -h 15 -UNSIGNED /TESTBED/test_p/given_action[1:0]
+addSignal -h 15 -UNSIGNED -holdScope given_formula[2:0]
+addSignal -h 15 -UNSIGNED -holdScope given_mode[1:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope i_pat[31:0]
+addSignal -h 15 -UNSIGNED -UDEC -holdScope formula_count[31:0]
+addGroup "G2"
+
+; getSignalForm Scope Hierarchy Status
+; active file of getSignalForm
+activeDirFile "" "/RAID2/COURSE/iclab/iclab143/Lab10/01_RTL/Program.fsdb"
+
+GETSIGNALFORM_SCOPE_HIERARCHY_BEGIN
+getSignalForm close
+
+"/$unit_0x0359e3aa"
+"/TESTBED"
+
+SCOPE_LIST_BEGIN
+"/$unit_0x0359e3aa"
+"/TESTBED"
+"/usertype"
+"/TESTBED/test_p"
+SCOPE_LIST_END
+
+GETSIGNALFORM_SCOPE_HIERARCHY_END
+
+

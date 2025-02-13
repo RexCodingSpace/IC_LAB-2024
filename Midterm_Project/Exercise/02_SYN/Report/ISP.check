@@ -1,0 +1,117 @@
+ 
+****************************************
+check_design summary:
+Version:     T-2022.03
+Date:        Wed Dec 25 01:53:19 2024
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     58
+    Unconnected ports (LINT-28)                                    15
+    Shorted outputs (LINT-31)                                      27
+    Constant outputs (LINT-52)                                     16
+
+Cells                                                              20
+    Cells do not drive (LINT-1)                                    20
+
+Nets                                                               17
+    Unloaded nets (LINT-2)                                         17
+--------------------------------------------------------------------------------
+
+Warning: In design 'ISP', cell 'B_160' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_168' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_170' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_172' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_174' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_181' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_183' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_185' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_187' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_189' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_191' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_193' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_195' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_197' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_199' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_201' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_203' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_205' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_207' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', cell 'B_209' does not drive any nets. (LINT-1)
+Warning: In design 'ISP', net 'net656' driven by pin 'C9551/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net655' driven by pin 'C9540/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net654' driven by pin 'C9527/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net653' driven by pin 'C9515/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net652' driven by pin 'C9454/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net651' driven by pin 'C9352/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net650' driven by pin 'C9332/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net649' driven by pin 'C9156/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net648' driven by pin 'C9155/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net647' driven by pin 'C9149/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net646' driven by pin 'C9148/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net645' driven by pin 'C9142/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net644' driven by pin 'C9141/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'net643' driven by pin 'C8956/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'vld_out' driven by pin 'dd1/vld_out' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'dd1/net1913' driven by pin 'dd1/C163/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', net 'dd1/net1912' driven by pin 'dd1/C157/Z' has no loads. (LINT-2)
+Warning: In design 'ISP', port 'awready_s_inf' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'bid_s_inf[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'bid_s_inf[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'bid_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'bid_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'bresp_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'bresp_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'bvalid_s_inf' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'rid_s_inf[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'rid_s_inf[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'rid_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'rid_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'rresp_s_inf[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'rresp_s_inf[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', port 'rlast_s_inf' is not connected to any nets. (LINT-28)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arburst_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arsize_s_inf[0]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arsize_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arlen_s_inf[6]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arid_s_inf[0]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arid_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arid_s_inf[2]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'arid_s_inf[3]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'awlen_s_inf[6]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'awburst_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'awsize_s_inf[0]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'awsize_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'awid_s_inf[0]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'awid_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to output port 'awid_s_inf[2]'. (LINT-31)
+Warning: In design 'ISP', output port 'awlen_s_inf[7]' is connected directly to output port 'awlen_s_inf[0]'. (LINT-31)
+Warning: In design 'ISP', output port 'awlen_s_inf[7]' is connected directly to output port 'awlen_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'awlen_s_inf[7]' is connected directly to output port 'awlen_s_inf[2]'. (LINT-31)
+Warning: In design 'ISP', output port 'awlen_s_inf[7]' is connected directly to output port 'awlen_s_inf[3]'. (LINT-31)
+Warning: In design 'ISP', output port 'awlen_s_inf[7]' is connected directly to output port 'awlen_s_inf[4]'. (LINT-31)
+Warning: In design 'ISP', output port 'awlen_s_inf[7]' is connected directly to output port 'awlen_s_inf[5]'. (LINT-31)
+Warning: In design 'ISP', output port 'arlen_s_inf[7]' is connected directly to output port 'arlen_s_inf[0]'. (LINT-31)
+Warning: In design 'ISP', output port 'arlen_s_inf[7]' is connected directly to output port 'arlen_s_inf[1]'. (LINT-31)
+Warning: In design 'ISP', output port 'arlen_s_inf[7]' is connected directly to output port 'arlen_s_inf[2]'. (LINT-31)
+Warning: In design 'ISP', output port 'arlen_s_inf[7]' is connected directly to output port 'arlen_s_inf[3]'. (LINT-31)
+Warning: In design 'ISP', output port 'arlen_s_inf[7]' is connected directly to output port 'arlen_s_inf[4]'. (LINT-31)
+Warning: In design 'ISP', output port 'arlen_s_inf[7]' is connected directly to output port 'arlen_s_inf[5]'. (LINT-31)
+Warning: In design 'ISP', output port 'awid_s_inf[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'awid_s_inf[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'awid_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'awid_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'awsize_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'awsize_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'awburst_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'awlen_s_inf[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arid_s_inf[3]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arid_s_inf[2]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arid_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arid_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arlen_s_inf[6]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arsize_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arsize_s_inf[0]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'ISP', output port 'arburst_s_inf[1]' is connected directly to 'logic 0'. (LINT-52)
+1
